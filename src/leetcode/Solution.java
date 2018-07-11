@@ -7,6 +7,7 @@ import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map.Entry;
+import java.util.PriorityQueue;
 
 public class Solution {
 
@@ -15,14 +16,16 @@ public class Solution {
 	public static void main(String[] args) {
 		Solution so = new Solution();
 
-		ListNode l1 = new ListNode(1);
-		ListNode l2 = new ListNode(9);
-		l2.next = new ListNode(9);
-		l2.next.next = new ListNode(9);
-		so.addTwoNumbers(l1, l2);
-		
-		//int[] arr = { 2, 7, 11, 15 };
-		//System.out.println(Arrays.toString(so.twoSum2(arr, 26)));
+		System.out.println("11".substring(0, 0).length());
+
+		/*
+		 * ListNode l1 = new ListNode(1); ListNode l2 = new ListNode(9); l2.next
+		 * = new ListNode(9); l2.next.next = new ListNode(9);
+		 * so.addTwoNumbers(l1, l2);
+		 */
+
+		// int[] arr = { 2, 7, 11, 15 };
+		// System.out.println(Arrays.toString(so.twoSum2(arr, 26)));
 
 		// System.out.println(Double.parseDouble("-1."));
 
@@ -30,6 +33,122 @@ public class Solution {
 
 		// System.out.println(so.myAtoi("-91283472332"));
 
+	}
+
+	/**
+	 * 4. Median of Two Sorted Arrays
+	 * 
+	 * There are two sorted arrays nums1 and nums2 of size m and n respectively.
+	 * 
+	 * Find the median of the two sorted arrays. The overall run time complexity
+	 * should be O(log (m+n)).
+	 * 
+	 * @param nums1
+	 * @param nums2
+	 * @return
+	 */
+	public double findMedianSortedArrays(int[] nums1, int[] nums2) {
+
+		// 利用PriorityQueue建立大根堆和小根堆
+		PriorityQueue<Integer> min = new PriorityQueue<Integer>();
+		PriorityQueue<Integer> max = new PriorityQueue<Integer>(10, new Comparator<Integer>() {
+			@Override
+			public int compare(Integer num1, Integer num2) {
+				// TODO Auto-generated method stub
+				return num2 - num1;
+			}
+		});
+		boolean flag = true; // 第偶数个数进小根堆，第奇数个数进大根堆，true 表示第奇数个数
+
+		for (int i = 0; i < nums1.length; i++) {
+			int num = nums1[i];
+			if (flag) {// 第奇数个数，进小根堆（先进大根堆，再进小根堆）
+				max.offer(num);
+				min.offer(max.poll());
+				flag = !flag;
+			} else {// 第偶数个数，进大根堆（先进小根堆，再进大根堆）
+				min.offer(num);
+				max.offer(min.poll());
+				flag = !flag;
+			}
+		}
+		for (int i = 0; i < nums2.length; i++) {
+			int num = nums2[i];
+			if (flag) {// 第奇数个数，进小根堆（先进大根堆，再进小根堆）
+				max.offer(num);
+				min.offer(max.poll());
+				flag = !flag;
+			} else {// 第偶数个数，进大根堆（先进小根堆，再进大根堆）
+				min.offer(num);
+				max.offer(min.poll());
+				flag = !flag;
+			}
+		}
+		if (!flag) { // 总共偶数个数
+			return (min.peek() + max.peek()) / 2.0;
+		} else { // 总共奇数个数
+			return min.peek();
+		}
+
+	}
+
+	/**
+	 * 3. Longest Substring Without Repeating Characters
+	 * 
+	 * 自定义哈希表版本*
+	 * 
+	 * Given a string, find the length of the longest substring without
+	 * repeating characters.
+	 * 
+	 * @param s
+	 * @return
+	 */
+	public int lengthOfLongestSubstring2(String s) {
+		if (s == null || s.length() < 1)
+			return 0;
+		int max = 0;
+		int[] chars = new int[128]; // 字符ASCII值作为下标，字符在s中的下标作为值
+		for (int i = 0, j = 0; j < s.length(); j++) {
+			i = Math.max(i, chars[s.charAt(j)]);
+			max = Math.max(max, j - i);
+			chars[s.charAt(j)] = j;
+		}
+		return max;
+	}
+
+	/**
+	 * 3. Longest Substring Without Repeating Characters
+	 * 
+	 * Given a string, find the length of the longest substring without
+	 * repeating characters.
+	 * 
+	 * @param s
+	 * @return
+	 */
+	public int lengthOfLongestSubstring(String s) {
+		if (s == null || s.length() < 1)
+			return 0;
+		if (s.length() == 1)
+			return 1;
+		int max = 0;
+		int start = 0; // 不同字符的开始下标
+		int end = 1;
+		String subStr = "";
+		while (end < s.length()) {
+			subStr = s.substring(start, end);
+			while (start < end) {
+				if (subStr.contains(s.charAt(end) + "")) {
+					// end下标对应的字符在子串中
+					start++;
+					subStr = s.substring(start, end);
+				} else
+					break;
+			}
+			max = Math.max(max, end - start + 1);
+			end++;
+		}
+
+		return max;
 	}
 
 	/**
@@ -72,7 +191,7 @@ public class Solution {
 					tmp = tmp.next;
 					res = res.next;
 				}
-				if(a==1)
+				if (a == 1)
 					res.next = new ListNode(1);
 			}
 		}
@@ -81,10 +200,12 @@ public class Solution {
 	}
 
 	/**
-	 * 1. Two Sum Given an array of integers, return indices of the two numbers
-	 * such that they add up to a specific target. You may assume that each
-	 * input would have exactly one solution, and you may not use the same
-	 * element twice. 简化版，不需要排序
+	 * 1. Two Sum
+	 * 
+	 * Given an array of integers, return indices of the two numbers such that
+	 * they add up to a specific target. You may assume that each input would
+	 * have exactly one solution, and you may not use the same element twice.
+	 * 简化版，不需要排序
 	 * 
 	 * @param nums
 	 * @param target
@@ -103,10 +224,11 @@ public class Solution {
 	}
 
 	/**
-	 * 1. Two Sum Given an array of integers, return indices of the two numbers
-	 * such that they add up to a specific target. You may assume that each
-	 * input would have exactly one solution, and you may not use the same
-	 * element twice.
+	 * 1. Two Sum
+	 * 
+	 * Given an array of integers, return indices of the two numbers such that
+	 * they add up to a specific target. You may assume that each input would
+	 * have exactly one solution, and you may not use the same element twice.
 	 * 
 	 * @param nums
 	 * @param target
