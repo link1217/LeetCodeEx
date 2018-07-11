@@ -15,8 +15,14 @@ public class Solution {
 	public static void main(String[] args) {
 		Solution so = new Solution();
 
-		int[] arr = { 2, 7, 11, 15 };
-		System.out.println(Arrays.toString(so.twoSum2(arr, 26)));
+		ListNode l1 = new ListNode(1);
+		ListNode l2 = new ListNode(9);
+		l2.next = new ListNode(9);
+		l2.next.next = new ListNode(9);
+		so.addTwoNumbers(l1, l2);
+		
+		//int[] arr = { 2, 7, 11, 15 };
+		//System.out.println(Arrays.toString(so.twoSum2(arr, 26)));
 
 		// System.out.println(Double.parseDouble("-1."));
 
@@ -24,6 +30,54 @@ public class Solution {
 
 		// System.out.println(so.myAtoi("-91283472332"));
 
+	}
+
+	/**
+	 * 2. You are given two non-empty linked lists representing two non-negative
+	 * integers. The digits are stored in reverse order and each of their nodes
+	 * contain a single digit. Add the two numbers and return it as a linked
+	 * list.
+	 * 
+	 * @param l1
+	 * @param l2
+	 * @return
+	 */
+	public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+		if (l1 == null)
+			return l2;
+		if (l2 == null)
+			return l1;
+		ListNode preHead = new ListNode(-1); // new listnode for return
+		ListNode res = preHead;
+		int a = 0; // a=1 if sum of two number >=10
+		while (l1 != null && l2 != null) {
+			int sum = l1.val + l2.val + a;
+			res.next = new ListNode(sum % 10);
+			a = sum / 10;
+			l1 = l1.next;
+			l2 = l2.next;
+			res = res.next;
+		}
+		if (a == 0) {
+			res.next = l1 == null ? l2 : l1;
+		} else {
+			if (l1 == null && l2 == null) {
+				res.next = new ListNode(a);
+			} else {
+				ListNode tmp = l1 == null ? l2 : l1;
+				while (tmp != null) {
+					int sum = tmp.val + a;
+					res.next = new ListNode(sum % 10);
+					a = sum / 10;
+					tmp = tmp.next;
+					res = res.next;
+				}
+				if(a==1)
+					res.next = new ListNode(1);
+			}
+		}
+
+		return preHead.next;
 	}
 
 	/**
