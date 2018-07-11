@@ -1,9 +1,12 @@
 package leetcode;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
+import java.util.Map.Entry;
 
 public class Solution {
 
@@ -11,30 +14,146 @@ public class Solution {
 
 	public static void main(String[] args) {
 		Solution so = new Solution();
-		
-		System.out.println(Double.parseDouble("-1."));
-		
-		System.out.println(so.isNumber("-e"));
-		
-		//System.out.println(so.myAtoi("-91283472332"));
+
+		int[] arr = { 2, 7, 11, 15 };
+		System.out.println(Arrays.toString(so.twoSum2(arr, 26)));
+
+		// System.out.println(Double.parseDouble("-1."));
+
+		// System.out.println(so.isNumber3("1"));
+
+		// System.out.println(so.myAtoi("-91283472332"));
 
 	}
 
 	/**
+	 * 1. Two Sum Given an array of integers, return indices of the two numbers
+	 * such that they add up to a specific target. You may assume that each
+	 * input would have exactly one solution, and you may not use the same
+	 * element twice. 简化版，不需要排序
+	 * 
+	 * @param nums
+	 * @param target
+	 * @return
+	 */
+	public int[] twoSum2(int[] nums, int target) {
+		HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
+		for (int i = 0; i < nums.length; i++) {
+			int a = nums[i];
+			int b = target - a;
+			if (map.containsKey(b)) // 如果map里存放了b
+				return new int[] { map.get(b), i };
+			map.put(a, i);
+		}
+		return null;
+	}
+
+	/**
+	 * 1. Two Sum Given an array of integers, return indices of the two numbers
+	 * such that they add up to a specific target. You may assume that each
+	 * input would have exactly one solution, and you may not use the same
+	 * element twice.
+	 * 
+	 * @param nums
+	 * @param target
+	 * @return
+	 */
+	public int[] twoSum(int[] nums, int target) {
+		if (nums == null || nums.length < 2)
+			return null;
+		int[] res = new int[2];
+		HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
+		for (int i = 0; i < nums.length; i++)
+			map.put(i, nums[i]);
+		int start = 0, end = nums.length - 1;
+		ArrayList<Entry<Integer, Integer>> list = new ArrayList<Entry<Integer, Integer>>(map.entrySet());
+		Collections.sort(list, new Comparator<Entry<Integer, Integer>>() {
+			@Override
+			public int compare(Entry<Integer, Integer> o1, Entry<Integer, Integer> o2) {
+				// TODO Auto-generated method stub
+				return o1.getValue() - o2.getValue();
+			}
+		});
+
+		while (start < end) {
+			if (list.get(start).getValue() + list.get(end).getValue() == target) {
+				res[0] = list.get(start).getKey();
+				res[1] = list.get(end).getKey();
+				return res;
+			} else if (list.get(start).getValue() + list.get(end).getValue() > target) {
+				end--;
+			} else {
+				start++;
+			}
+		}
+
+		return res;
+	}
+
+	/**
+	 * 数字判断 状态标志位版本
+	 * 
+	 * @param s
+	 * @return
+	 */
+	public boolean isNumber3(String s) {
+		if (s == null || s.trim().length() == 0)
+			return false;
+		s = s.trim();
+		boolean hasE = false, hasDot = false, hasNum = false; // e.number标志位
+		for (int i = 0; i < s.length(); i++) {
+			char ch = s.charAt(i);
+			if (ch >= '0' && ch <= '9')
+				hasNum = true;
+			else if (ch == '.') {
+				if (hasDot || hasE) // 当前面有.或者e时直接返回false
+					return false;
+				hasDot = true;
+			} else if (ch == 'e') {
+				if (hasE || !hasNum) // 当前面有e或者前面没有数字时返回false
+					return false;
+				hasE = true;
+				hasNum = false; // hasNum设置为false，后面必须有数字
+			} else if (ch == '-' || ch == '+') {
+				if (i != 0 && s.charAt(i - 1) != 'e') // -+号只能出现在首位或者e的下一位
+					return false;
+			} else {
+				return false;
+			}
+		}
+		return hasNum; // 如果数字合法，hasNum最终一定为true
+	}
+
+	/**
+	 * 数字判断 正则表达式版本
+	 * 
+	 * @param s
+	 * @return
+	 */
+	public boolean isNumber2(String s) {
+		if (s == null || s.trim().length() == 0)
+			return false;
+		s = s.trim(); // 去掉两侧空格
+		String regex = "[-+]?(\\d+\\.?|\\.\\d+)\\d*(e[-+]?\\d+)?";
+		return s.matches(regex);
+	}
+
+	/**
 	 * 数字判断
+	 * 
 	 * @param s
 	 * @return
 	 */
 	public boolean isNumber(String s) {
-        s = s.trim();
-        char[] str = s.toCharArray();
-        if (str.length < 1||str==null)
+		s = s.trim();
+		char[] str = s.toCharArray();
+		if (str.length < 1 || str == null)
 			return false;
-        if ((str[0] < '0' || str[0] > '9') && str.length == 1)
+		if ((str[0] < '0' || str[0] > '9') && str.length == 1)
 			return false;
 		int i = (str[0] == '-' || str[0] == '+') ? 1 : 0; // 第一个有效位
-		if(str[0] == '-' || str[0] == '+'){
-			if(!isNumber(s.substring(1)))
+		if (str[0] == '-' || str[0] == '+') {
+			if (!isNumber(s.substring(1)))
 				return false;
 		}
 		int len = str.length;
@@ -75,8 +194,8 @@ public class Solution {
 
 		// state=2,遇到了指数位
 		if (state == 2) {
-			//指数位之前必须为合法数字
-			if(!isNumber(s.substring(0, i)))
+			// 指数位之前必须为合法数字
+			if (!isNumber(s.substring(0, i)))
 				return false;
 			i++; // 指数位的下一位
 			if (i == len)
@@ -92,9 +211,8 @@ public class Solution {
 			}
 		}
 		return true;
-    }
-	
-	
+	}
+
 	/**
 	 * 字符串转换成int数
 	 * 
