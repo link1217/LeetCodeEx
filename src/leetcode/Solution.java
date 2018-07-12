@@ -8,7 +8,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map.Entry;
 
-
 import java.util.PriorityQueue;
 
 public class Solution {
@@ -18,7 +17,12 @@ public class Solution {
 	public static void main(String[] args) {
 		Solution so = new Solution();
 
-		System.out.println(so.isMatch("ba", ".*a*a"));
+		System.out.println(-100 % 10);
+
+		// System.out.println(so.convert("PAYPALISHIRING", 4));
+
+		// System.out.println(so.longestPalindrome("aa"));
+		// System.out.println(so.maxLcpsLength2("addsssa"));
 
 		// System.out.println("11".substring(0, 0).length());
 
@@ -37,6 +41,299 @@ public class Solution {
 
 		// System.out.println(so.myAtoi("-91283472332"));
 
+	}
+
+	/**
+	 * 11. Container With Most Water
+	 * 
+	 * Given n non-negative integers a1, a2, ..., an, where each represents a
+	 * point at coordinate (i, ai). n vertical lines are drawn such that the two
+	 * endpoints of line i is at (i, ai) and (i, 0). Find two lines, which
+	 * together with x-axis forms a container, such that the container contains
+	 * the most water.
+	 * 
+	 * Note: You may not slant the container and n is at least 2.
+	 * 
+	 * @param height
+	 * @return
+	 */
+	public int maxArea(int[] height) {
+		int area = 0;
+		int len = height.length;
+		int left = 0, right = len - 1;
+		while (left < right) {
+			int lh = height[left];
+			int rh = height[right];
+			if (lh > rh) {
+				area = Math.max(area, (right - left) * rh);
+				right--;
+			} else {
+				area = Math.max(area, (right - left) * lh);
+				left++;
+			}
+		}
+		return area;
+	}
+
+	/**
+	 * 9. Palindrome Number
+	 * 
+	 * Determine whether an integer is a palindrome. An integer is a palindrome
+	 * when it reads the same backward as forward.
+	 * 
+	 * 
+	 * @param x
+	 * @return
+	 */
+	public boolean isPalindrome(int x) {
+		if (x < 0)
+			return false;
+		int i = 0;
+		char[] cs = (x + "").toCharArray();
+		int len = cs.length;
+		while (i != len / 2) {
+			if (cs[i] != cs[len - i - 1])
+				return false;
+			i++;
+		}
+		return true;
+	}
+
+	/**
+	 * 9. Palindrome Number
+	 * 
+	 * Determine whether an integer is a palindrome. An integer is a palindrome
+	 * when it reads the same backward as forward.
+	 * 
+	 * 
+	 * @param x
+	 * @return
+	 */
+	public boolean isPalindrome2(int x) {
+		return new StringBuilder(x + "").reverse().toString().equals(x + "");
+	}
+
+	/**
+	 * 7. Reverse Integer
+	 * 
+	 * Given a 32-bit signed integer, reverse digits of an integer.
+	 * 
+	 * @param x
+	 * @return
+	 */
+	public int reverse(int x) {
+		long res = 0;
+		while (x != 0) {
+			res = (res << 1) + (res << 3) + x % 10;
+			x /= 10;
+		}
+		if (res > Integer.MAX_VALUE || res < Integer.MIN_VALUE)
+			return 0;
+		else
+			return (int) res;
+	}
+
+	/**
+	 * 7. Reverse Integer
+	 * 
+	 * Given a 32-bit signed integer, reverse digits of an integer.
+	 * 
+	 * @param x
+	 * @return
+	 */
+	public int reverse2(int x) {
+		int s = x >= 0 ? 1 : -1;
+		String str = s == 1 ? x + "" : (x + "").substring(1);
+		try {
+			return Integer.parseInt(new StringBuilder(str).reverse().toString()) * s;
+		} catch (Exception e) {
+			return 0;
+		}
+	}
+
+	public String convert(String s, int nRows) {
+		if (s == null || s.length() == 0 || nRows <= 0)
+			return "";
+		if (nRows == 1)
+			return s;
+
+		StringBuilder res = new StringBuilder();
+		int size = 2 * nRows - 2;
+		for (int i = 0; i < nRows; i++) {
+			for (int j = i; j < s.length(); j += size) {
+				res.append(s.charAt(j));
+				if (i != 0 && i != nRows - 1) {// except the first row and the
+												// last row
+					int temp = j + size - 2 * i;
+					if (temp < s.length())
+						res.append(s.charAt(temp));
+				}
+			}
+		}
+		return res.toString();
+	}
+
+	/**
+	 * 5. Longest Palindromic Substring
+	 * 
+	 * Given a string s, find the longest palindromic substring in s. You may
+	 * assume that the maximum length of s is 1000.
+	 * 
+	 * @param s
+	 * @return
+	 */
+	public String longestPalindrome(String s) {
+		int start = 0, end = 0;
+		char[] cs = s.toCharArray();
+		for (int i = 0; i < s.length(); i++) {
+			int len1 = expandAroundCenter(cs, i, i);
+			int len2 = expandAroundCenter(cs, i, i + 1);
+			int len = Math.max(len1, len2);
+			if (len > end - start) {
+				start = i - (len - 1) / 2;
+				end = i + len / 2;
+			}
+		}
+		return s.substring(start, end + 1);
+	}
+
+	private int expandAroundCenter(char[] cs, int left, int right) {
+		while (left >= 0 && right <= cs.length - 1 && cs[left] == cs[right]) {
+			left--;
+			right++;
+		}
+		return right - left - 1;
+	}
+
+	/**
+	 * 5. Longest Palindromic Substring
+	 * 
+	 * Given a string s, find the longest palindromic substring in s. You may
+	 * assume that the maximum length of s is 1000.
+	 * 
+	 * @param s
+	 * @return
+	 */
+	public String longestPalindrome3(String s) {
+		return maxLcpsLength(s).replace("#", "");
+	}
+
+	public char[] manacherString(String str) {
+		char[] charArr = str.toCharArray();
+		char[] res = new char[str.length() * 2 + 1];
+		int index = 0;
+		for (int i = 0; i != res.length; i++) {
+			res[i] = (i & 1) == 0 ? '#' : charArr[index++];
+		}
+		return res;
+	}
+
+	public String maxLcpsLength(String str) {
+		if (str == null) {
+			return null;
+		}
+		if (str.length() <= 1)
+			return str;
+		char[] charArr = manacherString(str);
+		int[] pArr = new int[charArr.length];
+		int index = -1;
+		int pR = -1;
+		int left = 0, end = 0;
+		int max = Integer.MIN_VALUE;
+		for (int i = 0; i != charArr.length; i++) {
+			pArr[i] = pR > i ? Math.min(pArr[2 * index - i], pR - i) : 1;
+			while (i + pArr[i] < charArr.length && i - pArr[i] > -1) {
+				if (charArr[i + pArr[i]] == charArr[i - pArr[i]])
+					pArr[i]++;
+				else {
+					break;
+				}
+			}
+			if (i + pArr[i] > pR) {
+				pR = i + pArr[i];
+				index = i;
+			}
+			// max = Math.max(max, pArr[i]);
+			if (max < pArr[i]) {
+				max = pArr[i];
+				end = i + max;
+				left = i - max + 1;
+			}
+		}
+		return new String(Arrays.copyOfRange(charArr, left, end));
+	}
+
+	public int maxLcpsLength2(String str) {
+		if (str == null || str.length() == 0) {
+			return 0;
+		}
+		char[] charArr = manacherString(str);
+		int[] pArr = new int[charArr.length];
+		int index = -1;
+		int pR = -1;
+		int max = Integer.MIN_VALUE;
+		for (int i = 0; i != charArr.length; i++) {
+			pArr[i] = pR > i ? Math.min(pArr[2 * index - i], pR - i) : 1;
+			while (i + pArr[i] < charArr.length && i - pArr[i] > -1) {
+				if (charArr[i + pArr[i]] == charArr[i - pArr[i]])
+					pArr[i]++;
+				else {
+					break;
+				}
+			}
+			if (i + pArr[i] > pR) {
+				pR = i + pArr[i];
+				index = i;
+			}
+			// max = Math.max(max, pArr[i]);
+			if (max < pArr[i]) {
+				max = pArr[i];
+				System.out.println(max - 1 + "--" + i);
+			}
+		}
+		return max - 1;
+	}
+
+	/**
+	 * 5. Longest Palindromic Substring
+	 * 
+	 * Given a string s, find the longest palindromic substring in s. You may
+	 * assume that the maximum length of s is 1000.
+	 * 
+	 * @param s
+	 * @return
+	 */
+	public String longestPalindrome2(String s) {
+		if (s == null)
+			return null;
+		if (s.length() <= 1)
+			return s;
+		char[] cs = s.toCharArray();
+		int start = 0, end = 0, len = cs.length;
+		int[][] dp = new int[len][len];
+		for (int i = 0; i < len - 1; i++) {
+			dp[i][i] = 1;
+			if (cs[i] == cs[i + 1]) {
+				dp[i][i + 1] = 1;
+				start = i;
+				end = i + 1;
+			} else
+				dp[i][i + 1] = 0;
+		}
+		dp[len - 1][len - 1] = 1;
+		for (int k = 3; k <= len; k++) {
+			for (int i = 0; i < len - k + 1; i++) {
+				int j = i + k - 1;
+				if (cs[i] == cs[j] && dp[i + 1][j - 1] == 1) {
+					dp[i][j] = 1;
+					start = i;
+					end = i + 1;
+				} else
+					dp[i][j] = 0;
+			}
+		}
+
+		return s.substring(start, end + 1);
 	}
 
 	/**
