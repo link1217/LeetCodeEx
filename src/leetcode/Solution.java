@@ -7,6 +7,8 @@ import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map.Entry;
+
+
 import java.util.PriorityQueue;
 
 public class Solution {
@@ -16,7 +18,9 @@ public class Solution {
 	public static void main(String[] args) {
 		Solution so = new Solution();
 
-		System.out.println("11".substring(0, 0).length());
+		System.out.println(so.isMatch("ba", ".*a*a"));
+
+		// System.out.println("11".substring(0, 0).length());
 
 		/*
 		 * ListNode l1 = new ListNode(1); ListNode l2 = new ListNode(9); l2.next
@@ -36,6 +40,116 @@ public class Solution {
 	}
 
 	/**
+	 * 10. Regular Expression Matching 动态规划，根据递归改编，记录递归的状态
+	 * 
+	 * Given an input string (s) and a pattern (p), implement regular expression
+	 * matching with support for '.' and '*'.
+	 * 
+	 * '.' Matches any single character. '*' Matches zero or more of the
+	 * preceding element. The matching should cover the entire input string (not
+	 * partial).
+	 * 
+	 * @param s
+	 * @param p
+	 * @return
+	 */
+	public boolean isMatch(String s, String p) {
+		if (s == null || p == null)
+			return false;
+		char[] ss = s.toCharArray();
+		char[] ps = p.toCharArray();
+		int m = ss.length, n = ps.length;
+		boolean[][] dp = new boolean[m + 1][n + 1];
+		dp[m][n] = true;
+		for (int i = m; i >= 0; i--) {
+			for (int j = n - 1; j >= 0; j--) {
+				boolean first = i < m && (ss[i] == ps[j] || ps[j] == '.');
+				if (j + 1 < n && ps[j + 1] == '*')
+					dp[i][j] = dp[i][j + 2] || (first && dp[i + 1][j]);
+				else
+					dp[i][j] = first && dp[i + 1][j + 1];
+			}
+		}
+		return dp[0][0];
+
+		/*
+		 * if (p.isEmpty()) return s.isEmpty(); boolean first = !s.isEmpty() &&
+		 * (s.charAt(0) == p.charAt(0) || p.charAt(0) == '.'); if (p.length() >=
+		 * 2 && p.charAt(1) == '*') { return isMatch2(s, p.substring(2)) ||
+		 * (first && isMatch2(s.substring(1), p)); } else { return first &&
+		 * isMatch2(s.substring(1), p.substring(1)); }
+		 */
+	}
+
+	/**
+	 * 10. Regular Expression Matching
+	 * 
+	 * Given an input string (s) and a pattern (p), implement regular expression
+	 * matching with support for '.' and '*'.
+	 * 
+	 * '.' Matches any single character. '*' Matches zero or more of the
+	 * preceding element. The matching should cover the entire input string (not
+	 * partial).
+	 * 
+	 * @param s
+	 * @param p
+	 * @return
+	 */
+	public boolean isMatch2(String s, String p) {
+		if (p.isEmpty())
+			return s.isEmpty();
+		boolean first = !s.isEmpty() && (s.charAt(0) == p.charAt(0) || p.charAt(0) == '.');
+		if (p.length() >= 2 && p.charAt(1) == '*') {
+			return isMatch2(s, p.substring(2)) || (first && isMatch2(s.substring(1), p));
+		} else {
+			return first && isMatch2(s.substring(1), p.substring(1));
+		}
+	}
+
+	/**
+	 * 10. Regular Expression Matching
+	 * 
+	 * Given an input string (s) and a pattern (p), implement regular expression
+	 * matching with support for '.' and '*'.
+	 * 
+	 * '.' Matches any single character. '*' Matches zero or more of the
+	 * preceding element. The matching should cover the entire input string (not
+	 * partial).
+	 * 
+	 * @param s
+	 * @param p
+	 * @return
+	 */
+	public boolean isMatch3(String s, String p) {
+		if (p == null || s == null)
+			return false;
+		return match(s, p, 0, 0);
+	}
+
+	private boolean match(String s, String p, int i, int j) {
+		int m = s.length(), n = p.length();
+		if (m == i && n == j)
+			return true;
+		if (m != i && j >= n)
+			return false;
+		if (j + 1 < p.length() && p.charAt(j + 1) == '*') {
+			// 模式串中当前字符的下一个字符为*
+			// 分为四种情况，1：不匹配，i不变，j+=2 2:匹配，i+1,j不变 3：匹配 i+1，j+=2 4:匹配 i不变，j+=2;
+			if (i < s.length() && (s.charAt(i) == p.charAt(j) || p.charAt(j) == '.'))
+				return match(s, p, i + 1, j) || match(s, p, i + 1, j + 2) || match(s, p, i, j + 2);
+
+			else
+				return match(s, p, i, j + 2);
+
+		} else {
+			if (j < p.length() && i < s.length() && (p.charAt(j) == '.' || s.charAt(i) == p.charAt(j)))
+				return match(s, p, i + 1, j + 1);
+			else
+				return false;
+		}
+	}
+
+	/**
 	 * 4. Median of Two Sorted Arrays
 	 * 
 	 * There are two sorted arrays nums1 and nums2 of size m and n respectively.
@@ -48,6 +162,39 @@ public class Solution {
 	 * @return
 	 */
 	public double findMedianSortedArrays(int[] nums1, int[] nums2) {
+		int m = nums1.length, n = nums2.length;
+		int left = (m + n + 1) / 2, right = (n + m + 2) / 2; // 下中位数和上中位数
+		return (findKth(nums1, nums2, left) + findKth(nums1, nums2, right)) / 2.0;
+	}
+
+	private int findKth(int[] nums1, int[] nums2, int k) {
+		int m = nums1.length, n = nums2.length;
+		if (m > n)
+			return findKth(nums2, nums1, k);
+		if (m == 0)
+			return nums2[k - 1];
+		if (k == 1)
+			return Math.min(nums1[0], nums2[0]);
+		int i = Math.min(m, k / 2), j = Math.min(n, k / 2);
+		if (nums1[i - 1] > nums2[j - 1])
+			return findKth(nums1, Arrays.copyOfRange(nums2, j, n), k - j);
+		else
+			return findKth(Arrays.copyOfRange(nums1, i, m), nums2, k - i);
+	}
+
+	/**
+	 * 4. Median of Two Sorted Arrays
+	 * 
+	 * There are two sorted arrays nums1 and nums2 of size m and n respectively.
+	 * 
+	 * Find the median of the two sorted arrays. The overall run time complexity
+	 * should be O(log (m+n)).
+	 * 
+	 * @param nums1
+	 * @param nums2
+	 * @return
+	 */
+	public double findMedianSortedArrays2(int[] nums1, int[] nums2) {
 
 		// 利用PriorityQueue建立大根堆和小根堆
 		PriorityQueue<Integer> min = new PriorityQueue<Integer>();
