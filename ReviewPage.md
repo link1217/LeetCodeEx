@@ -19,11 +19,11 @@ New problems will be automatically updated once added.
 --------------------
 ### **3. [Longest Substring Without Repeating Characters](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/LongestSubstringWithoutRepeatingCharacters.java)** 	Level: Medium		Tags: Hash Table, Two Pointers, String
 -使用长度为128的数组，可以模拟哈希表:int[] chars = new int[128];  chars[i] = index;//i为字符的ASCII值，index为该字符在原字符串中的下标值。
-> 	>	for (int i = 0, j = 0; j < s.length(); j++) {
-			i = Math.max(i, chars[s.charAt(j)]);	
-			max = Math.max(max, j - i);
-			chars[s.charAt(j)] = j;
-		}
+> >		for (int i = 0, j = 0; j < s.length(); j++) {
+> >			i = Math.max(i, chars[s.charAt(j)]);	
+> >			max = Math.max(max, j - i);
+> >			chars[s.charAt(j)] = j;
+> >		}
 		
 -----------------------
 ### **4. [Median of Two Sorted Arrays](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/MedianOfTwoSortedArrays.java)** 	Level: Hard		Tags: Array, Binary Search, Divide and Conquer 
