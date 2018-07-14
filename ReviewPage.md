@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Review Page
 
 This page summarize the solutions of all problems. For thoughts,ideas written in English, refer to deach individual solution. 
