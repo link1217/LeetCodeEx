@@ -28,7 +28,7 @@ New problems will be automatically updated once added.
 		
 -----------------------
 ### **4. [Median of Two Sorted Arrays](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/MedianOfTwoSortedArrays.java)** 	Level: Hard		Tags: Array, Binary Search, Divide and Conquer 
-- 借用二分查找的思维解决两个数组中中位数的问题，等价于求第k个数：kth(当k分别等于 left = (m + n + 1) / 2, right = (n + m + 2) / 2; // 下中位数
+- 借用二分查找的思维解决两个数组中中位数的问题，等价于求第k个数：kth(当k分别等于left = (m + n + 1) / 2, right = (n + m + 2) / 2; // 下中位数
 和上中位数，相加除以2即为中位数)。
 >  M[m]和N[n]是长度为m和n的有序数组，假设始终有m <= n,求;kM = M[i]和kN = N[j]是其第k/2个数，若kM > kN,则kth必不在N[0-j]，否则kth必不在M[0-i]，去掉必不存在的部分，求递归求第k-i(k-j)个数即可
 
