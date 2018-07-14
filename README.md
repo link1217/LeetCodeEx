@@ -29,18 +29,15 @@
 |8|[String to Integer (atoi)](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/StringToInteger.java)|Medium|Java| Math, String ||
 |9|[Palindrome Number](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/PalindromeNumber.java)|Easy|Java| Math ||
 |10|[Regular Expression Matching](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/RegularExpressionMatching.java)|Hard|Java| String, Dynamic Programming, BackTracking ||
-============================================
 |11|[Container With Most Water](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/ContainerWithMostWater.java)|Medium|Java| Array, Two Pointers ||
 |12|[Integer to Roman](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/IntegerToRoman.java)|Medium|Java| Math, String ||
 |13|[Roman to Integer](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/RomanToInteger.java)|Easy|Java| Math, String ||
 
-===================
 |65|[Valid Number](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/ValidNumber.java)|Hard|Java| Math, String ||
 
-=================
 |140|[Word Break II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/WordBreakII.java)|Hard|Java| Dynamic Programming, BackTracking ||
 
-====================
+
 |865|[Smallest Subtree with all the Deepest Nodes](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/SmallestSubtreeWithAllTheDeepestNodes.java)|Medium|Java| Tree ||
 |866|[Prime Palindrome](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/PrimePalindrome.java)|Medium|Java| Tree ||
 |867|[Transpose Matrix](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/TransposeMatrix.java)|Medium|Java| Tree ||
