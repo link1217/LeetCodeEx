@@ -123,9 +123,14 @@ New problems will be automatically updated once added.
 - 从整体考虑，不要沦陷进细节中
 
 ----------------------
+### **14. [Longest Common Prefix](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/LongestCommonPrefix.java)**	
+#### Level: Easy		
+#### Tags: String 
+* 很无聊的题，虽然官方Solution中给出了多种方法，这道题依旧很烂
+* 从左到右依次判断最长前缀，借助一个获取两个字符串共同前缀的函数，一旦遇到字符串为空，直接返回""
+* 讨论区有人给出二分法查找共同前缀长度，运行速度比直接匹配快2ms（二分法5ms，直接匹配7ms），其实差距不大，没必要用二分法
 
-
-
+-------------------------------
 
 
 
