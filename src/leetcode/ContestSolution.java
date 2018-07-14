@@ -5,6 +5,8 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.LinkedList;
 
+import others.TreeNode;
+
 /**
  * 每周评测1
  * 
@@ -73,7 +75,7 @@ public class ContestSolution {
 	 * deepest nodes in its subtree.
 	 * 
 	 * @param root
-	 * @return
+	 * @return 
 	 */
 	public TreeNode subtreeWithAllDeepest(TreeNode root) {
 		if (root == null || (root.left == null && root.right == null))

@@ -5,13 +5,14 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map.Entry;
-
 import java.util.PriorityQueue;
+
+import others.ListNode;
 
 /**
  * LeetCode problems 1--10
+ * 
  * @author Watcher
  *
  */
@@ -48,45 +49,171 @@ public class Solution1 {
 
 	}
 
-	
-
 	/**
-	 * 9. Palindrome Number
+	 * 1. Two Sum
 	 * 
-	 * Determine whether an integer is a palindrome. An integer is a palindrome
-	 * when it reads the same backward as forward.
+	 * Given an array of integers, return indices of the two numbers such that
+	 * they add up to a specific target. You may assume that each input would
+	 * have exactly one solution, and you may not use the same element twice.
 	 * 
-	 * 
-	 * @param x
+	 * @param nums
+	 * @param target
 	 * @return
 	 */
-	public boolean isPalindrome(int x) {
-		if (x < 0)
-			return false;
-		int i = 0;
-		char[] cs = (x + "").toCharArray();
-		int len = cs.length;
-		while (i != len / 2) {
-			if (cs[i] != cs[len - i - 1])
-				return false;
-			i++;
+	public int[] twoSum(int[] nums, int target) {
+		HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
+		for (int i = 0; i < nums.length; i++) {
+			int a = nums[i];
+			int b = target - a;
+			if (map.containsKey(b)) // 如果map里存放了b
+				return new int[] { map.get(b), i };
+			map.put(a, i);
 		}
-		return true;
+		return null;
+	}
+
+	public int[] twoSum2(int[] nums, int target) {
+		if (nums == null || nums.length < 2)
+			return null;
+		int[] res = new int[2];
+		HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
+		for (int i = 0; i < nums.length; i++)
+			map.put(i, nums[i]);
+		int start = 0, end = nums.length - 1;
+		ArrayList<Entry<Integer, Integer>> list = new ArrayList<Entry<Integer, Integer>>(map.entrySet());
+		Collections.sort(list, new Comparator<Entry<Integer, Integer>>() {
+			@Override
+			public int compare(Entry<Integer, Integer> o1, Entry<Integer, Integer> o2) {
+				// TODO Auto-generated method stub
+				return o1.getValue() - o2.getValue();
+			}
+		});
+
+		while (start < end) {
+			if (list.get(start).getValue() + list.get(end).getValue() == target) {
+				res[0] = list.get(start).getKey();
+				res[1] = list.get(end).getKey();
+				return res;
+			} else if (list.get(start).getValue() + list.get(end).getValue() > target) {
+				end--;
+			} else {
+				start++;
+			}
+		}
+
+		return res;
 	}
 
 	/**
-	 * 9. Palindrome Number
+	 * 2. Add Two Numbers
 	 * 
-	 * Determine whether an integer is a palindrome. An integer is a palindrome
-	 * when it reads the same backward as forward.
+	 * You are given two non-empty linked lists representing two non-negative
+	 * integers. The digits are stored in reverse order and each of their nodes
+	 * contain a single digit. Add the two numbers and return it as a linked
+	 * list.
 	 * 
-	 * 
-	 * @param x
+	 * @param l1
+	 * @param l2
 	 * @return
 	 */
-	public boolean isPalindrome2(int x) {
-		return new StringBuilder(x + "").reverse().toString().equals(x + "");
+	public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+		if (l1 == null)
+			return l2;
+		if (l2 == null)
+			return l1;
+		ListNode preHead = new ListNode(-1); // new listnode for return
+		ListNode res = preHead;
+		int a = 0; // a=1 if sum of two number >=10
+		while (l1 != null && l2 != null) {
+			int sum = l1.val + l2.val + a;
+			res.next = new ListNode(sum % 10);
+			a = sum / 10;
+			l1 = l1.next;
+			l2 = l2.next;
+			res = res.next;
+		}
+		if (a == 0) {
+			res.next = l1 == null ? l2 : l1;
+		} else {
+			if (l1 == null && l2 == null) {
+				res.next = new ListNode(a);
+			} else {
+				ListNode tmp = l1 == null ? l2 : l1;
+				while (tmp != null) {
+					int sum = tmp.val + a;
+					res.next = new ListNode(sum % 10);
+					a = sum / 10;
+					tmp = tmp.next;
+					res = res.next;
+				}
+				if (a == 1)
+					res.next = new ListNode(1);
+			}
+		}
+
+		return preHead.next;
 	}
+	
+	
+	/**
+	 * 3. Longest Substring Without Repeating Characters
+	 * 
+	 * 自定义哈希表版本*
+	 * 
+	 * Given a string, find the length of the longest substring without
+	 * repeating characters.
+	 * 
+	 * @param s
+	 * @return
+	 */
+	public int lengthOfLongestSubstring2(String s) {
+		if (s == null || s.length() < 1)
+			return 0;
+		int max = 0;
+		int[] chars = new int[128]; // 字符ASCII值作为下标，字符在s中的下标作为值
+		for (int i = 0, j = 0; j < s.length(); j++) {
+			i = Math.max(i, chars[s.charAt(j)]);
+			max = Math.max(max, j - i);
+			chars[s.charAt(j)] = j;
+		}
+		return max;
+	}
+
+	/**
+	 * 3. Longest Substring Without Repeating Characters
+	 * 
+	 * Given a string, find the length of the longest substring without
+	 * repeating characters.
+	 * 
+	 * @param s
+	 * @return
+	 */
+	public int lengthOfLongestSubstring(String s) {
+		if (s == null || s.length() < 1)
+			return 0;
+		if (s.length() == 1)
+			return 1;
+		int max = 0;
+		int start = 0; // 不同字符的开始下标
+		int end = 1;
+		String subStr = "";
+		while (end < s.length()) {
+			subStr = s.substring(start, end);
+			while (start < end) {
+				if (subStr.contains(s.charAt(end) + "")) {
+					// end下标对应的字符在子串中
+					start++;
+					subStr = s.substring(start, end);
+				} else
+					break;
+			}
+			max = Math.max(max, end - start + 1);
+			end++;
+		}
+
+		return max;
+	}
+	
 
 	/**
 	 * 7. Reverse Integer
@@ -146,6 +273,44 @@ public class Solution1 {
 			}
 		}
 		return res.toString();
+	}
+
+	/**
+	 * 9. Palindrome Number
+	 * 
+	 * Determine whether an integer is a palindrome. An integer is a palindrome
+	 * when it reads the same backward as forward.
+	 * 
+	 * 
+	 * @param x
+	 * @return
+	 */
+	public boolean isPalindrome(int x) {
+		if (x < 0)
+			return false;
+		int i = 0;
+		char[] cs = (x + "").toCharArray();
+		int len = cs.length;
+		while (i != len / 2) {
+			if (cs[i] != cs[len - i - 1])
+				return false;
+			i++;
+		}
+		return true;
+	}
+
+	/**
+	 * 9. Palindrome Number
+	 * 
+	 * Determine whether an integer is a palindrome. An integer is a palindrome
+	 * when it reads the same backward as forward.
+	 * 
+	 * 
+	 * @param x
+	 * @return
+	 */
+	public boolean isPalindrome2(int x) {
+		return new StringBuilder(x + "").reverse().toString().equals(x + "");
 	}
 
 	/**
@@ -511,179 +676,7 @@ public class Solution1 {
 
 	}
 
-	/**
-	 * 3. Longest Substring Without Repeating Characters
-	 * 
-	 * 自定义哈希表版本*
-	 * 
-	 * Given a string, find the length of the longest substring without
-	 * repeating characters.
-	 * 
-	 * @param s
-	 * @return
-	 */
-	public int lengthOfLongestSubstring2(String s) {
-		if (s == null || s.length() < 1)
-			return 0;
-		int max = 0;
-		int[] chars = new int[128]; // 字符ASCII值作为下标，字符在s中的下标作为值
-		for (int i = 0, j = 0; j < s.length(); j++) {
-			i = Math.max(i, chars[s.charAt(j)]);
-			max = Math.max(max, j - i);
-			chars[s.charAt(j)] = j;
-		}
-		return max;
-	}
-
-	/**
-	 * 3. Longest Substring Without Repeating Characters
-	 * 
-	 * Given a string, find the length of the longest substring without
-	 * repeating characters.
-	 * 
-	 * @param s
-	 * @return
-	 */
-	public int lengthOfLongestSubstring(String s) {
-		if (s == null || s.length() < 1)
-			return 0;
-		if (s.length() == 1)
-			return 1;
-		int max = 0;
-		int start = 0; // 不同字符的开始下标
-		int end = 1;
-		String subStr = "";
-		while (end < s.length()) {
-			subStr = s.substring(start, end);
-			while (start < end) {
-				if (subStr.contains(s.charAt(end) + "")) {
-					// end下标对应的字符在子串中
-					start++;
-					subStr = s.substring(start, end);
-				} else
-					break;
-			}
-			max = Math.max(max, end - start + 1);
-			end++;
-		}
-
-		return max;
-	}
-
-	/**
-	 * 2. You are given two non-empty linked lists representing two non-negative
-	 * integers. The digits are stored in reverse order and each of their nodes
-	 * contain a single digit. Add the two numbers and return it as a linked
-	 * list.
-	 * 
-	 * @param l1
-	 * @param l2
-	 * @return
-	 */
-	public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-		if (l1 == null)
-			return l2;
-		if (l2 == null)
-			return l1;
-		ListNode preHead = new ListNode(-1); // new listnode for return
-		ListNode res = preHead;
-		int a = 0; // a=1 if sum of two number >=10
-		while (l1 != null && l2 != null) {
-			int sum = l1.val + l2.val + a;
-			res.next = new ListNode(sum % 10);
-			a = sum / 10;
-			l1 = l1.next;
-			l2 = l2.next;
-			res = res.next;
-		}
-		if (a == 0) {
-			res.next = l1 == null ? l2 : l1;
-		} else {
-			if (l1 == null && l2 == null) {
-				res.next = new ListNode(a);
-			} else {
-				ListNode tmp = l1 == null ? l2 : l1;
-				while (tmp != null) {
-					int sum = tmp.val + a;
-					res.next = new ListNode(sum % 10);
-					a = sum / 10;
-					tmp = tmp.next;
-					res = res.next;
-				}
-				if (a == 1)
-					res.next = new ListNode(1);
-			}
-		}
-
-		return preHead.next;
-	}
-
-	/**
-	 * 1. Two Sum
-	 * 
-	 * Given an array of integers, return indices of the two numbers such that
-	 * they add up to a specific target. You may assume that each input would
-	 * have exactly one solution, and you may not use the same element twice.
-	 * 简化版，不需要排序
-	 * 
-	 * @param nums
-	 * @param target
-	 * @return
-	 */
-	public int[] twoSum2(int[] nums, int target) {
-		HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
-		for (int i = 0; i < nums.length; i++) {
-			int a = nums[i];
-			int b = target - a;
-			if (map.containsKey(b)) // 如果map里存放了b
-				return new int[] { map.get(b), i };
-			map.put(a, i);
-		}
-		return null;
-	}
-
-	/**
-	 * 1. Two Sum
-	 * 
-	 * Given an array of integers, return indices of the two numbers such that
-	 * they add up to a specific target. You may assume that each input would
-	 * have exactly one solution, and you may not use the same element twice.
-	 * 
-	 * @param nums
-	 * @param target
-	 * @return
-	 */
-	public int[] twoSum(int[] nums, int target) {
-		if (nums == null || nums.length < 2)
-			return null;
-		int[] res = new int[2];
-		HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
-		for (int i = 0; i < nums.length; i++)
-			map.put(i, nums[i]);
-		int start = 0, end = nums.length - 1;
-		ArrayList<Entry<Integer, Integer>> list = new ArrayList<Entry<Integer, Integer>>(map.entrySet());
-		Collections.sort(list, new Comparator<Entry<Integer, Integer>>() {
-			@Override
-			public int compare(Entry<Integer, Integer> o1, Entry<Integer, Integer> o2) {
-				// TODO Auto-generated method stub
-				return o1.getValue() - o2.getValue();
-			}
-		});
-
-		while (start < end) {
-			if (list.get(start).getValue() + list.get(end).getValue() == target) {
-				res[0] = list.get(start).getKey();
-				res[1] = list.get(end).getKey();
-				return res;
-			} else if (list.get(start).getValue() + list.get(end).getValue() > target) {
-				end--;
-			} else {
-				start++;
-			}
-		}
-
-		return res;
-	}
+	
 
 	/**
 	 * 数字判断 状态标志位版本
@@ -809,7 +802,34 @@ public class Solution1 {
 	}
 
 	/**
-	 * 字符串转换成int数
+	 * 8. String to Integer (atoi)
+	 * 
+	 * Implement atoi which converts a string to an integer.
+	 * 
+	 * The function first discards as many whitespace characters as necessary
+	 * until the first non-whitespace character is found. Then, starting from
+	 * this character, takes an optional initial plus or minus sign followed by
+	 * as many numerical digits as possible, and interprets them as a numerical
+	 * value.
+	 * 
+	 * The string can contain additional characters after those that form the
+	 * integral number, which are ignored and have no effect on the behavior of
+	 * this function.
+	 * 
+	 * If the first sequence of non-whitespace characters in str is not a valid
+	 * integral number, or if no such sequence exists because either str is
+	 * empty or it contains only whitespace characters, no conversion is
+	 * performed.
+	 * 
+	 * If no valid conversion could be performed, a zero value is returned.
+	 * 
+	 * Note:
+	 * 
+	 * Only the space character ' ' is considered as whitespace character.
+	 * Assume we are dealing with an environment which could only store integers
+	 * within the 32-bit signed integer range: [−231, 231 − 1]. If the numerical
+	 * value is out of the range of representable values, INT_MAX (231 − 1) or
+	 * INT_MIN (−231) is returned.
 	 * 
 	 * @param str
 	 * @return
@@ -833,44 +853,6 @@ public class Solution1 {
 		} catch (Exception e) {
 			return s == -1 ? Integer.MIN_VALUE : Integer.MAX_VALUE;
 		}
-	}
-
-	/**
-	 * Given a non-empty string s and a dictionary wordDict containing a list of
-	 * non-empty words, add spaces in s to construct a sentence where each word
-	 * is a valid dictionary word. Return all such possible sentences.
-	 * 
-	 * Note:
-	 * 
-	 * The same word in the dictionary may be reused multiple times in the
-	 * segmentation. You may assume the dictionary does not contain duplicate
-	 * words.
-	 * 
-	 * @param s
-	 * @param wordDict
-	 * @return
-	 */
-	public List<String> wordBreak(String s, List<String> wordDict) {
-		return DFS(s, wordDict, new HashMap<String, ArrayList<String>>());
-	}
-
-	private List<String> DFS(String s, List<String> dict, HashMap<String, ArrayList<String>> map) {
-		if (map.containsKey(s))
-			return map.get(s);
-		ArrayList<String> list = new ArrayList<String>();
-		if (s.length() == 0) {
-			list.add("");
-			return list;
-		}
-		for (String subStr : dict) {
-			if (s.startsWith(subStr)) {
-				for (String str : DFS(s.substring(subStr.length()), dict, map)) {
-					list.add(subStr + (str == "" ? "" : " ") + str);
-				}
-			}
-		}
-		map.put(s, list);
-		return list;
 	}
 
 }
