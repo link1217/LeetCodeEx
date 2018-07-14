@@ -12,7 +12,7 @@ New problems will be automatically updated once added.
 ---------------
 ### **2. [Add Two Numbers](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/AddTwoNumbers.java)**    Level: Medium     Tags:  Linked List, Math
 - 注意链表的开始和结尾，需要考虑是否进位
-- ListNode preHead = new ListNode(-1); // new listnode for return
+- `ListNode preHead = new ListNode(-1); // new listnode for return`
 > 有时候新建一个头结点，会有助于返回结果。这道题新建preHead，最后返回preHead.next
 - 最后一位相加后如果产生进位，则需要新建一个值为1的节点
 
