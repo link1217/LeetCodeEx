@@ -36,5 +36,5 @@
 |65|[Valid Number](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/ValidNumber.java)|Hard|Java| Math, String ||
 |140|[Word Break II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/WordBreakII.java)|Hard|Java| Dynamic Programming, BackTracking ||
 |865|[Smallest Subtree with all the Deepest Nodes](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/SmallestSubtreeWithAllTheDeepestNodes.java)|Medium|Java| Tree ||
-|866|[Prime Palindrome](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/PrimePalindrome.java)|Medium|Java| Tree ||
-|867|[Transpose Matrix](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/TransposeMatrix.java)|Medium|Java| Tree ||
+|866|[Prime Palindrome](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/PrimePalindrome.java)|Medium|Java| Math ||
+|867|[Transpose Matrix](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/TransposeMatrix.java)|Easy|Java| Array ||
