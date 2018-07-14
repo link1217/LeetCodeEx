@@ -8,7 +8,7 @@ package leetcode;
  * 
  * If there is no common prefix, return an empty string "".
  * 
- * @author Watcher 
+ * @author Watcher
  *
  */
 public class LongestCommonPrefix {
