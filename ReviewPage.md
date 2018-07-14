@@ -18,26 +18,26 @@ New problems will be automatically updated once added.
 
 --------------------
 ### **3. [Longest Substring Without Repeating Characters](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/LongestSubstringWithoutRepeatingCharacters.java)** 	Level: Medium		Tags: Hash Table, Two Pointers, String
--使用长度为128的数组，可以模拟哈希表:int[] chars = new int[128];  chars[i] = index;//i为字符的ASCII值，index为该字符在原字符串中的下标值。
-
+- 使用长度为128的数组，可以模拟哈希表:int[] chars = new int[128];  chars[i] = index;//i为字符的ASCII值，index为该字符在原字符串中的下标值。
+```
 		for (int i = 0, j = 0; j < s.length(); j++) {
  			i = Math.max(i, chars[s.charAt(j)]);	
  			max = Math.max(max, j - i);
  			chars[s.charAt(j)] = j;
 		}
-		
+```		
 -----------------------
 ### **4. [Median of Two Sorted Arrays](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/MedianOfTwoSortedArrays.java)** 	Level: Hard		Tags: Array, Binary Search, Divide and Conquer 
 - 借用二分查找的思维解决两个数组中中位数的问题，等价于求第k个数：kth(当k分别等于  left = (m + n + 1) / 2, right = (n + m + 2) / 2; // 下中位数
 和上中位数，相加除以2即为中位数)。
 >  M[m]和N[n]是长度为m和n的有序数组，假设始终有m <= n,求;kM = M[i]和kN = N[j]是其第k/2个数，若kM > kN,则kth必不在N[0-j]，否则kth必不在M[0-i]，去掉必不存在的部分，求递归求第k-i(k-j)个数即可
-
+```
  		int i = Math.min(m, k / 2), j = Math.min(n, k / 2);
 		if (nums1[i - 1] > nums2[j - 1])
 			return findKth(nums1, Arrays.copyOfRange(nums2, j, n), k - j);
 		else
 			return findKth(Arrays.copyOfRange(nums1, i, m), nums2, k - i);
-			
+```			
 - 注意递归结束条件：
  
  		if (m > n)
@@ -68,13 +68,13 @@ New problems will be automatically updated once added.
 -----------------------------------
 ### **9. [Palindrome Number](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/PalindromeNumber.java)** Level: Easy 	Tags:  Math
 * while循环按位计算，如果只是判断回文数字，可以只转换一半
-
+```
 		while (x > rev) {
 			rev = rev * 10 + x % 10;
 			x = x / 10;
 		}
 		return (x == rev || x == rev / 10);
-
+```
 ---------------------------------
 ### **10. [Regular Expression Matching](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/RegularExpressionMatching.java)** Level: Hard	Tags: String, Dynamic Programming, BackTracking 
 - 递归改动态规划：用二维数组记录递归的状态，可以省掉重复计算
@@ -89,7 +89,7 @@ New problems will be automatically updated once added.
 ### **12. [Integer to Roman](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/IntegerToRoman.java)** Level: Medium	Tags: Math, String 
 - 整数的每一位对应一个罗马数字，123 = 100 + 20 + 3，用3个罗马数字即可表示
 - 记录每一个罗马数字对应的整数
-> return nums4[num / 1000] + nums3[(num % 1000) / 100] + nums2[(num % 100) / 10] + nums1[num % 10];
+> `return nums4[num / 1000] + nums3[(num % 1000) / 100] + nums2[(num % 100) / 10] + nums1[num % 10];`
 
 ------------------------------
 ### **13. [Roman to Integer](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/RomanToInteger.java)** Level: Easy		Tags: Math, String
@@ -106,9 +106,9 @@ New problems will be automatically updated once added.
 ---------------------
 ### **65. [Valid Number](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/ValidNumber.java)** 	Level: Hard		Tags: Math, String 
 - 设置状态标志位，每一个位置都对应一个状态。注意hasE = true后将hasNum设为false
->	boolean hasE = false, hasDot = false, hasNum = false; // e.number标志位
+>	`boolean hasE = false, hasDot = false, hasNum = false; // e.number标志位`
 - 正则表达式：
->	String regex = "[-+]?(\\d+\\.?|\\.\\d+)\\d*(e[-+]?\\d+)?";
+>	`String regex = "[-+]?(\\d+\\.?|\\.\\d+)\\d*(e[-+]?\\d+)?";`
 
 -----------------------
 
@@ -124,13 +124,13 @@ New problems will be automatically updated once added.
 ### **865. [Smallest Subtree with all the Deepest Nodes](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/SmallestSubtreeWithAllTheDeepestNodes.java)**	Level: Medium	Tags: Tree 
 - 利用平衡二叉树的性质，若最深节点只有一个，直接返回此节点，否则返回所有最深节点共同的父节点，即返回左右子树深度一样的节点
 - 求二叉树某一节点的深度：
-
+```
 	private int depthOfNode(TreeNode n) {
 		if (n == null)
 			return 0;
 		return Math.max(depthOfNode(n.left), depthOfNode(n.right)) + 1;
 	}
-
+```
 	
 ---------------------
 ### **866. [Prime Palindrome](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/PrimePalindrome.java)**	Level: Medium	Tags: Math 
