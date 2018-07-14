@@ -57,7 +57,7 @@ New problems will be automatically updated once added.
 - 找数学规律，把字符串换成012345，便于发现规律
 
 -------------------------------
-### **7. [Reverse Integer](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/ReverseInteger.java)**Level: Easy	Tags: Math 
+### 7. [Reverse Integer](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/ReverseInteger.java)	Level: Easy	Tags: Math 
 - 按位翻转，或者直接转换成字符串，调用StringBuilder的reverse方法
 
 --------------------------------------
@@ -67,7 +67,7 @@ New problems will be automatically updated once added.
 
 -----------------------------------
 ### **9. [Palindrome Number](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/PalindromeNumber.java)** Level: Easy 	Tags:  Math
--while循环按位计算，如果只是判断回文数字，可以只转换一半
+* while循环按位计算，如果只是判断回文数字，可以只转换一半
 
 		while (x > rev) {
 			rev = rev * 10 + x % 10;
@@ -131,6 +131,7 @@ New problems will be automatically updated once added.
 		return Math.max(depthOfNode(n.left), depthOfNode(n.right)) + 1;
 	}
 
+	
 ---------------------
 ### **866. [Prime Palindrome](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/PrimePalindrome.java)**	Level: Medium	Tags: Math 
 - 一开始实现一种很复杂的方法，构建回文时考虑数字的左半边，累加左半边，需要注意进位时构建回文的方法转换。具体参考代码
