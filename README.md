@@ -20,9 +20,9 @@
 
 | Sequence | Problem       | Level  | Language  | Tags | Others |
 |:-------:|:--------------|:------:|:---------:|:----:|:-------------:|
-|1|[Two Sum](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/Solution1.java)|Easy|Java| Array, Hash Table ||
-|2|[Add Two Numbers](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/Solution1.java)|Medium|Java| Linked List, Math ||
-|3|[Longest Substring Without Repeating Characters](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/Solution1.java)|Medium|Java| Hash Table, Two Pointers, String||
+|1|[Two Sum](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/TwoSum.java)|Easy|Java| Array, Hash Table ||
+|2|[Add Two Numbers](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/AddTwoNumbers.java)|Medium|Java| Linked List, Math ||
+|3|[Longest Substring Without Repeating Characters](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/LongestSubstringWithoutRepeatingCharacters.java)|Medium|Java| Hash Table, Two Pointers, String||
 |4|[Median of Two Sorted Arrays](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/Solution1.java)|Hard|Java| Array, Binary Search, Divide and Conquer ||
 |5|[Longest Palindromic Substring](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/Solution1.java)|Medium|Java| String, Dynamic Programming ||
 |6|[ZigZag Conversion](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/Solution1.java)|Medium|Java| String ||

@@ -1,4 +1,4 @@
-package leetcode;
+package contest;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -8,15 +8,16 @@ import java.util.LinkedList;
 import others.TreeNode;
 
 /**
- * 每周评测1
+ * 
+ * 2018.7.8 每周评测
  * 
  * @author Watcher
  *
  */
-public class ContestSolution {
+public class Solution20180708 {
 
 	public static void main(String[] args) {
-		ContestSolution so = new ContestSolution();
+		Solution20180708 so = new Solution20180708();
 		// System.out.println(so.isPalindrome(1221));
 		System.out.println(so.primePalindrome(9989900));// 9989900
 		// System.out.println(so.makePalindrome(123, false));
@@ -75,7 +76,7 @@ public class ContestSolution {
 	 * deepest nodes in its subtree.
 	 * 
 	 * @param root
-	 * @return 
+	 * @return
 	 */
 	public TreeNode subtreeWithAllDeepest(TreeNode root) {
 		if (root == null || (root.left == null && root.right == null))
