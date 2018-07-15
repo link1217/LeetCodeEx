@@ -39,3 +39,5 @@
 |865|[Smallest Subtree with all the Deepest Nodes](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/SmallestSubtreeWithAllTheDeepestNodes.java)|Medium|Java| Tree ||
 |866|[Prime Palindrome](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/PrimePalindrome.java)|Medium|Java| Math ||
 |867|[Transpose Matrix](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/TransposeMatrix.java)|Easy|Java| Array ||
+|868|[Binary Gap](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/BinaryGap.java)|Easy|Java| Math ||
+|869|[Reordered Power of 2](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/ReorderedPowerOf2.java)|Medium|Java| Math ||
