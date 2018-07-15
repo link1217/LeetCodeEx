@@ -189,7 +189,7 @@ New problems will be automatically updated once added.
 #### Tags: Math
 * 查找二进数据中两个1的最大距离，首先定位到第一个1，然后再计算距离。
 * 可以用一个循环实现，设置一个初始值`int cur = -32; `表示当前1的位置，每次遇到1后重置cur
-> ```		
+ ```		
 			while (n > 0) {
 				if ((n & 1) == 1) {
 					res = Math.max(res, cur);
@@ -206,7 +206,7 @@ New problems will be automatically updated once added.
 #### Level: Medium
 #### Tags: Math
 * 思路就是把一个整数转换成这些数字可以组成的最大数，然后从1开始匹配2的n次方，一旦匹配到直接返回true，结束循环条件如下：
-> ```	change(m)的作用是重拍数字，返回最大组成的数
+ ```	change(m)的作用是重拍数字，返回最大组成的数
 		while (n > change(m) || n > m) {
 			m *= 2;
 			if (n == change(m))
