@@ -6,7 +6,6 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Map.Entry;
-import java.util.Scanner;
 
 /**
  * 2018.7.14周测
