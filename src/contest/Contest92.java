@@ -14,10 +14,10 @@ import others.TreeNode;
  * @author Watcher
  *
  */
-public class Solution20180708 {
+public class Contest92 {
 
 	public static void main(String[] args) {
-		Solution20180708 so = new Solution20180708();
+		Contest92 so = new Contest92();
 		// System.out.println(so.isPalindrome(1221));
 		System.out.println(so.primePalindrome(9989900));// 9989900
 		// System.out.println(so.makePalindrome(123, false));
