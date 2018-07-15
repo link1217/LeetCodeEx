@@ -6,6 +6,8 @@
 /bin/
 /gen/
 /out/
+/.settings/
+/target/
 
 # Compiled class file
 *.class
