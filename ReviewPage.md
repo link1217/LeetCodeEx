@@ -207,7 +207,7 @@ New problems will be automatically updated once added.
 #### Tags: Math
 * 思路就是把一个整数转换成这些数字可以组成的最大数，然后从1开始匹配2的n次方，一旦匹配到直接返回true，结束循环条件如下：
 ```	
- 		change(m)的作用是重拍数字，返回最大组成的数
+ 		change(m)的作用是重排数字，返回最大组成的数
 		while (n > change(m) || n > m) {
 			m *= 2;
 			if (n == change(m))
@@ -215,7 +215,7 @@ New problems will be automatically updated once added.
 		}
 		return n == change(m);
 ```
-* 注意重拍数字后int接收可能越界，用long接收
+* 注意重排数字后int接收可能越界，用long接收
 
 * 还可以根据每一个整数的数字组成来判断输入是否可以重组成为2的n次幂
 ```
