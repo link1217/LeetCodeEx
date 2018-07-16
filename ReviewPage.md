@@ -152,7 +152,18 @@ New problems will be automatically updated once added.
 ```
 
 -------------------------------
-
+### **16|[3Sum Closest](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/Sum3Closest.java)**
+#### Level: Medium
+#### Tags: Array, Two Pointers 
+* 双指针问题，一大一小往中间移动
+* 和3Sum类似，区别在于这里需要返回三个数值之和，所求的三个数之和需要与输入最接近，可以使用math函数
+```
+					if (diff > Math.abs(a + nums[j] + nums[k] - target)) {
+						diff = Math.abs(a + nums[j] + nums[k] - target);
+						res = a + nums[j] + nums[k];
+					}
+```
+* 具体细节参考代码
 
 
 

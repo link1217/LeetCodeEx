@@ -35,6 +35,7 @@
 |13|[Roman to Integer](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/RomanToInteger.java)|Easy|Java| Math, String ||
 |14|[Longest Common Prefix](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/LongestCommonPrefix.java)|Easy|Java|  String ||
 |15|[3Sum](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/Sum3.java)|Medium|Java|  Array, Two Pointers ||
+|16|[3Sum Closest](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/Sum3Closest.java)|Medium|Java|  Array, Two Pointers ||
 |65|[Valid Number](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/ValidNumber.java)|Hard|Java| Math, String ||
 |140|[Word Break II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/WordBreakII.java)|Hard|Java| Dynamic Programming, BackTracking ||
 |865|[Smallest Subtree with all the Deepest Nodes](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/SmallestSubtreeWithAllTheDeepestNodes.java)|Medium|Java| Tree ||
