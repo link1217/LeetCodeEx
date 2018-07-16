@@ -49,17 +49,16 @@ public class AdvantageShuffle {
 				j--;
 			}
 		}
-
 		if (list.isEmpty())
 			return res; // list为空表示所有的B值都找到匹配的A值，直接返回res
 
-		int l = 0;
-		while (l < A.length) {
-			if (A[l] != -1) { // 找到第一个没有用过的A，放进res中，每放一个，list除去一个
-				res[list.get(0).getKey()] = A[l]; // list中存放着尚未找到匹配的下标值，即res中未被赋值的下标
+		int k = 0;
+		while (k < A.length) {
+			if (A[k] != -1) { // 找到第一个没有用过的A，放进res中，每放一个，list除去一个
+				res[list.get(0).getKey()] = A[k]; // list中存放着尚未找到匹配的下标值，即res中未被赋值的下标
 				list.remove(0);
 			}
-			l++;
+			k++;
 		}
 
 		return res;

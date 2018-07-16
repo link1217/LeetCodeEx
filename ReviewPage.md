@@ -131,6 +131,29 @@ New problems will be automatically updated once added.
 * 讨论区有人给出二分法查找共同前缀长度，运行速度比直接匹配快2ms（二分法5ms，直接匹配7ms），其实差距不大，没必要用二分法
 
 -------------------------------
+### **15. [3Sum](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/threeSum.java)**
+#### Level: Medium
+#### Tags: Array, Two Pointers 
+* 先排序，遍历数组确定第一个数，剩下两个数从两头遍历
+* 注意一定要跳过不需要计算的数，不然会浪费大量时间
+> 第一个数不需要重复选取，第二第三个数选定后不需要选取相等的数
+```
+		if (i == 0 || nums[i] != nums[i - 1]) {···}
+		
+		if (nums[j] + nums[k] == a) {
+			listAll.add(Arrays.asList(nums[i], nums[j], nums[k]));
+			while (j < k && nums[j] == nums[j + 1])
+				j++;
+			while (j < k && nums[k] == nums[k - 1])
+				k--;
+			j++;
+			k--;
+		}
+```
+
+-------------------------------
+
+
 
 
 
