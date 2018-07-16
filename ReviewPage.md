@@ -206,16 +206,33 @@ New problems will be automatically updated once added.
 #### Level: Medium
 #### Tags: Math
 * 思路就是把一个整数转换成这些数字可以组成的最大数，然后从1开始匹配2的n次方，一旦匹配到直接返回true，结束循环条件如下：
- ```	change(m)的作用是重拍数字，返回最大组成的数
+```	
+ 		change(m)的作用是重拍数字，返回最大组成的数
 		while (n > change(m) || n > m) {
 			m *= 2;
 			if (n == change(m))
 				return true;
 		}
 		return n == change(m);
-  ```
+```
 * 注意重拍数字后int接收可能越界，用long接收
 
----------------
+* 还可以根据每一个整数的数字组成来判断输入是否可以重组成为2的n次幂
+```
+	//记录整数中每一个数字出现的次数： 11234400 =>21122 第i位表示i出现过几次
+	public int counter(int N) {
+		int res = 0;
+		for (; N > 0; N /= 10)
+			res += (int) Math.pow(10, N % 10);
+		return res;
+	}
+```
 
+---------------
+### **870. [Advantage Shuffle](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/AdvantageShuffle.java)**
+#### Level: Medium
+#### Tags: Math, HashMap 
+* 田忌赛马？
+* 对A排序，把B的value和index映射放入map，然后根据value排序，从A的最大值开始匹配B的最大值，小于等于就匹配B的次最大值
+* 详情参考代码，有详细注释
 

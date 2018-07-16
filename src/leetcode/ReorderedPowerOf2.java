@@ -16,6 +16,38 @@ import java.util.Arrays;
  */
 public class ReorderedPowerOf2 {
 
+	/**
+	 * 根据两个整数的数字组成来判断，耗时8ms
+	 * 
+	 * @param N
+	 * @return
+	 */
+	public boolean reorderedPowerOf2_(int N) {
+		for (int i = 0, c = counter(N); i < 32; i++)
+			if (counter(1 << i) == c)
+				return true;
+		return false;
+	}
+
+	/**
+	 * 记录整数中每一个数字出现的次数： 11234400 =>21122 第i位表示i出现过几次
+	 * 
+	 * @param N
+	 * @return
+	 */
+	public int counter(int N) {
+		int res = 0;
+		for (; N > 0; N /= 10)
+			res += (int) Math.pow(10, N % 10);
+		return res;
+	}
+
+	/**
+	 * 耗时10ms
+	 * 
+	 * @param N
+	 * @return
+	 */
 	public boolean reorderedPowerOf2(int N) {
 		long n = N; // int逆序后有可能越界，用long接收
 		n = change(n);

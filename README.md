@@ -41,3 +41,4 @@
 |867|[Transpose Matrix](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/TransposeMatrix.java)|Easy|Java| Array ||
 |868|[Binary Gap](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/BinaryGap.java)|Easy|Java| Math ||
 |869|[Reordered Power of 2](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/ReorderedPowerOf2.java)|Medium|Java| Math ||
+|870|[Advantage Shuffle](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/AdvantageShuffle.java)|Medium|Java| Math, HashMap ||
