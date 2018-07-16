@@ -152,7 +152,7 @@ New problems will be automatically updated once added.
 ```
 
 -------------------------------
-### **16|[3Sum Closest](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/Sum3Closest.java)**
+### **16. [3Sum Closest](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/Sum3Closest.java)**
 #### Level: Medium
 #### Tags: Array, Two Pointers 
 * 双指针问题，一大一小往中间移动
