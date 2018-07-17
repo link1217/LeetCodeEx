@@ -176,7 +176,17 @@ New problems will be automatically updated once added.
 
 
 ----------------------
+### **18. [4Sum](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/Sum4.java)**
+#### Level: Medium
+#### Tags: Array, Hash Table, Two Pointers
+* 类似于3Sum和2Sum，先确定两个数，然后从两端筛选其余两个数。
+* 注意过滤条件，过滤掉不符合的情况，可以极大地提高代码的运行效率
+> 过滤条件设置不足时耗时46ms，超过77%，新增几个过滤之后耗时14ms，超过100%
+* 详情参考代码
 
+
+
+-----------------------
 
 ---------------------
 ### **65. [Valid Number](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/ValidNumber.java)** 	
