@@ -165,7 +165,17 @@ New problems will be automatically updated once added.
 ```
 * 具体细节参考代码
 
+---------------------
+### **17. [Letter Combinations of a Phone Number](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/LetterCombinationsOfAPhoneNumber.java)** 
+#### Level: Medium
+#### Tags: String, Backtracking
+* 遍历字符数组和list，按顺序拼接，注意使用LinkedList，因为LinkedList增删快。详情参考代码
 
+* 回溯法： 不熟悉，有待了解
+
+
+
+----------------------
 
 
 ---------------------
