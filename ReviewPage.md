@@ -269,4 +269,42 @@ New problems will be automatically updated once added.
 * 田忌赛马？
 * 对A排序，把B的value和index映射放入map，然后根据value排序，从A的最大值开始匹配B的最大值，小于等于就匹配B的次最大值
 * 详情参考代码，有详细注释
+* 更新：使用优先级队列代替哈希表效果更好，而且给结果集赋值部分可以优化为一次循环赋值完毕。
+* 优先级队列：
+```
+		//队列中存放数组，数组中存放B中的元素值和下标，然后自定义比较器以元素值排序
+		//jdk1.8以后可以使用lambda表达式：PriorityQueue<int[]> pq= new PriorityQueue<>((a,b)->b[1]-a[1]);
+		PriorityQueue<int[]> queue = new PriorityQueue<int[]>(10, new Comparator<int[]>() {
+			@Override
+			public int compare(int[] o1, int[] o2) {
+				// TODO Auto-generated method stub
+				return o2[1] - o1[1];
+			}
+		});
+```
+* 循环赋值部分：
+```
+		int start = 0, end = len - 1;
+		while (!queue.isEmpty()) {
+			int[] cur = queue.poll();	//堆顶的数组，存放着B中的最大值和下标
+			int bIndex = cur[0];
+			int bVal = cur[1];
+			if (A[end] > bVal)
+				res[bIndex] = A[end--];		//A>B则令当下标对应的值为A。双指针思路
+			else
+				res[bIndex] = A[start++];	//否则依次获取A的最小值赋值给当前下标
+		}	
+```
+
+
+--------------------------
+
+
+
+
+
+
+
+
+
 
