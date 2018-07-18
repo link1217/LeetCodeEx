@@ -187,6 +187,46 @@ New problems will be automatically updated once added.
 
 
 -----------------------
+### **19. [Remove Nth Node From End of List](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/RemoveNthNodeFromEndOfList.java)**
+#### Level: Medium
+#### Tags: LinkedList, Two Pointers
+* 设置指向头结点的结点，最后返回 preHead.next
+```
+	ListNode preHead = new ListNode(-1);	
+	preHead.next = head;
+```
+* 注意结点移动的边界
+* 其余参考代码
+
+
+-------------------
+### **20. [Valid Parentheses](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/ValidParentheses.java)**
+#### Level: Easy
+#### Tags: String, Stack 
+* 用栈实现括号匹配，或者自定义数组模仿栈
+* 详情参考代码
+
+---------
+### **21. [Merge Two Sorted Lists](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/MergeTwoSortedLists.java)**
+#### Level: Easy
+#### Tags: LinkedList
+* 注意开始部分的null值判断，如果其中一个为null，直接返回另一个
+* 非递归版： 新建头结点，依次判断两个链表的值，最后链接上剩余部分
+* 递归版： 简单实用，想法值得借鉴
+```
+		if (l1.val < l2.val) {
+			l1.next = mergeTwoLists(l1.next, l2);
+			return l1;
+		} else {
+			l2.next = mergeTwoLists(l1, l2.next);
+			return l2;
+		}
+```
+
+-------------
+
+
+
 
 ---------------------
 ### **65. [Valid Number](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/ValidNumber.java)** 	

@@ -38,6 +38,9 @@
 |16|[3Sum Closest](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/Sum3Closest.java)|Medium|Java|  Array, Two Pointers ||
 |17|[Letter Combinations of a Phone Number](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/LetterCombinationsOfAPhoneNumber.java)|Medium|Java|  String, Backtracking ||
 |18|[4Sum](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/Sum4.java)|Medium|Java|  Array, Hash Table, Two Pointers ||
+|19|[Remove Nth Node From End of List](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/RemoveNthNodeFromEndOfList.java)|Medium|Java|  LinkedList, Two Pointers ||
+|20|[Valid Parentheses](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/ValidParentheses.java)|Easy|Java|  String, Stack ||
+|21|[Merge Two Sorted Lists](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/MergeTwoSortedLists.java)|Easy|Java|  LinkedList ||
 |65|[Valid Number](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/ValidNumber.java)|Hard|Java| Math, String ||
 |140|[Word Break II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/WordBreakII.java)|Hard|Java| Dynamic Programming, BackTracking ||
 |865|[Smallest Subtree with all the Deepest Nodes](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/SmallestSubtreeWithAllTheDeepestNodes.java)|Medium|Java| Tree ||
