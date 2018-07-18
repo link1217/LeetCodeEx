@@ -224,7 +224,27 @@ New problems will be automatically updated once added.
 ```
 
 -------------
+### **22. [Generate Parentheses](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/GenerateParentheses.java)**
+#### Level: Medium
+#### Tags: String, BackTracking 
+* 回溯法，用StringBuilder代替String拼接，可以提速些许
+* 注意right < left 过程中，右括号的长度一定不大左括号
+```
+		if (left + right == n * 2)
+			list.add(str.toString());
+		if (left < n) {
+			backtrack(list, str.append("("), left + 1, right, n);
+			str.deleteCharAt(str.length() - 1);
+		}
+		if (right < left) {
+			backtrack(list, str.append(")"), left, right + 1, n);
+			str.deleteCharAt(str.length() - 1);
+		}
+```
+* 还有遍历集合拼接法，详情参考代码
 
+
+----------------
 
 
 

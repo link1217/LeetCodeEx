@@ -41,6 +41,7 @@
 |19|[Remove Nth Node From End of List](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/RemoveNthNodeFromEndOfList.java)|Medium|Java|  LinkedList, Two Pointers ||
 |20|[Valid Parentheses](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/ValidParentheses.java)|Easy|Java|  String, Stack ||
 |21|[Merge Two Sorted Lists](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/MergeTwoSortedLists.java)|Easy|Java|  LinkedList ||
+|22|[Generate Parentheses](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/GenerateParentheses.java)|Medium|Java|  String, BackTracking ||
 |65|[Valid Number](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/ValidNumber.java)|Hard|Java| Math, String ||
 |140|[Word Break II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/WordBreakII.java)|Hard|Java| Dynamic Programming, BackTracking ||
 |865|[Smallest Subtree with all the Deepest Nodes](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/SmallestSubtreeWithAllTheDeepestNodes.java)|Medium|Java| Tree ||
