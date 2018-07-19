@@ -271,7 +271,14 @@ New problems will be automatically updated once added.
 
 
 ------------------------
+### **25. [Reverse Nodes in k-Group](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/ReverseNodesInKGroup.java)**
+#### Level: Hard
+#### Tags: LinkedList
+* 递归版：容易实现
+* 非递归版，叫麻烦，注意重排后的端点连接
+* 详情参考代码
 
+-----------------------
 
 
 
