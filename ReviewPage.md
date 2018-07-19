@@ -245,6 +245,33 @@ New problems will be automatically updated once added.
 
 
 ----------------
+### **23. [Merge k Sorted Lists](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/MergeKSortedLists.java)**
+#### Level: Hard
+#### Tags: LinkedList, Heap, Divide and Conquer 
+* 归并排序思路对多路链表归并，需要先实现两路归并
+* 归并过程如下：
+```
+		while (len > 1) {
+			for (int i = 0; i < len / 2; i++) {
+				lists[i] = merge2List(lists[i], lists[len - 1 - i]);
+			}
+			len = (len + 1) / 2;
+		}
+```
+* 同样可以利用优先级队列，相当于堆排序过程，速度较归并慢一点，详情参考代码
+
+---------------------
+### **24. [Swap Nodes in Pairs](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/SwapNodesInPairs.java)**
+#### Level: Hard
+#### Tags: LinkedList 
+* 递归版：简单明了，就是不知道是否符合题目常数空间复杂度的要求
+* 非递归版：额外空间少，速度上差不多
+> 非递归版注意设置节点的先驱节点，新建一个用于返回的头节点即可
+* 详情参考代码
+
+
+------------------------
+
 
 
 
