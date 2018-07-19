@@ -262,7 +262,7 @@ New problems will be automatically updated once added.
 
 ---------------------
 ### **24. [Swap Nodes in Pairs](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/SwapNodesInPairs.java)**
-#### Level: Hard
+#### Level: Medium
 #### Tags: LinkedList 
 * 递归版：简单明了，就是不知道是否符合题目常数空间复杂度的要求
 * 非递归版：额外空间少，速度上差不多
