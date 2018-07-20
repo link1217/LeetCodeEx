@@ -286,6 +286,42 @@ New problems will be automatically updated once added.
 * 无意义的一道题
 
 ------------------
+### **27. [Remove Element](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/RemoveElement.java)**
+#### Level: Easy
+#### Tags: Array, Two Pointers
+* 类似于26题，同样无聊的一题
+* 毫无参考必要
+
+-----------------------
+### **28. [Implement strStr()](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/ImplementStrStr.java)**
+#### Level: Easy
+#### Tags: String, Two Pointers
+* 烂题三连发，自定义实现String.indexOf()函数
+* 拼手速的题
+
+-------------------
+### **29. [Divide Two Integers](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/DivideTwoIntegers.java)**
+#### Level: Medium
+#### Tags: Math, Binary Search 
+* 利用二分查找思路。
+```
+		while (dvs <= dvd) {
+			long tmp = dvs;
+			int mul = 1;
+			while (dvd > (tmp << 1)) {
+				tmp <<= 1;
+				mul <<= 1;
+			}
+			res += mul;
+			dvd -= tmp;
+		}
+```
+
+------------------
+
+
+
+
 
 
 ---------------------
