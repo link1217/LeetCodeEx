@@ -45,11 +45,12 @@
 |23|[Merge k Sorted Lists](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/MergeKSortedLists.java)|Hard|Java|  LinkedList, Heap, Divide and Conquer ||
 |24|[Swap Nodes in Pairs](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/SwapNodesInPairs.java)|Medium|Java|  LinkedList ||
 |25|[Reverse Nodes in k-Group](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/ReverseNodesInKGroup.java)|Hard|Java|  LinkedList ||
+|26|[Remove Duplicates from Sorted Array](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/RemoveDuplicatesFromSortedArray.java)|Easy|Java|  Array, Two Pointers ||
 |65|[Valid Number](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/ValidNumber.java)|Hard|Java| Math, String ||
-|140|[Word Break II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/WordBreakII.java)|Hard|Java| Dynamic Programming, BackTracking ||
-|865|[Smallest Subtree with all the Deepest Nodes](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/SmallestSubtreeWithAllTheDeepestNodes.java)|Medium|Java| Tree ||
-|866|[Prime Palindrome](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/PrimePalindrome.java)|Medium|Java| Math ||
-|867|[Transpose Matrix](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/TransposeMatrix.java)|Easy|Java| Array ||
-|868|[Binary Gap](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/BinaryGap.java)|Easy|Java| Math ||
-|869|[Reordered Power of 2](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/ReorderedPowerOf2.java)|Medium|Java| Math ||
-|870|[Advantage Shuffle](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/AdvantageShuffle.java)|Medium|Java| Math, HashMap ||
+|140|[Word Break II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/WordBreakII.java)|Hard|Java| Dynamic Programming, BackTracking ||
+|865|[Smallest Subtree with all the Deepest Nodes](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode9/SmallestSubtreeWithAllTheDeepestNodes.java)|Medium|Java| Tree ||
+|866|[Prime Palindrome](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode9/PrimePalindrome.java)|Medium|Java| Math ||
+|867|[Transpose Matrix](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode9/TransposeMatrix.java)|Easy|Java| Array ||
+|868|[Binary Gap](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode9/BinaryGap.java)|Easy|Java| Math ||
+|869|[Reordered Power of 2](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode9/ReorderedPowerOf2.java)|Medium|Java| Math ||
+|870|[Advantage Shuffle](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode9/AdvantageShuffle.java)|Medium|Java| Math, HashMap ||

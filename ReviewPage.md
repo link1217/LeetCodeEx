@@ -279,7 +279,13 @@ New problems will be automatically updated once added.
 * 详情参考代码
 
 -----------------------
+### **26. [Remove Duplicates from Sorted Array](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/RemoveDuplicatesFromSortedArray.java)**
+#### Level: Easy
+#### Tags: Array, Two Pointers 
+* 设置一个不重复元素的下标，自增覆盖···
+* 无意义的一道题
 
+------------------
 
 
 ---------------------
@@ -297,14 +303,14 @@ New problems will be automatically updated once added.
 
 
 ----------------------
-### **140. [Word Break II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/WordBreakII.java)**	
+### **140. [Word Break II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/WordBreakII.java)**	
 #### Level: Hard		
 #### Tags:Dynamic Programming, BackTracking 
 - 深度优先搜索：
 >	参考代码理解
 
 ---------------------------
-### **865. [Smallest Subtree with all the Deepest Nodes](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/SmallestSubtreeWithAllTheDeepestNodes.java)**	
+### **865. [Smallest Subtree with all the Deepest Nodes](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode9/SmallestSubtreeWithAllTheDeepestNodes.java)**	
 #### Level: Medium	
 #### Tags: Tree 
 - 利用平衡二叉树的性质，若最深节点只有一个，直接返回此节点，否则返回所有最深节点共同的父节点，即返回左右子树深度一样的节点
@@ -318,7 +324,7 @@ New problems will be automatically updated once added.
 ```
 	
 ---------------------
-### **866. [Prime Palindrome](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/PrimePalindrome.java)**	
+### **866. [Prime Palindrome](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode9/PrimePalindrome.java)**	
 #### Level: Medium	
 #### Tags: Math 
 - 一开始实现一种很复杂的方法，构建回文时考虑数字的左半边，累加左半边，需要注意进位时构建回文的方法转换。具体参考代码
@@ -326,13 +332,13 @@ New problems will be automatically updated once added.
 >	假如数据量有限且可查询得到，必要时候直接拿来用，有奇效
 
 -----------------------------
-### **867. [Transpose Matrix](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/TransposeMatrix.java)**	
+### **867. [Transpose Matrix](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode9/TransposeMatrix.java)**	
 #### Level:Easy	
 #### Tags: Array
 - 二维数组的转置，ij互换即可
 
 ----------------------------------
-### **868. [Binary Gap](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/BinaryGap.java)**	
+### **868. [Binary Gap](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode9/BinaryGap.java)**	
 #### Level: Easy
 #### Tags: Math
 * 查找二进数据中两个1的最大距离，首先定位到第一个1，然后再计算距离。
@@ -350,7 +356,7 @@ New problems will be automatically updated once added.
 * 把while循环该成for循环好像会快一点点
 
 -------------
-### **869. [Reordered Power of 2](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/ReorderedPowerOf2.java)** 
+### **869. [Reordered Power of 2](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode9/ReorderedPowerOf2.java)** 
 #### Level: Medium
 #### Tags: Math
 * 思路就是把一个整数转换成这些数字可以组成的最大数，然后从1开始匹配2的n次方，一旦匹配到直接返回true，结束循环条件如下：
@@ -377,7 +383,7 @@ New problems will be automatically updated once added.
 ```
 
 ---------------
-### **870. [Advantage Shuffle](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/AdvantageShuffle.java)**
+### **870. [Advantage Shuffle](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode9/AdvantageShuffle.java)**
 #### Level: Medium
 #### Tags: Math, HashMap 
 * 田忌赛马？

@@ -1,4 +1,4 @@
-package leetcode;
+package leetcode9;
 
 /**
  * 867. Transpose Matrix

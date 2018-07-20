@@ -1,4 +1,4 @@
-package leetcode;
+package leetcode9;
 
 /**
  * * 868. Binary Gap
