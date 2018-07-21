@@ -318,6 +318,14 @@ New problems will be automatically updated once added.
 ```
 
 ------------------
+### **30|[Substring with Concatenation of All Words](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/SubstringWithConcatenationOfAllWords.java)**
+#### Level: Hard
+#### Tags: Hash Table, Two Pointers, String 
+* 双指针滑动窗口问题，重点掌握，参考代码
+* 将字符串存入哈希表，滑动窗口过程中修改字符串对应的个数，根据不同状态做出相应处理
+* 窗口右边往右移动，修改map数值，窗口左边往右移动时，恢复map的数值
+
+------------------
 
 
 

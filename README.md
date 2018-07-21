@@ -49,6 +49,7 @@
 |27|[Remove Element](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/RemoveElement.java)|Easy|Java|  Array, Two Pointers ||
 |28|[Implement strStr()](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/ImplementStrStr.java)|Easy|Java|  String, Two Pointers ||
 |29|[Divide Two Integers](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/DivideTwoIntegers.java)|Medium|Java|  Math, Binary Search ||
+|30|[Substring with Concatenation of All Words](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/SubstringWithConcatenationOfAllWords.java)|Hard|Java|  Hash Table, Two Pointers, String ||
 |65|[Valid Number](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/ValidNumber.java)|Hard|Java| Math, String ||
 |140|[Word Break II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/WordBreakII.java)|Hard|Java| Dynamic Programming, BackTracking ||
 |865|[Smallest Subtree with all the Deepest Nodes](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode9/SmallestSubtreeWithAllTheDeepestNodes.java)|Medium|Java| Tree ||
