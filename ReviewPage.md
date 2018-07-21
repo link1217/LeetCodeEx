@@ -330,10 +330,11 @@ New problems will be automatically updated once added.
 当窗口大小与words长度相同时，说明s中从left到right+wLen这一部分刚好可以匹配words，将left存入list即可。
 
 ------------------
-
-
-
-
+### **31. [Next Permutation](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/NextPermutation.java)**
+#### Level: Medium
+#### Tags: Array 
+* 从右到左找到第一个小于右边的数，然后在这个数的右边再从右到左找到第一个大于这个数的数，交换这两个数，然后再将这个数右边的数逆序即可。
+* 详情参考代码
 
 
 ---------------------
