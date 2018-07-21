@@ -336,6 +336,16 @@ New problems will be automatically updated once added.
 * 从右到左找到第一个小于右边的数，然后在这个数的右边再从右到左找到第一个大于这个数的数，交换这两个数，然后再将这个数右边的数逆序即可。
 * 详情参考代码
 
+------------------------
+### **32. [Next Permutation](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/NextPermutation.java)**
+#### Level: Hard
+#### Tags: String, Dynamic Programming
+* 简易版，利用栈实现，栈中存放下标值，配合辅助状态数组实现。
+* 升级版，利用动态规划实现。注意状态转移和情况分析
+
+----------------------
+
+
 
 ---------------------
 ### **65. [Valid Number](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/ValidNumber.java)** 	
