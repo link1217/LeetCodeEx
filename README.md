@@ -60,3 +60,4 @@
 |868|[Binary Gap](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode9/BinaryGap.java)|Easy|Java| Math ||
 |869|[Reordered Power of 2](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode9/ReorderedPowerOf2.java)|Medium|Java| Math ||
 |870|[Advantage Shuffle](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode9/AdvantageShuffle.java)|Medium|Java| Math, HashMap ||
+|872|[Leaf-Similar Trees](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode9/LeafSimilarTrees.java)|Easy|Java| Tree ||

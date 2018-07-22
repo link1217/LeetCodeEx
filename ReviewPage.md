@@ -481,9 +481,14 @@ New problems will be automatically updated once added.
 
 
 
+-----------------------
+### **872. [Leaf-Similar Trees](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode9/LeafSimilarTrees.java)**
+#### Level: Easy
+#### Tags: Tree
+* 任意一种方式遍历二叉树，将叶节点放入集合，对比两个集合即可。
+* 复习非递归遍历二叉树方法
+
+-----------------------------
 
 
-
-
-
-
+--------------------------
