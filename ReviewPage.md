@@ -365,6 +365,16 @@ New problems will be automatically updated once added.
 * 考察二分查找的下标转移，如果二分查找结束时尚未找到目标，则lo=hi+1，且nums[lo]>target,nums[hi]<target，插入位置应该是lo，或者hi+1
 
 ---------------------
+### **36. [Valid Sudoku](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/ValidSudoku.java)**
+#### Level: Medium
+#### Tags: Hash Table
+* 出题不严谨
+* 可以记录每一个数的行列号，配上String形式的标志，放入set中，一旦出现重复的，返回false
+* 或者利用三个数组分别记录行列和块，可以用一维数组实现，用每一个数的二进制记录状态
+* 具体参考代码
+
+-----------------------
+
 
 
 
