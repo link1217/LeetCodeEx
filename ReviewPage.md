@@ -344,6 +344,15 @@ New problems will be automatically updated once added.
 * 升级版，利用动态规划实现。注意状态转移和情况分析
 
 ----------------------
+### **33. [Search in Rotated Sorted Array](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/SearchInRotatedSortedArray.java)**
+#### Level: Medium
+#### Tags: Array, Binary Search
+* 变异的二分查找：根据反转点的位置来区分查找范围，根据大小关系可确定一种唯一的二分方向，其余的是另一方向。
+* 比如，当反转点在左边(561234)时，若```nums[mid] < target && nums[hi] >= target``` 则target必在mid与hi之间，否则在lo与mid之间
+* 可实现递归与非递归，具体参考代码
+
+--------------------------
+
 
 
 
