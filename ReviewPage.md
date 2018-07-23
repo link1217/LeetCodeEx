@@ -359,6 +359,13 @@ New problems will be automatically updated once added.
 * 注意边界数值判断即可，具体参考代码
 
 ------------------
+### **35. [Search Insert Position](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/SearchInsertPosition.java)**
+#### Level: Medium
+#### Tags: Array, Binary Search
+* 考察二分查找的下标转移，如果二分查找结束时尚未找到目标，则lo=hi+1，且nums[lo]>target,nums[hi]<target，插入位置应该是lo，或者hi+1
+
+---------------------
+
 
 
 
