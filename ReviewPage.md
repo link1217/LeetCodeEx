@@ -318,7 +318,7 @@ New problems will be automatically updated once added.
 ```
 
 ------------------
-### **30|[Substring with Concatenation of All Words](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/SubstringWithConcatenationOfAllWords.java)**
+### **30. [Substring with Concatenation of All Words](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/SubstringWithConcatenationOfAllWords.java)**
 #### Level: Hard
 #### Tags: Hash Table, Two Pointers, String 
 * 双指针滑动窗口问题，重点掌握，参考代码
