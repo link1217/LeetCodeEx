@@ -352,7 +352,13 @@ New problems will be automatically updated once added.
 * 可实现递归与非递归，具体参考代码
 
 --------------------------
+### **34. [Find First and Last Position of Element in Sorted Array](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/FindFirstAndLastPositionOfElementInSortedArray.java)**
+#### Level: Medium
+#### Tags: Array, Binary Search
+* 二分查找相同数字的长度
+* 注意边界数值判断即可，具体参考代码
 
+------------------
 
 
 

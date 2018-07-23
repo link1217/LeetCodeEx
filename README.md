@@ -53,6 +53,7 @@
 |31|[Next Permutation](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/NextPermutation.java)|Medium|Java|  Array ||
 |32|[Next Permutation](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/NextPermutation.java)|Hard|Java|  String, Dynamic Programming ||
 |33|[Search in Rotated Sorted Array](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/SearchInRotatedSortedArray.java)|Medium|Java|  Array, Binary Search ||
+|34|[Find First and Last Position of Element in Sorted Array](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/FindFirstAndLastPositionOfElementInSortedArray.java)|Medium|Java|  Array, Binary Search ||
 |65|[Valid Number](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/ValidNumber.java)|Hard|Java| Math, String ||
 |140|[Word Break II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/WordBreakII.java)|Hard|Java| Dynamic Programming, BackTracking ||
 |865|[Smallest Subtree with all the Deepest Nodes](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode9/SmallestSubtreeWithAllTheDeepestNodes.java)|Medium|Java| Tree ||
