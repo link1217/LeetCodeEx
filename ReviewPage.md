@@ -374,6 +374,13 @@ New problems will be automatically updated once added.
 * 具体参考代码
 
 -----------------------
+### **37. [Sudoku Solver](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/SudokuSolver.java)**
+#### Level: Hard
+#### Tags: Hash Table, BackTracking
+* 填充数独，回溯问题。注意回溯的终止条件和递归入口，及状态回溯
+* 详情参考代码
+
+--------------------------------
 
 
 
