@@ -388,6 +388,14 @@ New problems will be automatically updated once added.
 * 把字符串切割成字符数组，用StringBuilder代替String可以提高效率
 
 ---------------------
+### **39. [Combination Sum](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/combinationSum.java)**
+#### Level: Medium
+#### Tags: Array, BackTracking
+* 回溯，DFS，勤加练习，注意终止条件和递归时的状态变化
+* 疑问？：回溯过程用到的集合，ArrayList的耗时比Linkedlist要快1-2ms，不知道为什么？
+
+-------------------
+
 
 
 
