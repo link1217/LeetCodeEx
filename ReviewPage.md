@@ -401,9 +401,9 @@ New problems will be automatically updated once added.
 * 与39题类似，区别在于这里数组中有重复的数，且不可重复使用
 * 代码和39题的几乎一样，区别在于这里解决每个数只用一次需要在递归的时候从index+1开始，解决返回集合中的重复元素需要增加过滤条件：
 ```
-			//这个if可以过滤掉重复结果集合，因为递归调用已经遍历了重复元素有可能有效的情况，下次循环的时候就没必要再次调用了。
-			if (i > index && candidates[i] == candidates[i - 1])
-				continue;
+//这个if可以过滤掉重复结果集合，因为递归调用已经遍历了重复元素有可能有效的情况，下次循环的时候就没必要再次调用了。
+if (i > index && candidates[i] == candidates[i - 1])
+	continue;
 ```
 
 
