@@ -381,7 +381,13 @@ New problems will be automatically updated once added.
 * 详情参考代码
 
 --------------------------------
+### **38. [Count and Say](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/CountAndSay.java)**
+#### Level: Easy
+#### Tags: String
+* 迭代，递归调用，字符串拼接。
+* 把字符串切割成字符数组，用StringBuilder代替String可以提高效率
 
+---------------------
 
 
 
