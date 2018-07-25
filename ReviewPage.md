@@ -431,6 +431,21 @@ while (left < right) {
 ```
 
 -----------------------
+### **43. [Multiply Strings](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/MultiplyStrings.java)**
+#### Level: Medium
+#### Tags: Math, String
+* 两个数相乘，第i位与第j位相乘后的数位于第i+j位上，将乘积所在位相等的数累加，最后再相加，处理进位。
+```
+	//int[] mul = new int[n1.length+n2.length-1]; 存放了所有对应为乘积
+	for(int i=0;i<n1.length;i++){
+		for(int j=0;j<n2.length;j++){
+			mul[i+j]+=(n1[i] - '0') * (n2[j] - '0');
+		}
+	}
+```
+* 另有两种方法，详情参考代码
+
+------------------------
 
 
 
