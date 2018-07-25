@@ -408,6 +408,30 @@ if (i > index && candidates[i] == candidates[i - 1])
 
 
 -------------------
+### **41. [First Missing Positive](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/FirstMissingPositive.java)**
+#### Level: Hard
+#### Tags: Array 
+* 将数组中的整数放到对应的下标处，最后遍历数组找到第一个没有归位的下标，返回下标+1
+* 注意：越界则不需要处理，需要交换的两个值相等也不需要处理
+
+----------------------
+### **42. [Trapping Rain Water](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/TrappingRainWater.java)**
+#### Level: Hard
+#### Tags: Array, Two Pointers, Stack
+* 一开始用削减方法实现，耗时16ms，比较直观，容易理解，具体参考代码
+* 双指针方法实现较为快捷，以左右两边较短的一边为有效方向，保存有效方向的最大高度，每次更新最大高度或者计算存水量。
+* 双指针每次移动指针，有两种状态，要么更新长度，要么计算结果
+* 简化版双指针：耗时多了2ms，但是代码少了一半，利用三目运算符达到赋值和递增的目的
+```
+while (left < right) {
+	int lower = height[left] <= height[right] ? left++ : right--;
+	maxHeight = Math.max(maxHeight, height[lower]);
+	res += maxHeight - height[lower];
+}
+```
+
+-----------------------
+
 
 
 
