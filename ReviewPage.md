@@ -463,6 +463,49 @@ while (left < right) {
 
 
 ------------------
+### **46. [Permutations](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/Permutations.java)**
+#### Level: Medium
+#### Tags: BackTracking
+* 回溯，每次都从头开始添加，跳过已经添加的即可。
+```
+	if (list.size() == nums.length)
+		res.add(new ArrayList<>(list));
+	else {
+		for (int i = 0; i < nums.length; i++) {
+			if (!list.contains(nums[i])) {
+				list.add(nums[i]);
+				backtrack(nums, res, list);
+				list.remove(list.size() - 1);
+			}
+		}
+	}
+```
+
+
+--------------------
+### **47. [Permutations II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/PermutationsII.java)**
+#### Level: Medium
+#### Tags: BackTracking
+* 回溯，需要维护一个状态数组，已添加过的或者和前一个数值相等且前一个未添加过，则跳过。
+```
+	if (list.size() == nums.length)
+		res.add(new ArrayList<>(list));
+	else {
+		for (int i = 0; i < nums.length; i++) {
+			if (used[i] || (i > 0 && nums[i] == nums[i - 1] && !used[i - 1]))
+				continue;
+			list.add(nums[i]);
+			used[i] = true;
+			backtrack(nums, res, list, used);
+			list.remove(list.size() - 1);
+			used[i] = false;
+		}
+	}
+```
+
+
+
+---------------------
 
 
 
