@@ -446,6 +446,14 @@ while (left < right) {
 * 另有两种方法，详情参考代码
 
 ------------------------
+### **44. [Wildcard Matching](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/WildcardMatching.java)**
+#### Level: Hard
+#### Tags: String, BackTracking, Dynamic Programming, Greedy
+* 记录p串最后一个出现的*的位置，一旦不符合条件，p从新从这个位置出发匹配。
+* 动态规划版本：参考代码。
+
+
+-----------------------
 
 
 

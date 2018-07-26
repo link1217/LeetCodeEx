@@ -63,6 +63,7 @@
 |41|[First Missing Positive](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/FirstMissingPositive.java)|Hard|Java|  Array ||
 |42|[Trapping Rain Water](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/TrappingRainWater.java)|Hard|Java|  Array, Two Pointers, Stack ||
 |43|[Multiply Strings](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/MultiplyStrings.java)|Medium|Java|  Math, String ||
+|44|[Wildcard Matching](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/WildcardMatching.java)|Hard|Java| String, BackTracking, Dynamic Programming, Greedy ||
 |65|[Valid Number](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/ValidNumber.java)|Hard|Java| Math, String ||
 |140|[Word Break II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/WordBreakII.java)|Hard|Java| Dynamic Programming, BackTracking ||
 |865|[Smallest Subtree with all the Deepest Nodes](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode9/SmallestSubtreeWithAllTheDeepestNodes.java)|Medium|Java| Tree ||
