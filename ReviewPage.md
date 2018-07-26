@@ -503,9 +503,27 @@ while (left < right) {
 	}
 ```
 
-
-
 ---------------------
+### **48. [Rotate Image](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/RotateImage.java)**
+#### Level: Medium
+#### Tags: Array
+* 矩阵顺时针旋转90°
+* 1，先转置，再逐行逆序 注意转置时的索引开始 
+
+```
+
+	for (int i = 0; i < n; i++) {
+		for (int j = i + 1; j < n; j++) {
+			matrix[i][j] = matrix[i][j] ^ matrix[j][i];
+			matrix[j][i] = matrix[i][j] ^ matrix[j][i];
+			matrix[i][j] = matrix[i][j] ^ matrix[j][i];
+		}
+	}
+```
+*2，直接转圈交换，参考代码
+
+--------------------
+
 
 
 
