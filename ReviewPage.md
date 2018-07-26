@@ -451,10 +451,18 @@ while (left < right) {
 #### Tags: String, BackTracking, Dynamic Programming, Greedy
 * 记录p串最后一个出现的*的位置，一旦不符合条件，p从新从这个位置出发匹配。
 * 动态规划版本：参考代码。
-
+* dfs：遇到*时，循环比较s剩余部分和p剩余部分。
 
 -----------------------
+### **45. [Jump Game II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/JumpGameII.java)**
+#### Level: Hard
+#### Tags: Array, Greedy
+* 贪心和bfs
+* 两种思维：1，维护一个最远位置和当前位置(当前的下一步所能达到的最远位置)，每次往前走一步，每次更新最远位置，当i超过了当前位置，就跳一步到最远位置，当i超过了最远位置，说明困在了原地。
+* 2，每次检测能达到的最远位置，更新下一步
 
+
+------------------
 
 
 
