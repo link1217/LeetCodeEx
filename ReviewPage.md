@@ -523,7 +523,15 @@ while (left < right) {
 *2，直接转圈交换，参考代码
 
 --------------------
+### **49. [Group Anagrams](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/GroupAnagrams.java)**
+#### Level: Medium
+#### Tags: Hash Table, String 
+* 哈希表
+* 添加list到返回集合中时：不需要再次遍历map，直接添加到res即可，引用对象，res中存放的时地址值
+* 可以用素数表示每一个字符，一个字符串转化成每一个字符对应素数的乘积，作为key值存入map，可以省去直接对str中字符排序，时间复杂度上要提升一些
 
+
+-----------------------
 
 
 
