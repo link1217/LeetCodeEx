@@ -70,6 +70,8 @@
 |48|[Rotate Image](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/RotateImage.java)|Medium|Java| Array ||
 |49|[Group Anagrams](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/GroupAnagrams.java)|Medium|Java| Hash Table, String ||
 |50|[Pow(x, n)](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/PowXN.java)|Medium|Java| Math, Binary Search ||
+|51|[N-Queens](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/N_Queens.java)|Hard|Java| BackTracking ||
+|52|[N-Queens II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/N_QueenII.java)|Hard|Java| BackTracking ||
 |65|[Valid Number](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/ValidNumber.java)|Hard|Java| Math, String ||
 |140|[Word Break II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/WordBreakII.java)|Hard|Java| Dynamic Programming, BackTracking ||
 |865|[Smallest Subtree with all the Deepest Nodes](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode9/SmallestSubtreeWithAllTheDeepestNodes.java)|Medium|Java| Tree ||

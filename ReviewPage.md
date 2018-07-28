@@ -542,6 +542,30 @@ while (left < right) {
 
 
 -----------------
+### **51. [N-Queens](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/N_Queens.java)**
+#### Level: Hard
+#### Tags: BackTracking
+* 回溯：每一行必须找到一个有效位置，所以，不需要外层循环。（参考代码）
+* 可以使用一个一维数组记录列的情况，使用两个一维数组记录每一个对角线的特征：
+```
+	boolean[] cols = new boolean[n],rDiag = new boolean[2 * n - 1], cDiag = new boolean[2 * n - 1];
+	cols[col] = true;
+	rDiag[row + col] = true;
+	cDiag[n - 1 + col - row] = true;
+```
+
+
+
+
+--------------------
+### **52. [N-Queens II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/N_QueenII.java)**
+#### Level: Hard
+#### Tags: BackTracking
+* 上一道题的简化版
+* 详情参考代码
+
+--------------------
+
 
 
 
