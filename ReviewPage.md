@@ -532,6 +532,16 @@ while (left < right) {
 
 
 -----------------------
+### **50. [Pow(x, n)](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/PowXN.java)**
+#### Level: Medium
+#### Tags: Math, Binary Search
+* 二分法：
+* 直接二分递增
+* 二分递归调用
+* 参考代码
+
+
+-----------------
 
 
 
