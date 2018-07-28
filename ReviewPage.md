@@ -565,6 +565,43 @@ while (left < right) {
 * 详情参考代码
 
 --------------------
+### **53. [Maximum Subarray](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/MaximumSubarray.java)**
+#### Level: Easy
+#### Tags: Array, Divide and Conquer, Dynamic Programming
+* 依次累加，若为负数，重置为0即可
+
+
+------------------------
+### **54. [Spiral Matrix](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/SpiralMatrix.java)**
+#### Level: Medium
+#### Tags: Array
+* 旋转打印二维数组，取左上角和右下角，顺时针打印，然后每次往右下和左上缩进。
+* 注意当只有一行或者一列的时候，直接输出。
+
+-----------------------------
+### **55. [Jump Game](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/JumpGame.java)**
+#### Level: Medium
+#### Tags: Array, Greedy 
+* 简化版跳跃游戏，当i>next时返回false
+* 详情参考代码
+
+-----------------------------
+### **56. [Merge Intervals](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/MergeIntervals.java)**
+#### Level: Medium
+#### Tags: Array, Sort
+* 两种方案：
+* 1，直接排序，从头判断合并
+* 2，将start和end单独放进一维数组，遍历start，当start[i+1]>end[i]时，说明出现断裂，将前面的添加到结果集，然后下次从i+1作为新的开始。
+```
+	for (int i = 0, j = 0; i < size; i++) {
+		if (i == size - 1 || starts[i + 1] > ends[i]) {
+			res.add(new Interval(starts[j], ends[i]));
+			j = i + 1;
+		}
+	}
+```
+
+---------------
 
 
 

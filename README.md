@@ -72,6 +72,10 @@
 |50|[Pow(x, n)](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/PowXN.java)|Medium|Java| Math, Binary Search ||
 |51|[N-Queens](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/N_Queens.java)|Hard|Java| BackTracking ||
 |52|[N-Queens II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/N_QueenII.java)|Hard|Java| BackTracking ||
+|53|Maximum Subarray](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/MaximumSubarray.java)|Easy|Java| Array, Divide and Conquer, Dynamic Programming ||
+|54|[Spiral Matrix](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/SpiralMatrix.java)|Medium|Java| Array ||
+|55|[Jump Game](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/JumpGame.java)|Medium|Java| Array, Greedy ||
+|56|[Merge Intervals](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/MergeIntervals.java)|Medium|Java| Array, Sort ||
 |65|[Valid Number](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/ValidNumber.java)|Hard|Java| Math, String ||
 |140|[Word Break II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/WordBreakII.java)|Hard|Java| Dynamic Programming, BackTracking ||
 |865|[Smallest Subtree with all the Deepest Nodes](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode9/SmallestSubtreeWithAllTheDeepestNodes.java)|Medium|Java| Tree ||
