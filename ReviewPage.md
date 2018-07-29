@@ -602,8 +602,18 @@ while (left < right) {
 ```
 
 ---------------
-
-
+### **57. [Insert Interval](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/InsertInterval.java)**
+#### Level: Hard
+#### Tags: Array, Sort
+* 56题的升级版，直接用56题的方法改一下也能通过，不过耗时略长
+* 关键在于如何将新的区间插入到合适的位置
+* 只需要在 `cur.start > newInterval.end`时插入newInterval，然后将cur赋值给newInterval，最后需要将newInterval加入结果集
+```
+	else if (cur.start > newInterval.end) {
+		res.add(newInterval);
+		newInterval = cur;
+```
+* 详情参考代码
 
 
 

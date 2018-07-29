@@ -76,6 +76,7 @@
 |54|[Spiral Matrix](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/SpiralMatrix.java)|Medium|Java| Array ||
 |55|[Jump Game](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/JumpGame.java)|Medium|Java| Array, Greedy ||
 |56|[Merge Intervals](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/MergeIntervals.java)|Medium|Java| Array, Sort ||
+|57|[Insert Interval](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/InsertInterval.java)|Hard|Java| Array, Sort ||
 |65|[Valid Number](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/ValidNumber.java)|Hard|Java| Math, String ||
 |140|[Word Break II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/WordBreakII.java)|Hard|Java| Dynamic Programming, BackTracking ||
 |865|[Smallest Subtree with all the Deepest Nodes](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode9/SmallestSubtreeWithAllTheDeepestNodes.java)|Medium|Java| Tree ||
