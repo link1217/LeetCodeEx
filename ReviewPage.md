@@ -616,7 +616,13 @@ while (left < right) {
 
 
 --------------
+### **59. [Spiral Matrix II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/SpiralMatrixII.java)**
+#### Level: Medium
+#### Tags: Array
+* 54题的变形，同样的方法，改成逐个填数字就行。参考代码
 
+
+---------------------
 
 
 
