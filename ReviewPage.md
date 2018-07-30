@@ -633,6 +633,16 @@ while (left < right) {
 
 
 ---------------------
+### **60. [Permutation Sequence](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/PermutationSequence.java)**
+#### Level: Medium
+#### Tags: Math, BackTracking
+* 直接回溯超时
+* 每次根据k和n-1!决定首位的数字，循环或者递归即可。
+* 详情参考代码
+
+
+-------------------
+
 
 
 
