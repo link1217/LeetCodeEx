@@ -617,6 +617,25 @@ while (left < right) {
 
 
 
+------------------
+### **58. [Length of Last Word](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/LengthOfLastWord.java)**
+#### Level: Easy
+#### Tags: String
+* 去掉结尾空格，计算从最后到前一个空格的长度即可
+* 自定义指针计数比调用String类方法要快
+
+
+--------------
+### **59. [Spiral Matrix II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/SpiralMatrixII.java)**
+#### Level: Medium
+#### Tags: Array
+* 54题的变形，同样的方法，改成逐个填数字就行。参考代码
+
+
+---------------------
+
+
+
 ---------------------
 ### **65. [Valid Number](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/ValidNumber.java)** 	
 #### Level: Hard		
