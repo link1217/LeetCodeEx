@@ -607,6 +607,19 @@ while (left < right) {
 
 
 
+------------------
+### **58. [Length of Last Word](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/LengthOfLastWord.java)**
+#### Level: Easy
+#### Tags: String
+* 去掉结尾空格，计算从最后到前一个空格的长度即可
+* 自定义指针计数比调用String类方法要快
+
+
+--------------
+
+
+
+
 ---------------------
 ### **65. [Valid Number](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/ValidNumber.java)** 	
 #### Level: Hard		
