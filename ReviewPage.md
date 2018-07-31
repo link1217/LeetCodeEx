@@ -649,6 +649,14 @@ while (left < right) {
 * 注意k值需要对链表长度取余，节省没必要的运算
 
 ------------------------
+### **62. [Unique Paths](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/UniquePaths.java)**
+#### Level: Medium
+#### Tags: Array, Dynamic Programming
+* 动态规划，当前路径总数等于左边的+上边的。`dp[i][j] = dp[i - 1][j] + dp[i][j - 1];`
+* 循环相加即可，只需要初始化`dp[0][1] = 1;`
+* 具体参考代码
+
+-----------------
 
 
 
