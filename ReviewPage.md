@@ -642,6 +642,13 @@ while (left < right) {
 
 
 -------------------
+### **61. [Rotate List](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/RotateList.java)**
+#### Level: Medium
+#### Tags: Linked List, Two Pointers 
+* 记录头结点或者先连成环，再找到最终的切断点即可。
+* 注意k值需要对链表长度取余，节省没必要的运算
+
+------------------------
 
 
 

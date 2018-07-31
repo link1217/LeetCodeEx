@@ -80,6 +80,7 @@
 |58|[Length of Last Word](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/LengthOfLastWord.java)|Easy|Java| String ||
 |59|[Spiral Matrix II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/SpiralMatrixII.java)|Medium|Java| Array ||
 |60|[Permutation Sequence](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/PermutationSequence.java)|Medium|Java| Math, BackTracking ||
+|61|[Rotate List](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/RotateList.java)|Medium|Java| Linked List, Two Pointers ||
 |65|[Valid Number](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/ValidNumber.java)|Hard|Java| Math, String ||
 |140|[Word Break II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/WordBreakII.java)|Hard|Java| Dynamic Programming, BackTracking ||
 |865|[Smallest Subtree with all the Deepest Nodes](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode9/SmallestSubtreeWithAllTheDeepestNodes.java)|Medium|Java| Tree ||
