@@ -657,6 +657,27 @@ while (left < right) {
 * 具体参考代码
 
 -----------------
+### **63. [Unique Paths II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/UniquePathsII.java)**
+#### Level: Medium
+#### Tags: Array, Dynamic Programming
+* 动态规划，62题的变种，只需要跳过障碍即可
+```
+
+	if (obstacleGrid[i - 1][j - 1] == 1)
+			continue;
+```
+
+
+----------------------
+### **64. [Minimum Path Sum](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/MinimumPathSum.java)**
+#### Level: Medium
+#### Tags: Array, Dynamic Programming
+* 前两题的进化版：
+* 当前位置的结果同样只与左边和上边有关。
+* 只需要在原数组的基础上叠加，首行和首列不参与比较大小，且初始位置需要跳过。
+* 具体参考代码
+
+--------------------------
 
 
 
