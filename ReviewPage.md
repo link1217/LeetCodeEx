@@ -677,11 +677,6 @@ while (left < right) {
 * 只需要在原数组的基础上叠加，首行和首列不参与比较大小，且初始位置需要跳过。
 * 具体参考代码
 
---------------------------
-
-
-
-
 ---------------------
 ### **65. [Valid Number](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/ValidNumber.java)** 	
 #### Level: Hard		
@@ -692,6 +687,24 @@ while (left < right) {
 >	`String regex = "[-+]?(\\d+\\.?|\\.\\d+)\\d*(e[-+]?\\d+)?";`
 
 -----------------------
+### **66. [Plus One](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/PlusOne.java)**]
+#### Level: Easy
+#### Tags: Math, Array
+* 注意进位标志即可。若最后一位仍旧进位再新建一个长度加一的数组，否则返回原数组
+* 再原数组上直接运算
+
+--------------------
+### **67. [Add Binary](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/AddBinary.java)**
+#### Level: Easy
+#### Tags: Math, String
+* 注意长度不同和进位即可，参考代码
+* 可采如下措施保证第一个字符串的长度始终不小于第二个
+```
+	if (a.length() < b.length())
+		return addBinary(b, a);
+```
+
+-------------------
 
 
 
