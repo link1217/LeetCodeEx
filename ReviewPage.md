@@ -713,8 +713,21 @@ while (left < right) {
 * 其余参考代码
 
 -------------------------------
+### **69. [Sqrt(x)](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/Sqrtx.java)**
+#### Level: Easy
+#### Tags: Math, Binary Search
+* 二分查找，两种方式见代码
+* 二分过程中注意： `while(start <= end){···}  start = mid + 1; end = mid - 1;`
 
+-----------------
 
+### **70. [Climbing Stairs](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/ClimbingStairs.java)**
+#### Level: Easy
+#### Tags: Dynamic Programming 
+* 暴力递归超时
+* 最简单的动态规划，记忆前面的数值
+
+---------------
 
 
 ----------------------
