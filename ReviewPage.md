@@ -705,6 +705,14 @@ while (left < right) {
 ```
 
 -------------------
+### **68. [Text Justification](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/TextJustification.java)**
+#### Level: Hard
+#### Tags: String
+* 字符串操作，尽量使用StringBuilder代替String操作字符串。
+* 边界条件和细节方面多加注意
+* 其余参考代码
+
+-------------------------------
 
 
 

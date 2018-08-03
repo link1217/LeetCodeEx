@@ -87,6 +87,7 @@
 |65|[Valid Number](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/ValidNumber.java)|Hard|Java| Math, String ||
 |66|[Plus One](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/PlusOne.java)|Easy|Java| Math, Array ||
 |67|[Add Binary](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/AddBinary.java)|Easy|Java| Math, String ||
+|68|[Text Justification](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/TextJustification.java)|Hard|Java| String ||
 |140|[Word Break II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/WordBreakII.java)|Hard|Java| Dynamic Programming, BackTracking ||
 |865|[Smallest Subtree with all the Deepest Nodes](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode9/SmallestSubtreeWithAllTheDeepestNodes.java)|Medium|Java| Tree ||
 |866|[Prime Palindrome](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode9/PrimePalindrome.java)|Medium|Java| Math ||
