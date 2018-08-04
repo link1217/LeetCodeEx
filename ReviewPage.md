@@ -728,6 +728,16 @@ while (left < right) {
 * 最简单的动态规划，记忆前面的数值
 
 ---------------
+### **71. [Simplify Path](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/SimplifyPath.java)**
+#### Level: Easy
+#### Tags: String, Stack
+* 使用String.split()切割和栈可简单实现
+* 也可以维护一个下标，在数组上直接操作，用下标和数组模拟栈的功能
+* 有更快的实现方式，但更复杂一些，将字符串转换成字符数组，考虑各种情况后得到最后结果。参见代码
+
+
+-----------------------
+
 
 
 ----------------------
