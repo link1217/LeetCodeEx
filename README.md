@@ -91,6 +91,7 @@
 |69|[Sqrt(x)](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/Sqrtx.java)|Easy|Java| Math, Binary Search ||
 |70|[Climbing Stairs](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/ClimbingStairs.java)|Easy|Java| Dynamic Programming ||
 |71|[Simplify Path](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/SimplifyPath.java)|Easy|Java| String, Stack ||
+|72|[Edit Distance](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/EditDistance.java)|Hard|Java| String, Dynamic Programming ||
 |140|[Word Break II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/WordBreakII.java)|Hard|Java| Dynamic Programming, BackTracking ||
 |865|[Smallest Subtree with all the Deepest Nodes](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode9/SmallestSubtreeWithAllTheDeepestNodes.java)|Medium|Java| Tree ||
 |866|[Prime Palindrome](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode9/PrimePalindrome.java)|Medium|Java| Math ||
