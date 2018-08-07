@@ -772,6 +772,22 @@ while (left < right) {
 * 转换关系和循环边界条件参见代码
 
 ---------------------
+### **77. [Combinations](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/Combinations.java)**
+#### Level: Medium
+#### Tags: backtrack
+* 回溯：注意设置过滤条件
+```
+	for (int i = index; i <= n; i++) {
+		if (n - i + 1 + list.size() < k)
+			return;
+		list.add(i);
+		backtrack(res, list, i + 1, n, k);
+		list.remove(list.size() - 1);
+	}
+```
+
+
+------------------------
 
 
 
