@@ -774,7 +774,7 @@ while (left < right) {
 ---------------------
 ### **77. [Combinations](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/Combinations.java)**
 #### Level: Medium
-#### Tags: backtrack
+#### Tags: BackTracking
 * 回溯：注意设置过滤条件
 ```
 	for (int i = index; i <= n; i++) {
@@ -788,6 +788,12 @@ while (left < right) {
 
 
 ------------------------
+### **78. [Subsets](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/Subsets.java)**
+#### Level: Medium|Java| 
+#### Tags: BackTracking, Array, Bit Manipulation ||
+* 最直接的回溯，不需要任何条件设置，直接回溯调用即可
+
+----------------
 
 
 
