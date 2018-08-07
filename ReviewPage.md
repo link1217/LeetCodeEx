@@ -765,6 +765,14 @@ while (left < right) {
 * 顺便复习优化后的随机快排：  [quickSort](https://github.com/lanrengufeng/ZuoShenSuanFa/blob/master/src/chuji/Class2.java)
 
 -------------------------
+### **76. [Minimum Window Substring](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/MinimumWindowSubstring.java)**
+#### Level: Hard
+#### Tags: Hash Table, Two Pointers, String
+* 字符的hashmap可以使用int数组实现
+* 转换关系和循环边界条件参见代码
+
+---------------------
+
 
 
 ----------------------
