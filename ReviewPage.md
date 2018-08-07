@@ -750,6 +750,21 @@ while (left < right) {
 * O(1)空间复杂度：不使用额外空间的方法类似，就是把第一行和第一列作为标记。  首先  先判断第一行第一列是否含有0，并用两个bool变量记录起来。其次，遍历其他行和列，如果有0，就把该元素所在的行和列  分别记录起来，即把第一列的该行置0，把第一行的该列置为0；比如 ` matrix[1][2]==0`,那么，把`matrix[i][0]`和`matrix[0][j]`都置零。这样，遍历一遍之后就把所有的行和列都在第一行和第一列中体现出来。接下来就是，根据第一行和第一列的0元素，把其所在的行和列置0，不包括第一行和第一列。再接下来，就是根据前面的boolean标记判断是否把第一行和第一列置零。
 
 -------------------
+### **74. [Search a 2D Matrix](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/Searcha2DMatrix.java)**
+#### Level: Medium
+#### Tags: Array, Binary Search
+* 从左下角开始找
+* 可利用二分查找提高速度
+
+-----------------
+### **75. [Sort Colors](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/SortColors.java)**
+#### Level: Medium
+#### Tags: Array, Two Pointers, Sort
+* 荷兰国旗问题，和优化后的快速排序中的一次排序方法一样
+* 维护一个less，一个more，根据当前的值来移动两个指针
+* 顺便复习优化后的随机快排：  [quickSort](https://github.com/lanrengufeng/ZuoShenSuanFa/blob/master/src/chuji/Class2.java)
+
+-------------------------
 
 
 ----------------------
@@ -758,6 +773,23 @@ while (left < right) {
 #### Tags:Dynamic Programming, BackTracking 
 - 深度优先搜索：
 >	参考代码理解
+
+----------------------
+
+
+
+------------------------------
+### **240. [Search a 2D Matrix II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/Searcha2DMatrixII.java)**
+#### Level: Medium
+#### Tags: Binary Search, Divide and Conquer
+* 从左下角开始，往右上角移动
+* 74题的升级版
+
+
+---------------------
+
+
+
 
 ---------------------------
 ### **865. [Smallest Subtree with all the Deepest Nodes](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode9/SmallestSubtreeWithAllTheDeepestNodes.java)**	
