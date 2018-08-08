@@ -794,7 +794,23 @@ while (left < right) {
 * 最直接的回溯，不需要任何条件设置，直接回溯调用即可
 
 ----------------
+### **79. [Word Search](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/WordSearch.java)**
+#### Level: Medium
+#### Tags: BackTracking, Array
+* 审题很重要
+* 关键在于从数组中找到和字符串的首字符相同的字符，然后再进入回溯
+* 回溯过程中只需要考虑当前字符的上下左右
+```
 
+	used[i][j] = true;
+	if (backtrack(board, word, used, i, j + 1, index + 1) || backtrack(board, word, used, i + 1, j, index + 1)
+			|| backtrack(board, word, used, i, j - 1, index + 1) || backtrack(board, word, used, i - 1, j, index + 1))
+		return true;
+	else
+		used[i][j] = false;
+```
+
+------------------
 
 
 ----------------------

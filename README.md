@@ -98,6 +98,7 @@
 |76|[Minimum Window Substring](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/MinimumWindowSubstring.java)|Hard|Java| Hash Table, Two Pointers, String ||
 |77|[Combinations](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/Combinations.java)|Medium|Java| BackTracking ||
 |78|[Subsets](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/Subsets.java)|Medium|Java| BackTracking, Array, Bit Manipulation ||
+|79|[Word Search](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/WordSearch.java)|Medium|Java| BackTracking, Array ||
 |140|[Word Break II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/WordBreakII.java)|Hard|Java| Dynamic Programming, BackTracking ||
 |240|[Search a 2D Matrix II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/Searcha2DMatrixII.java)|Medium|Java| Binary Search, Divide and Conquer ||
 |865|[Smallest Subtree with all the Deepest Nodes](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode9/SmallestSubtreeWithAllTheDeepestNodes.java)|Medium|Java| Tree ||
