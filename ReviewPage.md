@@ -830,6 +830,14 @@ while (left < right) {
 ```
 
 ---------------------
+### **81. [Search in Rotated Sorted Array II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/SearchInRotatedSortedArrayII.java)**
+#### Level: Medium
+#### Tags: Array, Binary Search
+* 二分查找  [Search in Rotated Sorted Array](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/SearchInRotatedSortedArray.java) 的升级版
+* 1，利用递归，一旦出现中点和端点相等的情况，舍弃一半，返回两种情况的或值。  参考代码中的递归实现方式
+* 2，和之前一样，不过在区分反转点的时候，加一个mid等于端点值得情况，一旦如此，则hi--，即此时只缩减一位，直到不冲突的时候再使用二分。
+
+-------------------------
 
 
 
