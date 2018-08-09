@@ -838,7 +838,15 @@ while (left < right) {
 * 2，和之前一样，不过在区分反转点的时候，加一个mid等于端点值得情况，一旦如此，则hi--，即此时只缩减一位，直到不冲突的时候再使用二分。
 
 -------------------------
+### **82. [Remove Duplicates from Sorted List II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/RemoveDuplicatesFromSortedListII.java)**
+#### Level: Medium
+#### Tags: Linked List
+* 节点通过引用地址传值，直接赋值，赋的是地址值
+* 递归版 
+* 循环递归版
+* 参考代码 
 
+----------------------
 
 
 ----------------------
