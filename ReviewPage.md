@@ -811,6 +811,26 @@ while (left < right) {
 ```
 
 ------------------
+### **80. [Remove Duplicates from Sorted Array II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/RemoveDuplicatesFromSortedArrayII.java)**
+#### Level: Medium
+#### Tags: Array, Two Pointers
+* 两种方案：
+* 1，维护一个Boolean标志，一旦首次出现重复值时置true，根据数组的值和flag来更改数组的值
+* 2，i是有效位，则只需要判断数组当前值cur和nums[i-2]是否相等即可。
+```
+
+	public int removeDuplicates(int[] nums) {
+		int i = 0;
+		for (int n : nums) {
+			if (i < 2 || n > nums[i - 2])
+				nums[i++] = n;
+		}
+		return i;
+	}
+```
+
+---------------------
+
 
 
 ----------------------
