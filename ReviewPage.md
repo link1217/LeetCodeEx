@@ -847,6 +847,14 @@ while (left < right) {
 * 参考代码 
 
 ----------------------
+### **83. [Remove Duplicates from Sorted List](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/RemoveDuplicatesFromSortedList.java)**
+#### Level: Easy
+#### Tags: Linked List
+* 简单的节点转移，细心点即可
+* 递归实现更简单
+
+--------------------
+
 
 
 ----------------------
