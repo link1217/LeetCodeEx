@@ -854,6 +854,15 @@ while (left < right) {
 * 递归实现更简单
 
 --------------------
+### **84. [Largest Rectangle in Histogram](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/LargestRectangleInHistogram.java)**
+#### Level: Hard
+#### Tags: Array, Stack
+* 暴力解法耗时贼长
+* 使用一个栈，存放遍历过的每一个数，保证栈中的数是非递减的，一旦出现比栈顶小的数，则更新最大值，并将栈中大于此数的值改为这个数。
+* 其实不需要栈，可以在原数组上直接修改，比使用栈更方便简单，原理同使用栈一样。
+* 详情参考代码
+
+-------------------------
 
 
 

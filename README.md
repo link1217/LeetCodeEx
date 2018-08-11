@@ -103,6 +103,7 @@
 |81|[Search in Rotated Sorted Array II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/SearchInRotatedSortedArrayII.java)|Medium|Java| Array, Binary Search ||
 |82|[Remove Duplicates from Sorted List II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/RemoveDuplicatesFromSortedListII.java)|Medium|Java| Linked List ||
 |83|[Remove Duplicates from Sorted List](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/RemoveDuplicatesFromSortedList.java)|Easy|Java| Linked List ||
+|84|[Largest Rectangle in Histogram](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/LargestRectangleInHistogram.java)|Hard|Java| Array, Stack ||
 |140|[Word Break II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/WordBreakII.java)|Hard|Java| Dynamic Programming, BackTracking ||
 |240|[Search a 2D Matrix II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/Searcha2DMatrixII.java)|Medium|Java| Binary Search, Divide and Conquer ||
 |865|[Smallest Subtree with all the Deepest Nodes](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode9/SmallestSubtreeWithAllTheDeepestNodes.java)|Medium|Java| Tree ||
