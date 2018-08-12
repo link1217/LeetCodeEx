@@ -872,6 +872,20 @@ while (left < right) {
 * 本题相当于m行个84题对应的柱状图，调用m次84题的方法即可
 
 -----------------------
+### **86. [Partition List](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/PartitionList.java)**
+#### Level: Medium
+#### Tags: Linked List, Two Pointers
+* 新建头结点
+* 新建头结点的引用，表示当前节点，当前节点第一次起作用时，相当于更改头结点的next指针，之后当前节点指向别的对象，不再和头结点指向同一个位置。
+* 所以不需要下面这样赋初值
+```
+
+	if(preHead.next==null)
+		preHead.next = head;
+```
+
+
+------------------------
 
 
 

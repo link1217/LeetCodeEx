@@ -105,6 +105,7 @@
 |83|[Remove Duplicates from Sorted List](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/RemoveDuplicatesFromSortedList.java)|Easy|Java| Linked List ||
 |84|[Largest Rectangle in Histogram](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/LargestRectangleInHistogram.java)|Hard|Java| Array, Stack ||
 |85|[Maximal Rectangle](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/MaximalRectangle.java)|Hard|Java| Array, Hash Table, Dynamic Programming, Stack ||
+|86|[Partition List](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/PartitionList.java)|Medium|Java| Linked List, Two Pointers ||
 |140|[Word Break II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/WordBreakII.java)|Hard|Java| Dynamic Programming, BackTracking ||
 |240|[Search a 2D Matrix II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/Searcha2DMatrixII.java)|Medium|Java| Binary Search, Divide and Conquer ||
 |865|[Smallest Subtree with all the Deepest Nodes](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode9/SmallestSubtreeWithAllTheDeepestNodes.java)|Medium|Java| Tree ||
