@@ -863,6 +863,15 @@ while (left < right) {
 * 详情参考代码
 
 -------------------------
+### **85. [Maximal Rectangle](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/MaximalRectangle.java)**
+#### Level: Hard
+#### Tags: Array, Hash Table, Dynamic Programming, Stack
+* 做一个长度为原矩阵宽度一样的数组，```int[] heights = new int[n];``` 用来存放当前列1的最大连续高度，循环遍历matrix的每一行，统计当前行对应的heights
+* 对每一行的heights数组，利用 **84. [Largest Rectangle in Histogram](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/LargestRectangleInHistogram.java)** 的结论，求出最终结果。
+* heights数组可以复用，详情参见代码
+* 本题相当于m行个84题对应的柱状图，调用m次84题的方法即可
+
+-----------------------
 
 
 
