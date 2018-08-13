@@ -886,7 +886,14 @@ while (left < right) {
 
 
 ------------------------
+### **87. [Scramble String](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/ScrambleString.java)**
+#### Level: Hard
+#### Tags: String, Dynamic Programming
+* 剪枝后的递归比动态规划要快
+* 递归遍历所有情况，可首先判断当前字符串的字符数量和组成情况是否一样，来削减递归深度
 
+
+--------------------
 
 
 ----------------------
