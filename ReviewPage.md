@@ -892,8 +892,15 @@ while (left < right) {
 * 剪枝后的递归比动态规划要快
 * 递归遍历所有情况，可首先判断当前字符串的字符数量和组成情况是否一样，来削减递归深度
 
-
 --------------------
+### **88. [Merge Sorted Array](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/MergeSortedArray.java)**
+#### Level: Easy
+#### Tags: Array, Two Pointers
+* 从前往后插入数据，需要大小为m+n的辅助空间
+* 从后往前插入数据，直接插入到nums1即可，不需要额外空间，且只要nums2中的数据用完，全部数据便已经就位
+
+---------------------
+
 
 
 ----------------------
