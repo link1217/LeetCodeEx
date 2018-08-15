@@ -902,7 +902,7 @@ while (left < right) {
 ---------------------
 ### **89. [Gray Code](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/GrayCode.java)**
 #### Level: Medium
-#### Tags: backtracking
+#### Tags: Backtracking
 * 每次从后往前遍历list，增加2^i即可。
 * 或者使用异或操作，从0开始，代码如下，perfect
 ```
@@ -917,6 +917,17 @@ while (left < right) {
 ```
 
 ------------------
+### **90. [Subsets II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/SubsetsII.java)**
+#### Level: Medium|Java| 
+#### Tags: Array, Backtracking
+* 经典回溯，跳过重复元素即可
+```
+
+	if (i > index && nums[i] == nums[i - 1])
+		continue;
+```
+
+---------------
 
 
 ----------------------

@@ -1,11 +1,13 @@
 package leetcode;
 
-/**
- * 89. Gray Code
- */
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 89. Gray Code
+ * @author Watcher
+ *
+ */
 public class GrayCode {
 
 	public List<Integer> grayCode(int n) {
