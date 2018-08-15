@@ -900,7 +900,23 @@ while (left < right) {
 * 从后往前插入数据，直接插入到nums1即可，不需要额外空间，且只要nums2中的数据用完，全部数据便已经就位
 
 ---------------------
+### **89. [Gray Code](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/GrayCode.java)**
+#### Level: Medium
+#### Tags: backtracking
+* 每次从后往前遍历list，增加2^i即可。
+* 或者使用异或操作，从0开始，代码如下，perfect
+```
 
+	public List<Integer> grayCode(int n) {
+		List<Integer> res = new ArrayList<>();
+		n = 1 << n;
+		for (int i = 0; i < n; i++)
+			res.add(i ^ (i >> 1));
+		return res;
+	}
+```
+
+------------------
 
 
 ----------------------
