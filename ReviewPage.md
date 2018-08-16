@@ -918,7 +918,7 @@ while (left < right) {
 
 ------------------
 ### **90. [Subsets II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/SubsetsII.java)**
-#### Level: Medium|Java| 
+#### Level: Medium
 #### Tags: Array, Backtracking
 * 经典回溯，跳过重复元素即可
 ```
@@ -928,7 +928,13 @@ while (left < right) {
 ```
 
 ---------------
+### **91. [Decode Ways](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/DecodeWays.java)**
+#### Level: Medium
+#### Tags: String, Dynamic Programming ||
+* 关键在于处理中间的0
+* 开头为0或者中间有连续的0直接返回0，中间有0则 `dp[i + 1] = dp[i] = dp[i - 1];`
 
+-----------------
 
 ----------------------
 ### **140. [Word Break II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/WordBreakII.java)**	
