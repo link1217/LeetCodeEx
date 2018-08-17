@@ -935,6 +935,15 @@ while (left < right) {
 * 开头为0或者中间有连续的0直接返回0，中间有0则 `dp[i + 1] = dp[i] = dp[i - 1];`
 
 -----------------
+### **92. [Reverse Linked List II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/ReverseLinkedListII.java)**
+#### Level: Medium
+#### Tags: Linked List
+* 设置头结点用于返回结果
+* 记录需要翻转的链表的第一个结点的前置结点，用于连接反转后的链表
+* 从需要翻转的第一个结点开始往后遍历，将其插入到最后一个结点的后面，直至遍历到最后一个结点为止，然后将前面记录的前置结点与当前结点连接，返回头结点的下一个结点即可
+
+---------------------
+
 
 ----------------------
 ### **140. [Word Break II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/WordBreakII.java)**	
