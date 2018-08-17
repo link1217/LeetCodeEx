@@ -943,6 +943,14 @@ while (left < right) {
 * 从需要翻转的第一个结点开始往后遍历，将其插入到最后一个结点的后面，直至遍历到最后一个结点为止，然后将前面记录的前置结点与当前结点连接，返回头结点的下一个结点即可
 
 ---------------------
+### **93. [Restore IP Addresses](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/RestoreIPAddresses.java)**
+#### Level: Medium
+#### Tags: String, Backtracking
+* 注意不能出现以0打头的两位及以上的数，或者大于255的数
+* 可使用集合完成回溯过程
+* 也可以申请一个长度为字符串长度加3的字符数组，用于存储最终的ip地址，比使用集合效率更高
+
+-------------------
 
 
 ----------------------
