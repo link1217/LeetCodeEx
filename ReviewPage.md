@@ -951,6 +951,15 @@ while (left < right) {
 * 也可以申请一个长度为字符串长度加3的字符数组，用于存储最终的ip地址，比使用集合效率更高
 
 -------------------
+### **94. [Binary Tree Inorder Traversal](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/BinaryTreeInorderTraversal.java)**
+#### Level: Medium
+#### Tags: Hash Table, Stack, Tree
+* 中序遍历二叉树
+* 递归版，打印放中间即可
+* 非递归版，借助于栈，先遍历左子树，直到为null，弹出栈顶并打印，转向右子树
+
+--------------------
+
 
 
 ----------------------

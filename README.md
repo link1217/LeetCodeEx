@@ -113,6 +113,7 @@
 |91|[Decode Ways](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/DecodeWays.java)|Medium|Java| String, Dynamic Programming ||
 |92|[Reverse Linked List II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/ReverseLinkedListII.java)|Medium|Java| Linked List ||
 |93|[Restore IP Addresses](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/RestoreIPAddresses.java)|Medium|Java| String, Backtracking ||
+|94|[Binary Tree Inorder Traversal](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/BinaryTreeInorderTraversal.java)|Medium|Java| Hash Table, Stack, Tree ||
 |140|[Word Break II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/WordBreakII.java)|Hard|Java| Dynamic Programming, BackTracking ||
 |240|[Search a 2D Matrix II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/Searcha2DMatrixII.java)|Medium|Java| Binary Search, Divide and Conquer ||
 |865|[Smallest Subtree with all the Deepest Nodes](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode9/SmallestSubtreeWithAllTheDeepestNodes.java)|Medium|Java| Tree ||
