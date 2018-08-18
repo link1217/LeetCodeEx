@@ -959,7 +959,20 @@ while (left < right) {
 * 非递归版，借助于栈，先遍历左子树，直到为null，弹出栈顶并打印，转向右子树
 
 --------------------
+### **95. [Unique Binary Search Trees II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/UniqueBinarySearchTreesII.java)**
+#### Level: Medium
+#### Tags: Dynamic Programming, Tree
+* 递归遍历，哈希表记录状态
 
+-------------
+### **96. [Unique Binary Search Trees](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/UniqueBinarySearchTrees.java)**
+#### Level: Medium
+#### Tags: Dynamic Programming, Tree
+* 卡特兰数
+* 动态规划
+
+
+-----------------
 
 
 ----------------------
