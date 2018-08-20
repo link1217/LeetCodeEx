@@ -993,6 +993,12 @@ while (left < right) {
 * 设置短路标志，但是短路后效果并没有改善，不知道为什么
 
 --------------------------
+### **100. [Same Tree](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/SameTree.java)**
+#### Level: Easy
+#### Tags: Tree, DFS
+* 递归判断，参见代码
+
+---------------
 
 
 ----------------------
