@@ -971,8 +971,14 @@ while (left < right) {
 * 卡特兰数
 * 动态规划
 
-
 -----------------
+### **97. [Interleaving String](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/InterleavingString.java)**
+#### Level: Hard
+#### Tags: Dynamic Programming, String
+* 暴力递归会超时，可以做一个map记录递归状态，耗时0ms
+* 正常的动态规划耗时2-5ms，比记录状态的递归要慢一点
+
+--------------------------
 
 
 ----------------------
