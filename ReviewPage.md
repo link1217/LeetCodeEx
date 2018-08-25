@@ -6,8 +6,8 @@ New problems will be automatically updated once added.
 **快速索引**
 
 <!--GFM-TOC -->
-- [50.Pow(x, n)](#powx-n)
-- [100.Same Tree](#same-tree)
+- [50.Pow(x, n)](#50-powx-n)
+- [100.Same Tree](#100-same-tree)
 <!--GFM-TOC -->
 
 -------------------------
