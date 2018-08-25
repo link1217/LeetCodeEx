@@ -5,6 +5,10 @@ New problems will be automatically updated once added.
 --------------------------------------------
 **快速索引**
 
+<!--GFM-TOC -->
+- [50.Pow(x, n)](#powx-n)
+- [100.Same Tree](#same-tree)
+<!--GFM-TOC -->
 
 -------------------------
 ### 1. [Two Sum](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/TwoSum.java)      
@@ -983,24 +987,24 @@ while (left < right) {
 - 正常的动态规划耗时2-5ms，比记录状态的递归要慢一点
 
 --------------------------
-### **98. [Validate Binary Search Tree](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/ValidateBinarySearchTree.java)**
-#### Level: Medium
-#### Tags: Tree, DFS
-* 平衡搜索二叉树的性质：中序遍历一定是严格递增序列
-* 所以，可以中序遍历二叉树，一旦出现非递增的情况直接返回false
+### 98. [Validate Binary Search Tree](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/ValidateBinarySearchTree.java)
+- Level: Medium
+- Tags: Tree, DFS
+- 平衡搜索二叉树的性质：中序遍历一定是严格递增序列
+- 所以，可以中序遍历二叉树，一旦出现非递增的情况直接返回false
 
 ---------------
-### **99. [Recover Binary Search Tree](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/RecoverBinarySearchTree.java)**
-#### Level: Hard
-#### Tags: Tree, DFS
-* 交换的结点一定是逆序的地方
-* 设置短路标志，但是短路后效果并没有改善，不知道为什么
+### 99. [Recover Binary Search Tree](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/RecoverBinarySearchTree.java)
+- Level: Hard
+- Tags: Tree, DFS
+- 交换的结点一定是逆序的地方
+- 设置短路标志，但是短路后效果并没有改善，不知道为什么
 
 --------------------------
-### **100. [Same Tree](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/SameTree.java)**
-#### Level: Easy
-#### Tags: Tree, DFS
-* 递归判断，参见代码
+### 100. [Same Tree](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode/SameTree.java)
+- Level: Easy
+- Tags: Tree, DFS
+- 递归判断，参见代码
 
 ---------------
 
