@@ -9,7 +9,7 @@ import java.util.Map.Entry;
 
 /**
  * 2018.7.14周测
- *  
+ * 
  * @author Watcher
  *
  */
@@ -31,8 +31,8 @@ public class Contest93 {
 	/**
 	 * 868. Binary Gap
 	 * 
-	 * Given a positive integer N, find and return the longest distance between
-	 * two consecutive 1's in the binary representation of N.
+	 * Given a positive integer N, find and return the longest distance between two consecutive 1's in
+	 * the binary representation of N.
 	 * 
 	 * If there aren't two consecutive 1's, return 0.
 	 * 
@@ -67,11 +67,11 @@ public class Contest93 {
 	/**
 	 * 869. Reordered Power of 2
 	 * 
-	 * Starting with a positive integer N, we reorder the digits in any order
-	 * (including the original order) such that the leading digit is not zero.
+	 * Starting with a positive integer N, we reorder the digits in any order (including the original
+	 * order) such that the leading digit is not zero.
 	 * 
-	 * Return true if and only if we can do this in a way such that the
-	 * resulting number is a power of 2.
+	 * Return true if and only if we can do this in a way such that the resulting number is a power of
+	 * 2.
 	 * 
 	 * 
 	 * @param N
@@ -106,11 +106,10 @@ public class Contest93 {
 	/**
 	 * 870. Advantage Shuffle
 	 * 
-	 * Given two arrays A and B of equal size, the advantage of A with respect
-	 * to B is the number of indices i for which A[i] > B[i].
+	 * Given two arrays A and B of equal size, the advantage of A with respect to B is the number of
+	 * indices i for which A[i] > B[i].
 	 * 
-	 * Return any permutation of A that maximizes its advantage with respect to
-	 * B.
+	 * Return any permutation of A that maximizes its advantage with respect to B.
 	 * 
 	 * @param A
 	 * @param B

@@ -4,6 +4,7 @@ import others.ListNode;
 
 /**
  * 83. Remove Duplicates from Sorted List
+ * 
  * @author Watcher
  *
  */
@@ -42,5 +43,4 @@ public class RemoveDuplicatesFromSortedList {
 		return head;
 	}
 
-	
 }

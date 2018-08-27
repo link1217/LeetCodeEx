@@ -3,8 +3,7 @@ package leetcode;
 /**
  * 12. Integer to Roman
  * 
- * Roman numerals are represented by seven different symbols: I, V, X, L, C, D
- * and M.
+ * Roman numerals are represented by seven different symbols: I, V, X, L, C, D and M.
  * 
  * @author Watcher
  *
@@ -13,6 +12,7 @@ public class IntegerToRoman {
 
 	/**
 	 * 精简
+	 * 
 	 * @param num
 	 * @return
 	 */

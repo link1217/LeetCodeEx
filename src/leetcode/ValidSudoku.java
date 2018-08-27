@@ -12,6 +12,7 @@ public class ValidSudoku {
 
 	/**
 	 * 利用一维数组中每一位数的二进制来记录状态
+	 * 
 	 * @param board
 	 * @return
 	 */

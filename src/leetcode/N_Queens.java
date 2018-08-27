@@ -18,9 +18,10 @@ public class N_Queens {
 		boolean[] rDiag;
 		boolean[] lDiag;
 		char[][] board;
-		
+
 		/**
 		 * 耗时最短的版本
+		 * 
 		 * @param n
 		 * @return
 		 */

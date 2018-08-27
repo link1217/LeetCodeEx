@@ -18,7 +18,7 @@ public class MaximalRectangle {
 		if (matrix == null || matrix.length == 0 || matrix[0].length == 0)
 			return 0;
 		int res = 0, m = matrix.length, n = matrix[0].length;
-		int[] heights = new int[n]; 	//当前列1的连续高度
+		int[] heights = new int[n]; // 当前列1的连续高度
 		for (int i = 0; i < m; i++) {
 			getHeight(matrix[i], heights);
 			res = Math.max(res, largestRectangleArea(Arrays.copyOf(heights, heights.length)));

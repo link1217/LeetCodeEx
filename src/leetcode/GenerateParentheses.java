@@ -6,8 +6,8 @@ import java.util.List;
 /**
  * 22. Generate Parentheses
  * 
- * Given n pairs of parentheses, write a function to generate all combinations
- * of well-formed parentheses.
+ * Given n pairs of parentheses, write a function to generate all combinations of well-formed
+ * parentheses.
  * 
  * 
  * @author Watcher
@@ -16,12 +16,13 @@ import java.util.List;
 public class GenerateParentheses {
 	public static void main(String[] args) {
 		GenerateParentheses so = new GenerateParentheses();
-		 System.out.println(so.generateParenthesis(2));
+		System.out.println(so.generateParenthesis(2));
 
 	}
 
 	/**
 	 * 耗时较多
+	 * 
 	 * @param n
 	 * @return
 	 */
@@ -30,7 +31,7 @@ public class GenerateParentheses {
 		if (n == 0)
 			list.add("");
 		else
-			for (int i = n-1; i >= 0; i--) {
+			for (int i = n - 1; i >= 0; i--) {
 				List<String> insertSub = generateParenthesis(i);
 				List<String> tailSub = generateParenthesis(n - 1 - i);
 				for (String insert : insertSub)

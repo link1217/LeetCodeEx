@@ -10,6 +10,7 @@ public class LargestRectangleInHistogram {
 
 	/**
 	 * 在原数组上修改，保证数组是非递减的，模仿栈；耗时2ms
+	 * 
 	 * @param heights
 	 * @return
 	 */
@@ -18,13 +19,13 @@ public class LargestRectangleInHistogram {
 			return 0;
 		int start = 0, res = 0;
 		for (int i = 0; i < heights.length; i++)
-			if (heights[i] != 0) {  // 确保start为最小的非零下标
+			if (heights[i] != 0) { // 确保start为最小的非零下标
 				start = i;
 				break;
 			}
 		res = heights[start];
 		for (int i = start + 1; i < heights.length; i++) {
-			if (heights[i] == 0) {  //每次遇到0，更新最大值，且更新start
+			if (heights[i] == 0) { // 每次遇到0，更新最大值，且更新start
 				res = getMax(heights, start, i - 1, res);
 				start = i + 1;
 			} else if (heights[i] < heights[i - 1]) {

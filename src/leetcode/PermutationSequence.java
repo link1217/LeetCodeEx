@@ -16,28 +16,28 @@ public class PermutationSequence {
 		PermutationSequence so = new PermutationSequence();
 		System.out.println(so.getPermutation(9, 101134));
 	}
-	
+
 	public String getPermutation(int n, int k) {
 		LinkedList<Integer> list = new LinkedList<Integer>();
-		int fact=1;
+		int fact = 1;
 		StringBuilder sb = new StringBuilder();
-		for(int i=1;i<=n;i++){
-			fact*=i;
+		for (int i = 1; i <= n; i++) {
+			fact *= i;
 			list.add(i);
 		}
 		k--;
-		for(int i=1;i<=n;i++){
-			fact/=n-i+1;
-			int index = k/fact;
+		for (int i = 1; i <= n; i++) {
+			fact /= n - i + 1;
+			int index = k / fact;
 			sb.append(list.remove(index));
-			k-=index*fact;
+			k -= index * fact;
 		}
 		return sb.toString();
 	}
-	
 
 	/**
 	 * 递归，9ms
+	 * 
 	 * @param n
 	 * @param k
 	 * @return

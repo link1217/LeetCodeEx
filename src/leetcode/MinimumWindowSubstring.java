@@ -1,6 +1,5 @@
 package leetcode;
 
-
 /**
  * 76. Minimum Window Substring
  * 
@@ -17,14 +16,14 @@ public class MinimumWindowSubstring {
 		char[] cs = s.toCharArray();
 		int start = 0, lo = 0, hi = 0, min = Integer.MAX_VALUE, cnt = t.length();
 		while (hi < s.length()) {
-			if (map[cs[hi++]]-- > 0)	
+			if (map[cs[hi++]]-- > 0)
 				cnt--;
-			while (cnt == 0) { 	//找到所有t中的字符，hi处于最后一个字符的下一位置
+			while (cnt == 0) { // 找到所有t中的字符，hi处于最后一个字符的下一位置
 				if (hi - lo < min) {
 					min = hi - lo;
 					start = lo;
 				}
-				if (map[cs[lo++]]++ == 0) //找到第一个缺少的字符，lo处于第一个缺少的字符的下一位置
+				if (map[cs[lo++]]++ == 0) // 找到第一个缺少的字符，lo处于第一个缺少的字符的下一位置
 					cnt++;
 			}
 		}

@@ -27,7 +27,7 @@ public class GroupAnagrams {
 				List<String> list = new ArrayList<>();
 				list.add(str);
 				map.put(s, list);
-				res.add(list);	//不需要再次遍历map，这里添加到res即可，引用对象，res中存放的时地址值
+				res.add(list); // 不需要再次遍历map，这里添加到res即可，引用对象，res中存放的时地址值
 			}
 		}
 //		for (String key : map.keySet())

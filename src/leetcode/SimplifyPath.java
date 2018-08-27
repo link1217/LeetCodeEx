@@ -12,6 +12,7 @@ public class SimplifyPath {
 
 	/**
 	 * 最快
+	 * 
 	 * @param path
 	 * @return
 	 */

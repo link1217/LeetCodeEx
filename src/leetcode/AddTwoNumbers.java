@@ -5,18 +5,18 @@ import others.ListNode;
 /**
  * 2. Add Two Numbers
  * 
- * You are given two non-empty linked lists representing two non-negative
- * integers. The digits are stored in reverse order and each of their nodes
- * contain a single digit. Add the two numbers and return it as a linked list.
+ * You are given two non-empty linked lists representing two non-negative integers. The digits are
+ * stored in reverse order and each of their nodes contain a single digit. Add the two numbers and
+ * return it as a linked list.
  * 
  * @author Watcher
  *
  */
 public class AddTwoNumbers {
 
-	
 	/**
 	 * 链表实现两数相加，注意进位和最后一位
+	 * 
 	 * @param l1
 	 * @param l2
 	 * @return

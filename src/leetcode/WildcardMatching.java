@@ -66,36 +66,42 @@ public class WildcardMatching {
 		}
 		return dp[s.length()];
 	}
-	
+
 	/**
 	 * dfs
+	 * 
 	 * @param s
 	 * @param p
 	 * @return
 	 */
 	public boolean isMatch3(String s, String p) {
-        return dfs(s, p, 0, 0) > 1;
-    }
-    // return value:
-    // 0: reach the end of s but unmatched
-    // 1: unmatched without reaching the end of s
-    // 2: matched
-    int dfs(String s, String p, int si, int pi) {
-        if (si == s.length() && pi == p.length()) return 2;
-        if (si == s.length() && p.charAt(pi) != '*') return 0;
-        if (pi == p.length()) return 1;
-        if (p.charAt(pi) == '*') {
-            if (pi+1 < p.length() && p.charAt(pi+1) == '*') 
-                return dfs(s, p, si, pi+1); // skip duplicate '*'
-            for(int i = 0; i <= s.length()-si; ++i) {
-                int ret = dfs(s, p, si+i, pi+1);
-                if (ret == 0 || ret == 2) return ret; 
-            }
-        }
-        if (p.charAt(pi) == '?' || s.charAt(si) == p.charAt(pi))
-            return dfs(s, p, si+1, pi+1);
-        return 1;
-    }    
+		return dfs(s, p, 0, 0) > 1;
+	}
+
+	// return value:
+	// 0: reach the end of s but unmatched
+	// 1: unmatched without reaching the end of s
+	// 2: matched
+	int dfs(String s, String p, int si, int pi) {
+		if (si == s.length() && pi == p.length())
+			return 2;
+		if (si == s.length() && p.charAt(pi) != '*')
+			return 0;
+		if (pi == p.length())
+			return 1;
+		if (p.charAt(pi) == '*') {
+			if (pi + 1 < p.length() && p.charAt(pi + 1) == '*')
+				return dfs(s, p, si, pi + 1); // skip duplicate '*'
+			for (int i = 0; i <= s.length() - si; ++i) {
+				int ret = dfs(s, p, si + i, pi + 1);
+				if (ret == 0 || ret == 2)
+					return ret;
+			}
+		}
+		if (p.charAt(pi) == '?' || s.charAt(si) == p.charAt(pi))
+			return dfs(s, p, si + 1, pi + 1);
+		return 1;
+	}
 
 	/**
 	 * 暴力匹配，超时

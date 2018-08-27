@@ -9,15 +9,16 @@ package leetcode;
 public class MultiplyStrings {
 
 	public static void main(String[] args) {
-		//MultiplyStrings so = new MultiplyStrings();
+		// MultiplyStrings so = new MultiplyStrings();
 //		char[] cs = { '0' };
 //		char[] cs2 = { '1' };
 		// System.out.println(so.add(cs, cs2));
 		// System.out.println(so.multiply("0", "110"));
 	}
-	
+
 	/**
 	 * 各位累加，耗时14ms，最快
+	 * 
 	 * @param num1
 	 * @param num2
 	 * @return
@@ -27,24 +28,22 @@ public class MultiplyStrings {
 			return "0";
 		char[] n1 = num1.toCharArray();
 		char[] n2 = num2.toCharArray();
-		int[] mul = new int[n1.length+n2.length-1];
-		for(int i=0;i<n1.length;i++){
-			for(int j=0;j<n2.length;j++){
-				mul[i+j]+=(n1[i] - '0') * (n2[j] - '0');
+		int[] mul = new int[n1.length + n2.length - 1];
+		for (int i = 0; i < n1.length; i++) {
+			for (int j = 0; j < n2.length; j++) {
+				mul[i + j] += (n1[i] - '0') * (n2[j] - '0');
 			}
 		}
 		StringBuilder sb = new StringBuilder();
-		int sign = 0;	
-		for(int i=mul.length-1;i>=0;i--){
-			sb.append((mul[i]+sign)%10);
-			sign = (mul[i]+sign)/10;
+		int sign = 0;
+		for (int i = mul.length - 1; i >= 0; i--) {
+			sb.append((mul[i] + sign) % 10);
+			sign = (mul[i] + sign) / 10;
 		}
-		if(sign>0)
+		if (sign > 0)
 			sb.append(sign);
 		return sb.reverse().toString();
 	}
-	
-	
 
 	/**
 	 * 位置转移，耗时16ms

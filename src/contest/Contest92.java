@@ -24,16 +24,14 @@ public class Contest92 {
 		// System.out.println(so.makePalindrome(123, true));
 		// System.out.println(so.isPrime(9002009));
 		/*
-		 * TreeNode root = new TreeNode(3); root.left = new TreeNode(5);
-		 * root.left.left = new TreeNode(6); root.left.right = new TreeNode(2);
-		 * root.left.right.left = new TreeNode(7); root.left.right.right = new
-		 * TreeNode(4);
+		 * TreeNode root = new TreeNode(3); root.left = new TreeNode(5); root.left.left = new TreeNode(6);
+		 * root.left.right = new TreeNode(2); root.left.right.left = new TreeNode(7); root.left.right.right
+		 * = new TreeNode(4);
 		 * 
-		 * root.right = new TreeNode(1); root.right.left = new TreeNode(0);
-		 * root.right.right = new TreeNode(8);
+		 * root.right = new TreeNode(1); root.right.left = new TreeNode(0); root.right.right = new
+		 * TreeNode(8);
 		 * 
-		 * System.out.println(new
-		 * ContestSolution().subtreeWithAllDeepest(root).val);
+		 * System.out.println(new ContestSolution().subtreeWithAllDeepest(root).val);
 		 */
 	}
 
@@ -42,8 +40,8 @@ public class Contest92 {
 	 * 
 	 * Given a matrix A, return the transpose of A.
 	 * 
-	 * The transpose of a matrix is the matrix flipped over it's main diagonal,
-	 * switching the row and column indices of the matrix.
+	 * The transpose of a matrix is the matrix flipped over it's main diagonal, switching the row and
+	 * column indices of the matrix.
 	 * 
 	 * @param A
 	 * @return
@@ -63,17 +61,14 @@ public class Contest92 {
 	/**
 	 * 865. Smallest Subtree with all the Deepest Nodes
 	 * 
-	 * Given a binary tree rooted at root, the depth of each node is the
-	 * shortest distance to the root.
+	 * Given a binary tree rooted at root, the depth of each node is the shortest distance to the root.
 	 * 
-	 * A node is deepest if it has the largest depth possible among any node in
-	 * the entire tree.
+	 * A node is deepest if it has the largest depth possible among any node in the entire tree.
 	 * 
-	 * The subtree of a node is that node, plus the set of all descendants of
-	 * that node.
+	 * The subtree of a node is that node, plus the set of all descendants of that node.
 	 * 
-	 * Return the node with the largest depth such that it contains all the
-	 * deepest nodes in its subtree.
+	 * Return the node with the largest depth such that it contains all the deepest nodes in its
+	 * subtree.
 	 * 
 	 * @param root
 	 * @return
@@ -143,13 +138,12 @@ public class Contest92 {
 	 * 
 	 * Find the smallest prime palindrome greater than or equal to N.
 	 * 
-	 * Recall that a number is prime if it's only divisors are 1 and itself, and
-	 * it is greater than 1.
+	 * Recall that a number is prime if it's only divisors are 1 and itself, and it is greater than 1.
 	 * 
 	 * For example, 2,3,5,7,11 and 13 are primes.
 	 * 
-	 * Recall that a number is a palindrome if it reads the same from left to
-	 * right as it does from right to left.
+	 * Recall that a number is a palindrome if it reads the same from left to right as it does from
+	 * right to left.
 	 * 
 	 * For example, 12321 is a palindrome.
 	 * 

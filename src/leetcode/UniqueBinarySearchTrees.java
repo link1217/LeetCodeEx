@@ -1,6 +1,5 @@
 package leetcode;
 
-
 /**
  * 96. Unique Binary Search Trees
  * 

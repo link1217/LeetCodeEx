@@ -1,6 +1,5 @@
 package leetcode;
 
-
 /**
  * 59. Spiral Matrix II
  * 

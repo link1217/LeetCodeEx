@@ -10,7 +10,7 @@ public class JumpGameII {
 
 	public static void main(String[] args) {
 		JumpGameII so = new JumpGameII();
-		int[] nums = { 3,2, 1 };
+		int[] nums = { 3, 2, 1 };
 		System.out.println(so.jump(nums));
 	}
 

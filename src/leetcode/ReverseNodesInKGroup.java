@@ -34,7 +34,7 @@ public class ReverseNodesInKGroup {
 	public ListNode reverseKGroup(ListNode head, int k) {
 		ListNode cur = head;
 		int cnt = k;
-		while (cnt > 0 && cur != null){
+		while (cnt > 0 && cur != null) {
 			cur = cur.next; // cur移动到第k+1位置
 			cnt--;
 		}

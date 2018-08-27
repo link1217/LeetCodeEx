@@ -5,8 +5,9 @@ import java.util.Arrays;
 /**
  * 16. 3Sum Closest
  * 
- * Given an array nums of n integers and an integer target, find three integers in nums such that the sum is closest to
- * target. Return the sum of the threeintegers. You may assume that each input would have exactly one solution.
+ * Given an array nums of n integers and an integer target, find three integers in nums such that
+ * the sum is closest to target. Return the sum of the threeintegers. You may assume that each input
+ * would have exactly one solution.
  * 
  * @author Watcher
  *
@@ -14,7 +15,7 @@ import java.util.Arrays;
 public class Sum3Closest {
 
 	public static void main(String[] args) {
-		int[] arr = { -1,-2,1,12,5 };
+		int[] arr = { -1, -2, 1, 12, 5 };
 		System.out.println(new Sum3Closest().threeSumClosest(arr, 5));
 	}
 
