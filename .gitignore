@@ -2,6 +2,10 @@
 .classpath
 .project
 
+#idea files
+*/.idea/
+.idea/
+
 # Generated files
 /bin/
 /gen/
