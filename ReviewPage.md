@@ -1007,7 +1007,13 @@ while (left < right) {
 - 递归判断，参见代码
 
 ---------------
+### 101. [Symmetric Tree](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/SymmetricTree.java)
+- Level: Easy
+- Tags: Tree, DFS, BFS 
+- 递归与迭代实现
+- 迭代使用辅助栈，每次放两个结点进去
 
+--------------
 
 ----------------------
 ### 140. [Word Break II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/WordBreakII.java)	
