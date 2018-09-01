@@ -1014,6 +1014,32 @@ while (left < right) {
 - 迭代使用辅助栈，每次放两个结点进去
 
 --------------
+### 102. [Binary Tree Level Order Traversal](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/BinaryTreeLevelOrderTraversal.java)
+- Level: Medium
+- Tags: Tree, BFS 
+- 迭代版使用双端队列，记录最右结点
+- 递归版直接往list中添加，记录level：
+```$xslt
+    public List<List<Integer>> levelOrderRecur(TreeNode root) {
+            List<List<Integer>> res = new ArrayList<>();
+            if (root == null)
+                return res;
+            levelTraversal(root, 0, res);
+            return res;
+        }
+    
+    private void levelTraversal(TreeNode root, int level, List<List<Integer>> res) {
+        if (root != null) {
+            if (res.size() == level)
+                res.add(new ArrayList<>());
+            res.get(level).add(root.val);
+            levelTraversal(root.left, level + 1, res);
+            levelTraversal(root.right, level+1, res);
+        }
+    }
+```
+
+-----------------
 
 ----------------------
 ### 140. [Word Break II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/WordBreakII.java)	
