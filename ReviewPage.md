@@ -1040,6 +1040,18 @@ while (left < right) {
 ```
 
 -----------------
+### 103. [Binary Tree Zigzag Level Order Traversal](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/BinaryTreeZigzagLevelOrderTraversal.java)
+- Level: Medium
+- Tags: Tree, BFS, Stack
+- 迭代版使用两个辅助栈，加入顺序不同
+- 递归版直接往list中添加，记录level，最后再将偶数位的集合做反转，和102题的递归版相比，只是多了如下两行代码：
+``` 
+    for (int i = 1; i < res.size(); i += 2)
+        Collections.reverse(res.get(i));
+```
+
+----------------
+
 
 ----------------------
 ### 140. [Word Break II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/WordBreakII.java)	
