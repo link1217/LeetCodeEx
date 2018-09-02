@@ -1063,6 +1063,15 @@ while (left < right) {
     }
 ```
 
+-------------------------
+### 105. [Maximum Depth of Binary Tree](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/ConstructBinaryTreeFromPreorderAndInorderTraversal.java)
+- Level: Medium
+- Tags: Array, Tree, DFS
+- 递归版的三个版本，参考具体代码
+
+------------------
+
+
 
 ----------------------
 ### 140. [Word Break II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/WordBreakII.java)	

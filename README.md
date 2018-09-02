@@ -123,7 +123,8 @@
 |101|[Symmetric Tree](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/SymmetricTree.java)|Easy|Java| Tree, DFS, BFS ||
 |102|[Binary Tree Level Order Traversal](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/BinaryTreeLevelOrderTraversal.java)|Medium|Java| Tree, BFS ||
 |103|[Binary Tree Zigzag Level Order Traversal](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/BinaryTreeZigzagLevelOrderTraversal.java)|Medium|Java| Tree, BFS, Stack ||
-|104|[Maximum Depth of Binary Tree](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/MaximumDepthOfBinaryTree.java)|Easy|Java| Tree, DFS ||
+|104|[Construct Binary Tree from Preorder and Inorder Traversal](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/MaximumDepthOfBinaryTree.java)|Easy|Java| Tree, DFS ||
+|105|[Maximum Depth of Binary Tree](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/ConstructBinaryTreeFromPreorderAndInorderTraversal.java)|Medium|Java| Array, Tree, DFS ||
 |140|[Word Break II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/WordBreakII.java)|Hard|Java| Dynamic Programming, BackTracking ||
 |240|[Search a 2D Matrix II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/Searcha2DMatrixII.java)|Medium|Java| Binary Search, Divide and Conquer ||
 |865|[Smallest Subtree with all the Deepest Nodes](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode9/SmallestSubtreeWithAllTheDeepestNodes.java)|Medium|Java| Tree ||
