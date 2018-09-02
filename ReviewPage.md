@@ -1105,6 +1105,14 @@ while (left < right) {
 - 每次取数组的中间位置插入结点，左孩子递归数组的左部分，右孩子递归数组的右部分。
 
 ---------------------
+### 109. [Convert Sorted List to Binary Search Tree](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/ConvertSortedListToBinarySearchTree.java)
+- Level: Medium
+- Tags: Linked List, Tree, DFS
+- 将链表转换成数组，采用108题的思路解答
+- 直接使用链表递归，每次找到链表的中点作为二叉树结点，左边和右边继续递归
+
+----------------
+
 
 
 ----------------------
