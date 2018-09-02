@@ -1051,6 +1051,17 @@ while (left < right) {
 ```
 
 ----------------
+### 104. [Maximum Depth of Binary Tree](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/MaximumDepthOfBinaryTree.java)
+- Level: Easy
+- Tags: Tree, DFS
+- 递归三行代码搞定：
+```
+    public int maxDepth(TreeNode root) {
+        if (root == null)
+            return 0;
+        return Math.max(maxDepth(root.left), maxDepth(root.right)) + 1;
+    }
+```
 
 
 ----------------------
