@@ -1064,13 +1064,35 @@ while (left < right) {
 ```
 
 -------------------------
-### 105. [Maximum Depth of Binary Tree](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/ConstructBinaryTreeFromPreorderAndInorderTraversal.java)
+### 105. [Construct Binary Tree from Preorder and Inorder Traversal](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/ConstructBinaryTreeFromPreorderAndInorderTraversal.java)
 - Level: Medium
 - Tags: Array, Tree, DFS
 - 递归版的三个版本，参考具体代码
 
 ------------------
+### 106. [Construct Binary Tree from Inorder and Postorder Traversal](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/ConstructBinaryTreeFromInorderAndPostorderTraversal.java)
+- Level: Medium
+- Tags: Array, Tree, DFS
+- 递归实现，与105题的差别在于，先排右孩子，再排左孩子，数组长度减下标为实际下标
+- 耗时1ms
+```
+    public TreeNode buildTree(int[] inorder, int[] postorder) {
+        return buildTree(inorder, postorder, Integer.MAX_VALUE);
+    }
+    int inIndex = 0, posIndex = 0;
+    private TreeNode buildTree(int[] inorder, int[] postorder, int val) {
+        if (inIndex >= inorder.length || inorder[inorder.length - inIndex - 1] == val)
+            return null;
+        TreeNode root = new TreeNode(postorder[postorder.length - ++posIndex]);
+        root.right = buildTree(inorder, postorder, root.val);
+        inIndex++;
+        root.left = buildTree(inorder, postorder, val);
+        return root;
+    }
+```
+- 其余递归方法，根据105题修改即可
 
+-----------------
 
 
 ----------------------

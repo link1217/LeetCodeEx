@@ -8,14 +8,9 @@ import java.util.Arrays;
  * 105. Construct Binary Tree from Preorder and Inorder Traversal
  */
 public class ConstructBinaryTreeFromPreorderAndInorderTraversal {
-    public static void main(String[] args) {
-        int[] preorder = {3, 9, 20, 15, 7};
-        int[] inorder = {9, 3, 15, 20, 7};
-        new ConstructBinaryTreeFromPreorderAndInorderTraversal().buildTree3(preorder, inorder);
-    }
 
     /**
-     * 一个递归，耗时21ms
+     * 递归版本1，耗时21ms
      *
      * @param preorder
      * @param inorder
@@ -66,12 +61,10 @@ public class ConstructBinaryTreeFromPreorderAndInorderTraversal {
      * @return
      */
     public TreeNode buildTree3(int[] preorder, int[] inorder) {
-        if (preorder.length == 0 || inorder.length == 0)
-            return null;
         return buildTree3(preorder, inorder, Integer.MAX_VALUE);
     }
 
-    int preIndex = 0, inIndex = 0;
+    private int preIndex = 0, inIndex = 0;
 
     private TreeNode buildTree3(int[] preorder, int[] inorder, int val) {
         if (inIndex >= inorder.length || inorder[inIndex] == val)
