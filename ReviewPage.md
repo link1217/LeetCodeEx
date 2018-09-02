@@ -1099,6 +1099,12 @@ while (left < right) {
 - 与102题逻辑一样，区别在于，在遍历过所有结点后，反转结果集即可。
 
 ------------------
+### 108. [Convert Sorted Array to Binary Search Tree](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/ConvertSortedArrayToBinarySearchTree.java)
+- Level: Easy
+- Tags: Tree, DFS
+- 每次取数组的中间位置插入结点，左孩子递归数组的左部分，右孩子递归数组的右部分。
+
+---------------------
 
 
 ----------------------
