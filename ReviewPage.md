@@ -1112,6 +1112,12 @@ while (left < right) {
 - 直接使用链表递归，每次找到链表的中点作为二叉树结点，左边和右边继续递归
 
 ----------------
+### 110. [Balanced Binary Tree](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/BalancedBinaryTree.java)
+- Level: Easy
+- Tags: Tree, DFS
+- 求左右孩子的最大深度，一旦深度差大于1直接短路返回。
+
+----------------------
 
 
 
