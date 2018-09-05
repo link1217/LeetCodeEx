@@ -1130,6 +1130,30 @@ while (left < right) {
 - 结点为null直接返回false，左右子结点都为空则判断sum是否等于当前结点的值，否则继续递归。
 
 --------------------
+### 113. [Path Sum II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/PathSumII.java)
+- Level: Medium
+- Tags: Tree, DFS
+- 递归调用自身，将集合定义在外面即可。
+```
+    private List<List<Integer>> res = new ArrayList<>();
+    private List<Integer> list = new ArrayList<>();
+
+    public List<List<Integer>> pathSum(TreeNode root, int sum) {
+        if (root == null)
+            return res;
+        list.add(root.val);
+        if (root.left == null && root.right == null && sum == root.val)
+            res.add(new ArrayList<>(list));
+        pathSum(root.left, sum - root.val);
+        pathSum(root.right, sum - root.val);
+        list.remove(list.size() - 1);
+        return res;
+    }
+
+```
+
+-------------------
+
 
 ----------------------
 ### 140. [Word Break II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/WordBreakII.java)	
