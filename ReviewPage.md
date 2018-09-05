@@ -1159,6 +1159,19 @@ while (left < right) {
 - 找到左子树的最右结点，插入右子树和当前结点之间
 
 --------------------
+### 115. [Distinct Subsequences](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/DistinctSubsequences.java)
+- Level: Hard
+- Tags: Dynamic Programming, String
+- 动态规划递推公式：
+```
+    if (cs[i - 1] == ct[j - 1])
+        dp[i][j] = dp[i - 1][j - 1] + dp[i - 1][j];
+    else
+        dp[i][j] = dp[i - 1][j];
+```
+- 另一种方案参见代码
+
+--------------------
 
 
 ----------------------
