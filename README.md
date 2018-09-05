@@ -135,6 +135,7 @@
 |113|[Path Sum II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/PathSumII.java)|Medium|Java| Tree, DFS ||
 |140|[Word Break II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/WordBreakII.java)|Hard|Java| Dynamic Programming, BackTracking ||
 |240|[Search a 2D Matrix II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/Searcha2DMatrixII.java)|Medium|Java| Binary Search, Divide and Conquer ||
+|437|[Path Sum III](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/PathSumIII.java)|Easy|Java| Tree ||
 |865|[Smallest Subtree with all the Deepest Nodes](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode9/SmallestSubtreeWithAllTheDeepestNodes.java)|Medium|Java| Tree ||
 |866|[Prime Palindrome](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode9/PrimePalindrome.java)|Medium|Java| Math ||
 |867|[Transpose Matrix](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode9/TransposeMatrix.java)|Easy|Java| Array ||

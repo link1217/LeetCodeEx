@@ -1175,7 +1175,13 @@ while (left < right) {
 
 
 ---------------------
+### 437. [Path Sum III](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/PathSumIII.java)
+- Level: Easy
+- Tags: Tree
+- 递归调用自身和辅助方法，遍历所有以当前结点开头的满足条件情况
+- 递归辅助函数，查询以当前结点结尾的所有满足条件的情况，新建数组保存已遍历的所有结点的和
 
+------------------
 
 
 
