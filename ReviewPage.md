@@ -1153,6 +1153,12 @@ while (left < right) {
 ```
 
 -------------------
+### 114. [Flatten Binary Tree to Linked List](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/FlattenBinaryTreeToLinkedList.java)
+- Level: Medium
+- Tags: Tree, DFS
+- 找到左子树的最右结点，插入右子树和当前结点之间
+
+--------------------
 
 
 ----------------------
