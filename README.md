@@ -131,6 +131,7 @@
 |109|[Convert Sorted List to Binary Search Tree](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/ConvertSortedListToBinarySearchTree.java)|Medium|Java| Linked List, Tree, DFS ||
 |110|[Balanced Binary Tree](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/BalancedBinaryTree.java)|Easy|Java| Tree, DFS ||
 |111|[Minimum Depth of Binary Tree](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/MinimumDepthOfBinaryTree.java)|Easy|Java| Tree, DFS, BFS ||
+|112|[Path Sum](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/PathSum.java)|Easy|Java| Tree, DFS ||
 |140|[Word Break II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/WordBreakII.java)|Hard|Java| Dynamic Programming, BackTracking ||
 |240|[Search a 2D Matrix II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/Searcha2DMatrixII.java)|Medium|Java| Binary Search, Divide and Conquer ||
 |865|[Smallest Subtree with all the Deepest Nodes](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode9/SmallestSubtreeWithAllTheDeepestNodes.java)|Medium|Java| Tree ||

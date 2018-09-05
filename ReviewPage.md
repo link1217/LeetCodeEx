@@ -1124,8 +1124,12 @@ while (left < right) {
 - 额外判断根结点的左右子结点是否为空
 
 ---------------------
+### 112. [Path Sum](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/PathSum.java)
+- Level: Easy
+- Tags: Tree, DFS
+- 结点为null直接返回false，左右子结点都为空则判断sum是否等于当前结点的值，否则继续递归。
 
-
+--------------------
 
 ----------------------
 ### 140. [Word Break II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/WordBreakII.java)	
