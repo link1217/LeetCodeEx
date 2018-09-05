@@ -1118,6 +1118,12 @@ while (left < right) {
 - 求左右孩子的最大深度，一旦深度差大于1直接短路返回。
 
 ----------------------
+### 111. [Minimum Depth of Binary Tree](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/MinimumDepthOfBinaryTree.java)
+- Level: Easy
+- Tags: Tree, DFS, BFS
+- 额外判断根结点的左右子结点是否为空
+
+---------------------
 
 
 
