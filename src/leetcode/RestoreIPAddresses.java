@@ -13,7 +13,7 @@ import java.util.List;
 public class RestoreIPAddresses {
 
 	public static void main(String[] args) {
-		System.out.println(new RestoreIPAddresses().restoreIpAddresses("010010"));
+		System.out.println(new RestoreIPAddresses().restoreIpAddresses("8888"));
 
 	}
 
