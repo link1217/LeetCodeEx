@@ -1172,6 +1172,31 @@ while (left < right) {
 - 另一种方案参见代码
 
 --------------------
+### 116. [Populating Next Right Pointers in Each Node](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/PopulatingNextRightPointersInEachNode.java)
+- Level: Medium
+- Tags: Tree, DFS
+- 使用队列层次遍历简单实现
+- 直接迭代实现，记录每一层的最左结点，两层循环即可。
+```
+    public void connect(TreeLinkNode root) {
+        TreeLinkNode level = root;
+        while (level != null) {
+            TreeLinkNode cur = level;
+            while (cur != null) {
+                if (cur.left != null)
+                    cur.left.next = cur.right;
+                if (cur.right != null && cur.next != null)
+                    cur.right.next = cur.next.left;
+                cur = cur.next;
+            }
+            level = level.left;
+        }
+    }
+```
+
+
+--------------
+
 
 
 ----------------------
