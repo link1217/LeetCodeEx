@@ -1196,6 +1196,18 @@ while (left < right) {
 
 
 --------------
+### 117. [Populating Next Right Pointers in Each Node II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/PopulatingNextRightPointersInEachNodeII.java)
+- Level: Medium
+- Tags: Tree, DFS
+- 116题的升级版，设置一个前驱结点，用于访问下一层的首个有效结点
+
+------------------
+### 118. [Pascal's Triangle](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/PascalsTriangle.java)
+- Level: Easy
+- Tags: Array
+- 遍历累加
+
+------------------
 
 
 
