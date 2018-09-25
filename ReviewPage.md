@@ -1208,6 +1208,12 @@ while (left < right) {
 - 遍历累加
 
 ------------------
+### 119. [Pascal's Triangle II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/PascalsTriangleII.java)
+- Level: Easy
+- Tags: Array
+- 同上
+
+-----------------
 
 
 
