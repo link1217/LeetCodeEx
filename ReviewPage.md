@@ -1214,6 +1214,14 @@ while (left < right) {
 - 同上
 
 -----------------
+### 120. [Triangle](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/Triangle.java)
+- Level: Medium
+- Tags: Array, Dynamic Programming
+- 动态规划：
+1，从上到下+从右到左        
+2，从下到上+从左到右
+
+----------------
 
 
 
