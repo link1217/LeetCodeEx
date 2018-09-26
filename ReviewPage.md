@@ -1222,7 +1222,41 @@ while (left < right) {
 2，从下到上+从左到右
 
 ----------------
+### 121. [Best Time to Buy and Sell Stock](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/BestTimeToBuyAndSellStock.java)
+- Level: Easy
+- Tags: Array
+- 当前值-最小值，求最大的一个结果即可
 
+------------------
+### 122. [Best Time to Buy and Sell Stock](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/BestTimeToBuyAndSellStock.java)
+- Level: Easy
+- Tags: Array, Greedy
+
+
+---------------------
+### 123. [Best Time to Buy and Sell Stock III](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/BestTimeToBuyAndSellStockIII.java)
+- Level: Hard
+- Tags: Array, Dynamic Programming
+- 暴力动态规划，耗时长
+- 做两个数组，一个存放以当天截止的最大收益，一个存放以当天开始的最大收益，最后对应位置相加求最大值。
+- 直接求：
+```
+    public int maxProfit(int[] prices) {
+        if (prices == null || prices.length < 2)
+            return 0;
+        int buy1 = Integer.MIN_VALUE, profit1 = 0;
+        int buy2 = Integer.MIN_VALUE, profit2 = 0;
+        for (int p : prices) {
+            buy1 = Math.max(buy1, -p);
+            profit1 = Math.max(profit1, p + buy1);
+            buy2 = Math.max(buy2, profit1 - p);
+            profit2 = Math.max(profit2, p + buy2);
+        }
+        return profit2;
+    }
+```
+
+--------------
 
 
 ----------------------
@@ -1231,6 +1265,12 @@ while (left < right) {
 - Tags:Dynamic Programming, BackTracking 
 - 深度优先搜索：
 >	参考代码理解
+
+----------------------
+### 188. [Best Time to Buy and Sell Stock IV](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/BestTimeToBuyAndSellStockIV.java)
+- Level: Hard
+- Tags: Array, Dynamic Programming
+- 根据123题修改可得
 
 ----------------------
 

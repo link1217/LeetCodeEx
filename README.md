@@ -140,7 +140,11 @@
 |118|[Pascal's Triangle](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/PascalsTriangle.java)|Easy |Java| Array ||
 |119|[Pascal's Triangle II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/PascalsTriangleII.java)|Easy |Java| Array ||
 |120|[Triangle](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/Triangle.java)|Medium |Java| Array, Dynamic Programming ||
+|121|[Best Time to Buy and Sell Stock](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/BestTimeToBuyAndSellStock.java)|Easy |Java| Array ||
+|122|[Best Time to Buy and Sell Stock II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/BestTimeToBuyAndSellStockII.java)|Easy |Java| Array, Greedy ||
+|123|[Best Time to Buy and Sell Stock III](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/BestTimeToBuyAndSellStockIII.java)|Hard |Java| Array, Dynamic Programming ||
 |140|[Word Break II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/WordBreakII.java)|Hard|Java| Dynamic Programming, BackTracking ||
+|188|[Best Time to Buy and Sell Stock IV](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/BestTimeToBuyAndSellStockIV.java)|Hard |Java| Array, Dynamic Programming ||
 |240|[Search a 2D Matrix II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/Searcha2DMatrixII.java)|Medium|Java| Binary Search, Divide and Conquer ||
 |437|[Path Sum III](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/PathSumIII.java)|Easy|Java| Tree ||
 |865|[Smallest Subtree with all the Deepest Nodes](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode9/SmallestSubtreeWithAllTheDeepestNodes.java)|Medium|Java| Tree ||
