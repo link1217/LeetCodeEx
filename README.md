@@ -144,6 +144,7 @@
 |122|[Best Time to Buy and Sell Stock II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/BestTimeToBuyAndSellStockII.java)|Easy |Java| Array, Greedy ||
 |123|[Best Time to Buy and Sell Stock III](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/BestTimeToBuyAndSellStockIII.java)|Hard |Java| Array, Dynamic Programming ||
 |124|[Binary Tree Maximum Path Sum](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/BinaryTreeMaximumPathSum.java)|Hard |Java| DFS ||
+|125|[Valid Palindrome](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/ValidPalindrome.java)|Easy |Java| Two Pointers, String ||
 |140|[Word Break II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/WordBreakII.java)|Hard|Java| Dynamic Programming, BackTracking ||
 |188|[Best Time to Buy and Sell Stock IV](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/BestTimeToBuyAndSellStockIV.java)|Hard |Java| Array, Dynamic Programming ||
 |240|[Search a 2D Matrix II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/Searcha2DMatrixII.java)|Medium|Java| Binary Search, Divide and Conquer ||

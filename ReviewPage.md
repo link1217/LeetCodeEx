@@ -1281,6 +1281,13 @@ while (left < right) {
 
 
 ------------------
+### 125. [Valid Palindrome](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/ValidPalindrome.java)
+- Level: Easy
+- Tags: Two Pointers, String
+- 双指针逐个比较，跳过非数字字母字符即可
+
+----------------
+
 
 
 ----------------------
