@@ -1287,7 +1287,17 @@ while (left < right) {
 - 双指针逐个比较，跳过非数字字母字符即可
 
 ----------------
+### 126. [Word Ladder II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/WordLadderII.java)
+- Level: Hard
+- Tags: Array, String, BackTracking, BFS
+- 单向搜寻邻居单词，如果反向，需要反转map中的k-v映射
+- 将list转换为set，求解邻居过程中，移除已经访问过的字符串
 
+------------------
+### 127. [Word Ladder](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/WordLadder.java)
+- Level: Medium
+- Tags:  BFS
+- 126的简化版
 
 
 ----------------------
