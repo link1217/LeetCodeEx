@@ -1299,6 +1299,26 @@ while (left < right) {
 - Tags:  BFS
 - 126的简化版
 
+-----------------
+### 128. [Longest Consecutive Sequence](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/LongestConsecutiveSequence.java)
+- Level: Hard
+- Tags:  Array, Union Find
+- 并查集可实现O(n)时间复杂度，但实际上耗时较长
+- 另可以将数据存入set中，检测通过while循环查找后一个数是否存在，如下：
+> 
+```
+    for (int num : nums) {
+        if (set.contains(num - 1))
+            continue;
+        int cur = num + 1;
+        while (set.contains(cur))
+            cur++;
+        max = Math.max(max, cur - num);
+    }
+```
+
+
+
 
 ----------------------
 ### 140. [Word Break II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/WordBreakII.java)	
