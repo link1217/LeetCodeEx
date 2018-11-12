@@ -1316,8 +1316,28 @@ while (left < right) {
         max = Math.max(max, cur - num);
     }
 ```
+----------------------
+### 129. [Sum Root to Leaf Numbers](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/SumRoot2LeafNumbers.java)
+- Level: Medium
+- Tags:  Tree, DFS
+- 利用辅助函数深度遍历二叉树即可，如下所示：
+```
+   public int sumNumbers(TreeNode root) {
+       return sum(root, 0);
+   }
+
+   private int sum(TreeNode root, int val) {
+       if (root == null)
+           return 0;
+       int cur = val * 10 + root.val;
+       if (root.left == null && root.right == null)
+           return cur;
+       return sum(root.left, cur) + sum(root.right, cur);
+   } 
+```
 
 
+--------------
 
 
 ----------------------

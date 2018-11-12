@@ -148,6 +148,7 @@
 |126|[Word Ladder II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/WordLadderII.java)|Hard |Java| Array, String, BackTracking, BFS ||
 |127|[Word Ladder](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/WordLadder.java)|Medium |Java| BFS ||
 |128|[Longest Consecutive Sequence](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/LongestConsecutiveSequence.java)|Hard |Java| Array, Union Find ||
+|129|[Sum Root to Leaf Numbers](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/SumRoot2LeafNumbers.java)|Medium |Java| Tree, DFS ||
 |140|[Word Break II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/WordBreakII.java)|Hard|Java| Dynamic Programming, BackTracking ||
 |188|[Best Time to Buy and Sell Stock IV](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/BestTimeToBuyAndSellStockIV.java)|Hard |Java| Array, Dynamic Programming ||
 |240|[Search a 2D Matrix II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/Searcha2DMatrixII.java)|Medium|Java| Binary Search, Divide and Conquer ||
