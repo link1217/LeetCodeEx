@@ -1338,6 +1338,12 @@ while (left < right) {
 
 
 --------------
+### 130. [Surrounded Regions](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/SurroundedRegions.java)
+- Level: Medium
+- Tags:  BFS, DFS, Union Find
+- 遍历边界的O，通过感染方法将与之毗连的O全部设为Y，最后整体遍历，将O转为X，将Y转回O即可
+
+-----------------
 
 
 ----------------------
