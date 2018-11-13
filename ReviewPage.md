@@ -1344,6 +1344,12 @@ while (left < right) {
 - 遍历边界的O，通过感染方法将与之毗连的O全部设为Y，最后整体遍历，将O转为X，将Y转回O即可
 
 -----------------
+### 131. [Palindrome Partitioning](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/PalindromePartitioning.java)
+- Level: Medium
+- Tags:  BackTracking
+- 自左至右判断子串是否为回文，回溯添加入集合
+
+-------------------
 
 
 ----------------------
