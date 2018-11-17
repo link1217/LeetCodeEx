@@ -1350,6 +1350,39 @@ while (left < right) {
 - 自左至右判断子串是否为回文，回溯添加入集合
 
 -------------------
+### 132. [Palindrome Partitioning II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/PalindromePartitioningII.java)
+- Level: Hard
+- Tags: Dynamic Programming
+- 从每一个位置和旁边位置向两边扩，同时更新最右边的位置的值。 `dp[right] = min(dp[right],dp[left-1]+1)`
+```$java
+    public int minCut(String s) {
+        if (s == null || s.isEmpty())
+            return 0;
+        int[] min = new int[s.length()];
+        for (int i = 1; i < min.length; i++)
+            min[i] = i;
+        char[] cs = s.toCharArray();
+        for (int i = 0; i < cs.length; i++) {
+            help(cs, i, i, min);
+            help(cs, i, i + 1, min);
+        }
+        return min[min.length - 1];
+    }
+
+    private void help(char[] cs, int left, int right, int[] min) {
+        while (left >= 0 && right < cs.length && cs[left] == cs[right]) {
+            if (left == 0)
+                min[right] = 0;
+            else
+                min[right] = Math.min(min[right], min[left - 1] + 1);
+            left--;
+            right++;
+        }
+    }
+```
+
+--------------------
+
 
 
 ----------------------
