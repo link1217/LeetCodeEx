@@ -1388,6 +1388,26 @@ while (left < right) {
 - 遍历图，设置map，一旦新建一个节点就放入map
 
 -------------------
+### 134. [Gas Station](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/GasStation.java)
+- Level: Medium		
+- Tags: Greedy
+```
+    public int canCompleteCircuit(int[] gas, int[] cost) {
+        int res = 0, sum = 0, total = 0;
+        for (int i = 0; i < gas.length; i++) {
+            sum += gas[i] - cost[i];
+            if (sum < 0) {
+                total += sum;
+                sum = 0;
+                res = i + 1;
+            }
+        }
+        total += sum;
+        return total < 0 ? -1 : res;
+    }
+```
+
+---------------------
 
 
 
