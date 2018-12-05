@@ -1408,7 +1408,37 @@ while (left < right) {
 ```
 
 ---------------------
+### 135. [Candy](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/Candy.java)
+- Level: Hard		
+- Tags: Greedy
+- 自左至右加一遍，大于左边的则+1，否则为1；从右到左加一遍，大于右边的则和1+右边的取最值，否则不变。
+```
+    public int candy(int[] ratings) {
+        if (ratings.length < 2)
+            return ratings.length;
+        int len = ratings.length;
+        int[] nums = new int[len];
+        int sum = 0;
+        nums[0] = 1;
+        for (int i = 1; i < len; i++)
+            nums[i] = ratings[i] > ratings[i - 1] ? 1 + nums[i - 1] : 1;
+        sum += nums[len - 1];
+        for (int i = len - 2; i >= 0; i--) {
+            nums[i] = ratings[i] > ratings[i + 1] ? Math.max(nums[i], 1 + nums[i + 1]) : nums[i];
+            sum += nums[i];
+        }
+        return sum;
+    }
+```
 
+-----------------------------
+### 136.[Single Number](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/SingleNumber.java)
+- Level: Easy		
+- Tags: Hash Table, Bit Manipulation
+- 异或和即为所求
+
+
+-------------------
 
 
 ----------------------
