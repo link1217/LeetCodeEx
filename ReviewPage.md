@@ -1439,6 +1439,23 @@ while (left < right) {
 
 
 -------------------
+### 137. [Single Number II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/SingleNumberII.java)
+- Level: Medium		
+- Tags: Hash Table, Bit Manipulation
+- 方法一： 统计每一位置上1的个数，然后对3取余后和1相与即可
+- 方法二： `https://cloud.tencent.com/developer/article/1131945`
+```
+public int singleNumber(int[] nums) {
+    int a = 0, b = 0;
+    for (int num : nums) {
+        a = (a ^ num) & ~b;
+        b = (b ^ num) & ~a;
+    }
+    return a;
+}
+```
+
+---------------------
 
 
 ----------------------
@@ -1464,7 +1481,13 @@ while (left < right) {
 - Tags: Binary Search, Divide and Conquer
 - 从左下角开始，往右上角移动
 - 74题的升级版
+---------------
+### 260. [Single Number III](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/SingleNumberIII.java)
+- Level: Medium		
+- Tags: Hash Table, Bit Manipulation
+- 取异或和sum，找到sum中的一个1， `sum &= -sum` ，然后根据当前位置是否为1把原数组分为两部分，再求异或和即可
 
+--------------------
 
 ---------------------
 ### 437. [Path Sum III](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/PathSumIII.java)

@@ -156,9 +156,11 @@
 |134|[Gas Station](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/GasStation.java)|Medium |Java| Greedy ||
 |135|[Candy](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/Candy.java)|Hard |Java| Greedy ||
 |136|[Single Number](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/SingleNumber.java)|Easy |Java| Hash Table, Bit Manipulation ||
+|137|[Single Number II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/SingleNumberII.java)|Medium |Java| Hash Table, Bit Manipulation ||
 |140|[Word Break II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/WordBreakII.java)|Hard|Java| Dynamic Programming, BackTracking ||
 |188|[Best Time to Buy and Sell Stock IV](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/BestTimeToBuyAndSellStockIV.java)|Hard |Java| Array, Dynamic Programming ||
 |240|[Search a 2D Matrix II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/Searcha2DMatrixII.java)|Medium|Java| Binary Search, Divide and Conquer ||
+|260|[Single Number III](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/SingleNumberIII.java)|Medium |Java| Hash Table, Bit Manipulation ||
 |437|[Path Sum III](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/PathSumIII.java)|Easy|Java| Tree ||
 |865|[Smallest Subtree with all the Deepest Nodes](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode9/SmallestSubtreeWithAllTheDeepestNodes.java)|Medium|Java| Tree ||
 |866|[Prime Palindrome](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode9/PrimePalindrome.java)|Medium|Java| Math ||
