@@ -1456,6 +1456,13 @@ public int singleNumber(int[] nums) {
 ```
 
 ---------------------
+### 138. [Copy List with Random Pointer](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/CopyListWithRandomPointer.java)
+- Level: Medium		
+- Tags: Hash Table, Linked List
+- 先在每一个结点后复制一个结点，连接在原链表内，再遍历每一个结点的随机指针，按顺序连接复制结点的随机指针，最后分开结点。
+
+----------------------
+
 
 
 ----------------------
