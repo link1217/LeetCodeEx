@@ -1476,6 +1476,18 @@ public int singleNumber(int[] nums) {
 >	参考代码理解
 
 ----------------------
+### 141. [Linked List Cycle](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/LinkedListCycle.java)
+- Level: Easy		
+- Tags: Linked List, Two Pointers
+- 快慢指针相遇则有环
+
+---------------------
+### 142. [Linked List Cycle II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/LinkedListCycleII.java)
+- Level: Medium		
+- Tags: Linked List, Two Pointers
+- 快慢指针相遇后都变慢指针，一个原地开始，一个从头开始，再次相遇则为入环点
+
+-------------------
 ### 188. [Best Time to Buy and Sell Stock IV](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/BestTimeToBuyAndSellStockIV.java)
 - Level: Hard
 - Tags: Array, Dynamic Programming
