@@ -1462,8 +1462,11 @@ public int singleNumber(int[] nums) {
 - 先在每一个结点后复制一个结点，连接在原链表内，再遍历每一个结点的随机指针，按顺序连接复制结点的随机指针，最后分开结点。
 
 ----------------------
-
-
+### 139. [Word Break](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/WordBreak.java)
+- Level: Medium		
+- Tags: Dynamic Programming, BackTracking 
+- 用hashmap记录状态，或者动态规划，用Boolean数组记录状态。
+- 只要找到一种情况满足要求即可
 
 ----------------------
 ### 140. [Word Break II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/WordBreakII.java)	

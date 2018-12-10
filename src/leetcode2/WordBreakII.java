@@ -29,7 +29,7 @@ public class WordBreakII {
 	 * @return
 	 */
 	public List<String> wordBreak(String s, List<String> wordDict) {
-		return DFS(s, wordDict, new HashMap<String, ArrayList<String>>());
+		return DFS(s, wordDict, new HashMap<>());
 	}
 
 	private List<String> DFS(String s, List<String> dict, HashMap<String, ArrayList<String>> map) {
