@@ -1488,6 +1488,14 @@ public int singleNumber(int[] nums) {
 - 快慢指针相遇后都变慢指针，一个原地开始，一个从头开始，再次相遇则为入环点
 
 -------------------
+### 143. [Reorder List](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/ReorderList.java)
+- Level: Medium		
+- Tags: Linked List, Two Pointers
+- 将后半段逆序后再依次插入前半段，注意边界条件和跳出条件
+---------------------------
+
+
+--------------------------
 ### 188. [Best Time to Buy and Sell Stock IV](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/BestTimeToBuyAndSellStockIV.java)
 - Level: Hard
 - Tags: Array, Dynamic Programming
