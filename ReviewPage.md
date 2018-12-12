@@ -1493,7 +1493,14 @@ public int singleNumber(int[] nums) {
 - Tags: Linked List, Two Pointers
 - 将后半段逆序后再依次插入前半段，注意边界条件和跳出条件
 ---------------------------
+### 144. [Binary Tree Preorder Traversal](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/BinaryTreePreorderTraversal.java)
+- Level: Medium		
+- Tags: Tree
+- 递归遍历
+- 使用辅助栈迭代遍历
+- Morris遍历
 
+--------------
 
 --------------------------
 ### 188. [Best Time to Buy and Sell Stock IV](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/BestTimeToBuyAndSellStockIV.java)
