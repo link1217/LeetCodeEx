@@ -1514,6 +1514,17 @@ public int singleNumber(int[] nums) {
 - 哈希表+双向链表，参见代码
 
 --------------------
+### 147. [Insertion Sort List](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/InsertionSortList.java)
+- Level: Medium		
+- Tags: Linked List, Sort
+- 设置返回链表的前置节点，依次将头结点插入到新的链表中
+
+------------------
+### 148. [Sort List](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/SortList.java)
+- Level: Medium		
+- Tags: Linked List, Sort
+- 链表版归并排序，但有说此方法空间复杂度为O(lgn)，具体常数空间度复杂度方法参见网上代码
+-------------------
 
 
 --------------------------

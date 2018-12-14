@@ -166,6 +166,8 @@
 |144|[Binary Tree Preorder Traversal](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/BinaryTreePreorderTraversal.java)|Medium|Java| Tree ||
 |145|[Binary Tree Postorder Traversal](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/BinaryTreePostorderTraversal.java)|Hard|Java| Tree ||
 |146|[LRU Cache](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/LRUCache.java)|Hard|Java| Design ||
+|147|[Insertion Sort List](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/InsertionSortList.java)|Medium|Java| Linked List, Sort ||
+|148|[Sort List](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/SortList.java)|Medium|Java| Linked List, Sort ||
 |188|[Best Time to Buy and Sell Stock IV](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/BestTimeToBuyAndSellStockIV.java)|Hard |Java| Array, Dynamic Programming ||
 |240|[Search a 2D Matrix II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/Searcha2DMatrixII.java)|Medium|Java| Binary Search, Divide and Conquer ||
 |260|[Single Number III](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/SingleNumberIII.java)|Medium |Java| Hash Table, Bit Manipulation ||
