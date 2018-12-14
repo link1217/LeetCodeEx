@@ -1508,6 +1508,12 @@ public int singleNumber(int[] nums) {
 - 使用辅助栈迭代遍历
 - Morris遍历
 -------------------
+### 146. [LRU Cache](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/LRUCache.java)
+- Level: Hard		
+- Tags: Design
+- 哈希表+双向链表，参见代码
+
+--------------------
 
 
 --------------------------
