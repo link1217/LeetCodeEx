@@ -1525,6 +1525,22 @@ public int singleNumber(int[] nums) {
 - Tags: Linked List, Sort
 - 链表版归并排序，但有说此方法空间复杂度为O(lgn)，具体常数空间度复杂度方法参见网上代码
 -------------------
+### 149. [Max Points on a Line](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/MaxPointsOnALine.java)
+|Hard|Java| Hash Table, Math ||
+- Level: Hard		
+- Tags: Hash Table, Math
+- 注意重合的点
+- 注意double的精度丢失，不能直接用斜率存储，需要用分数形式存储，采用欧几里得算法计算最大公约数
+- 欧几里得算法：
+```
+private int gcd(int y, int x) {
+    if (x == 0)
+        return y;
+    return gcd(x, y % x);
+}
+```
+
+-------------------------
 
 
 --------------------------
