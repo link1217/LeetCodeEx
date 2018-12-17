@@ -1541,6 +1541,13 @@ private int gcd(int y, int x) {
 ```
 
 -------------------------
+### 150. [Evaluate Reverse Polish Notation](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/EvaluateReversePolishNotation.java)
+- Level: Medium		
+- Tags: Stack
+- 使用栈，数字入栈，操作符出栈计算后再入栈
+- 递归方法：比直接使用栈耗时更短，从右到左计算，参见代码中的第三种解法。
+
+----------------
 
 
 --------------------------

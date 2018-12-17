@@ -169,6 +169,7 @@
 |147|[Insertion Sort List](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/InsertionSortList.java)|Medium|Java| Linked List, Sort ||
 |148|[Sort List](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/SortList.java)|Medium|Java| Linked List, Sort ||
 |149|[Max Points on a Line](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/MaxPointsOnALine.java)|Hard|Java| Hash Table, Math ||
+|150|[Evaluate Reverse Polish Notation](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/EvaluateReversePolishNotation.java)|Medium|Java| Stack ||
 |188|[Best Time to Buy and Sell Stock IV](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/BestTimeToBuyAndSellStockIV.java)|Hard |Java| Array, Dynamic Programming ||
 |240|[Search a 2D Matrix II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/Searcha2DMatrixII.java)|Medium|Java| Binary Search, Divide and Conquer ||
 |260|[Single Number III](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/SingleNumberIII.java)|Medium |Java| Hash Table, Bit Manipulation ||
