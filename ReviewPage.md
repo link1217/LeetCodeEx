@@ -1555,7 +1555,30 @@ private int gcd(int y, int x) {
 - 直接从右到左截取，不需要翻转，反倒更快
 
 -------------------
-
+### 152. [Maximum Product Subarray](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/MaximumProductSubarray.java)
+- Level: Medium		
+- Tags: Array, Dynamic Programming
+- 每次取最大值和最小值，遇到负值时交换最大最小值
+```
+if (nums[i] < 0) {
+    int tmp = max;
+    max = min;
+    min = tmp;
+}
+max = Math.max(nums[i], nums[i] * max);
+min = Math.min(nums[i], nums[i] * min);
+res = Math.max(res, max);
+```
+------------------------
+### 153. [Find Minimum in Rotated Sorted Array](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/FindMinimumInRotatedSortedArray.java)
+- Level: Medium		
+- Tags: Array, Binary Search
+- 二分查找，一旦符合`nums[left] <= nums[right]`返回`nums[leftr]`即可
+----------------------
+### 154. [Find Minimum in Rotated Sorted Array II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/FindMinimumInRotatedSortedArrayII.java)
+- Level: Hard		
+- Tags: Array, Binary Search
+- 与153题解法思路相近，区别在于，若nums[mid]和nums[left]相等时，执行left++，即并不是每一次都进行折半，最后返回nums[right]
 
 --------------------------
 ### 188. [Best Time to Buy and Sell Stock IV](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/BestTimeToBuyAndSellStockIV.java)
