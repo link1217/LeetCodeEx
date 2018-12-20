@@ -1581,6 +1581,26 @@ res = Math.max(res, max);
 - 与153题解法思路相近，区别在于，若nums[mid]和nums[left]相等时，执行left++，即并不是每一次都进行折半，最后返回nums[right]
 
 --------------------------
+### 155. [Min Stack](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/MinStack.java)
+- Level: Easy		
+- Tags: Stack, Design
+- 使用两个栈实现
+- 一个栈+一个有value和min属性的Node类实现
+- 一个栈+一个min属性实现，push的时候有如下操作：
+```
+public void push(int x) {
+    if (x <= min) {
+        stack.push(min);
+        min = x;
+    }
+    stack.push(x);
+}
+```
+--------------------------
+
+
+
+-----------------------
 ### 188. [Best Time to Buy and Sell Stock IV](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/BestTimeToBuyAndSellStockIV.java)
 - Level: Hard
 - Tags: Array, Dynamic Programming
