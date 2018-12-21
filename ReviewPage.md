@@ -1597,8 +1597,21 @@ public void push(int x) {
 }
 ```
 --------------------------
-
-
+### 160. [Intersection of Two Linked Lists](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/IntersectionOfTwoLinkedLists.java)
+- Level: Easy		
+- Tags: Linked List
+- 方法一：记录两个链表的长度，根据长度差，让更长的链表先移动diff步，随后一起移动，直到相遇或为null
+- 方法二：同时从头移动两个结点，移动到末尾null后从另一链表的表头开始，直到两结点相同则返回
+```
+public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
+    ListNode curA = headA, curB = headB;
+    while (curA != curB) {
+        curA = curA == null ? headB : curA.next;
+        curB = curB == null ? headA : curB.next;
+    }
+    return curA;
+}
+```
 
 -----------------------
 ### 188. [Best Time to Buy and Sell Stock IV](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/BestTimeToBuyAndSellStockIV.java)
