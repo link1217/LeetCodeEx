@@ -1630,7 +1630,12 @@ public int findPeakElement(int[] nums) {
     return left;
 }
 ```
-
+---------------------------
+### 164. [Maximum Gap](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/maximumGap.java)
+- Level: Hard
+- Tags: Array, Sort
+- 左神算法视频初级班讲过
+- 基于桶排序求最大间隔，设置len+1个桶，最大间隔必在不同的桶间产生
 
 ------------------------
 ### 188. [Best Time to Buy and Sell Stock IV](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/BestTimeToBuyAndSellStockIV.java)
