@@ -1612,8 +1612,27 @@ public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
     return curA;
 }
 ```
-
 -----------------------
+### 162. [Find Peak Element](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/FindPeakElement.java)
+- Level: Easy		
+- Tags: Array, Binary Search
+- 二分搜索，如果`nums[mid]>nums[mid+1]`则peak点一定在左边，否则在右边
+```
+public int findPeakElement(int[] nums) {
+    int left = 0, right = nums.length - 1, mid;
+    while (left < right) {
+        mid = left + (right - left >> 1);
+        if (nums[mid] > nums[mid + 1])
+            right = mid;
+        else
+            left = mid + 1;
+    }
+    return left;
+}
+```
+
+
+------------------------
 ### 188. [Best Time to Buy and Sell Stock IV](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/BestTimeToBuyAndSellStockIV.java)
 - Level: Hard
 - Tags: Array, Dynamic Programming

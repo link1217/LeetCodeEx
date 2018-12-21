@@ -176,6 +176,7 @@
 |154|[Find Minimum in Rotated Sorted Array II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/FindMinimumInRotatedSortedArrayII.java)|Hard|Java| Array, Binary Search ||
 |155|[Min Stack](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/MinStack.java)|Easy|Java| Stack, Design ||
 |160|[Intersection of Two Linked Lists](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/IntersectionOfTwoLinkedLists.java)|Easy|Java| Linked List ||
+|162|[Find Peak Element](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/FindPeakElement.java)|Easy|Java| Array, Binary Search ||
 |188|[Best Time to Buy and Sell Stock IV](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/BestTimeToBuyAndSellStockIV.java)|Hard |Java| Array, Dynamic Programming ||
 |240|[Search a 2D Matrix II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/Searcha2DMatrixII.java)|Medium|Java| Binary Search, Divide and Conquer ||
 |260|[Single Number III](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/SingleNumberIII.java)|Medium |Java| Hash Table, Bit Manipulation ||
