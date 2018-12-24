@@ -1667,8 +1667,27 @@ public String convertToTitle(int n) {
     return sb.reverse().toString();
 }
 ```
-
 --------------------------
+### 169. [Majority Element](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/MajorityElement.java)
+- Level: Easy
+- Tags: Array
+- 利用快排的partition过程，若`p[1] - p[0] + 1 > nums.length / 2`则返回nums[p[0]]，否则根据两侧剩余空间判断从哪边继续partition
+- 直接计数，相同则+1，不同-1 若计数为0则更新数字
+```
+public int majorityElement(int[] nums) {
+    int pre = nums[0], cnt = 0;
+    for (int num : nums) {
+        if (cnt == 0)
+            pre = num;
+        if (num == pre)
+            cnt++;
+        else
+            cnt--;
+    }
+    return pre;
+}
+```
+----------------------
 ### 188. [Best Time to Buy and Sell Stock IV](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/BestTimeToBuyAndSellStockIV.java)
 - Level: Hard
 - Tags: Array, Dynamic Programming
