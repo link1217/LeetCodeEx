@@ -1653,6 +1653,22 @@ public int findPeakElement(int[] nums) {
 - Tags: Array, Two Pointers
 - 双指针往中间移动，根据当前数的和与target的大小判断从哪边移动或者返回结果
 -----------------------
+### 168. [Excel Sheet Column Title](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/ExcelSheetColumnTitle.java)
+- Level: Easy
+- Tags: Math
+- 十进制转26进制
+```
+public String convertToTitle(int n) {
+    StringBuilder sb = new StringBuilder();
+    while (n != 0) {
+        sb.append((char) ((n - 1) % 26 + 'A'));
+        n = (n - 1) / 26;
+    }
+    return sb.reverse().toString();
+}
+```
+
+--------------------------
 ### 188. [Best Time to Buy and Sell Stock IV](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/BestTimeToBuyAndSellStockIV.java)
 - Level: Hard
 - Tags: Array, Dynamic Programming
