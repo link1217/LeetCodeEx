@@ -1648,6 +1648,11 @@ public int findPeakElement(int[] nums) {
 - Tags: Hash Table, Math
 - 根据余数是否重复出现判定小数部分是否进入循环，将余数和对应的位置存入hashmap
 ------------------
+### 167. [Two Sum II - Input array is sorted](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/TwoSumII.java)
+- Level: Easy
+- Tags: Array, Two Pointers
+- 双指针往中间移动，根据当前数的和与target的大小判断从哪边移动或者返回结果
+-----------------------
 ### 188. [Best Time to Buy and Sell Stock IV](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/BestTimeToBuyAndSellStockIV.java)
 - Level: Hard
 - Tags: Array, Dynamic Programming
