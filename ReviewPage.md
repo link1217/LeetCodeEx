@@ -1702,6 +1702,22 @@ public int titleToNumber(String s) {
 }
 ```
 ----------------------------
+### 172. [Factorial Trailing Zeroes](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/FactorialTrailingZeroes.java)
+- Level: Easy
+- Tags: Math
+- 累加除以5的结果
+```
+public int trailingZeroes2(int n) {
+    int res = 0;
+    while (n > 4) {
+        n /= 5;
+        res += n;
+    }
+    return res;
+}
+```
+- 递归版见代码
+------------------
 ### 188. [Best Time to Buy and Sell Stock IV](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/BestTimeToBuyAndSellStockIV.java)
 - Level: Hard
 - Tags: Array, Dynamic Programming
