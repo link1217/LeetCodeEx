@@ -8,6 +8,7 @@ New problems will be automatically updated once added.
 <!--GFM-TOC -->
 - [50.Pow(x, n)](#50-powx-n)
 - [100.Same Tree](#100-same-tree)
+- [150.Evaluate Reverse Polish Notation](#150-evaluate-reverse-polish-notation)
 <!--GFM-TOC -->
 
 -------------------------
