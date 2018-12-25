@@ -1688,6 +1688,20 @@ public int majorityElement(int[] nums) {
 }
 ```
 ----------------------
+### 171. [Excel Sheet Column Number](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/ExcelSheetColumnNumber.java)
+- Level: Easy
+- Tags: Math
+- 26进制转10进制
+```
+public int titleToNumber(String s) {
+    char[] cs = s.toCharArray();
+    int res = 0;
+    for (char ch:cs)
+        res = res * 26 + ch - 64;
+    return res;
+}
+```
+----------------------------
 ### 188. [Best Time to Buy and Sell Stock IV](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/BestTimeToBuyAndSellStockIV.java)
 - Level: Hard
 - Tags: Array, Dynamic Programming
