@@ -1718,6 +1718,11 @@ public int trailingZeroes2(int n) {
 ```
 - 递归版见代码
 ------------------
+### 173. [Binary Search Tree Iterator](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/BSTIterator.java)
+- Level: Medium
+- Tags: Stack, Tree, Design
+- 题意不明，具体看代码
+------------------------
 ### 188. [Best Time to Buy and Sell Stock IV](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/BestTimeToBuyAndSellStockIV.java)
 - Level: Hard
 - Tags: Array, Dynamic Programming
