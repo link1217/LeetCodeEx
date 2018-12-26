@@ -1724,6 +1724,12 @@ public int trailingZeroes2(int n) {
 - Tags: Stack, Tree, Design
 - 题意不明，具体看代码
 ------------------------
+### 174. [Dungeon Game](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/DungeonGame.java)
+- Level: Hard
+- Tags: Dynamic Programming
+- 从下到上动态规划
+- 从右下角开始计算需要的最少血量，向上向左移动的时候血量和1取最大值
+-----------------------
 ### 188. [Best Time to Buy and Sell Stock IV](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/BestTimeToBuyAndSellStockIV.java)
 - Level: Hard
 - Tags: Array, Dynamic Programming
