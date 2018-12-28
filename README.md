@@ -187,6 +187,7 @@
 |172|[Factorial Trailing Zeroes](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/FactorialTrailingZeroes.java)|Easy|Java| Math ||
 |173|[Binary Search Tree Iterator](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/BSTIterator.java)|Medium|Java| Stack, Tree, Design ||
 |174|[Dungeon Game](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/DungeonGame.java)|Hard|Java| Dynamic Programming ||
+|179|[Largest Number](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/LargestNumber.java)|Medium|Java| Sort ||
 |188|[Best Time to Buy and Sell Stock IV](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/BestTimeToBuyAndSellStockIV.java)|Hard |Java| Array, Dynamic Programming ||
 |240|[Search a 2D Matrix II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/Searcha2DMatrixII.java)|Medium|Java| Binary Search, Divide and Conquer ||
 |260|[Single Number III](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/SingleNumberIII.java)|Medium |Java| Hash Table, Bit Manipulation ||

@@ -1730,6 +1730,20 @@ public int trailingZeroes2(int n) {
 - 从下到上动态规划
 - 从右下角开始计算需要的最少血量，向上向左移动的时候血量和1取最大值
 -----------------------
+### 179. [Largest Number](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/LargestNumber.java)
+- Level: Medium
+- Tags: Sort
+- 先排序，自定义比较器
+- 转换成字符串进行排序，str1+str2和str2+str1进行比较 
+```
+Arrays.sort(arr, (o1, o2) -> {
+    String a = o1 + o2;
+    String b = o2 + o1;
+    return b.compareTo(a);
+});
+```
+
+--------------------------
 ### 188. [Best Time to Buy and Sell Stock IV](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/BestTimeToBuyAndSellStockIV.java)
 - Level: Hard
 - Tags: Array, Dynamic Programming
