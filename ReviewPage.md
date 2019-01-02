@@ -1744,6 +1744,27 @@ Arrays.sort(arr, (o1, o2) -> {
 ```
 
 --------------------------
+### 187. [Repeated DNA Sequences](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/RepeatedDNASequences.java)
+- Level: Medium
+- Tags: Hash Table, Bit Manipulation
+- 方法一，用两个set，存放每一位开始的长度为10的字符串，如果放不进去则表明出现过，将其存入另一个set，最后返回另一个set即可
+- 方法二，Bit Manipulation位操作；设置一个掩码 `int mask = 0xfffff;//20bit,10个字母，每个字母占2bit` 对ACGT进行编码 
+`map['A'] = 0;map['C'] = 1;map['G'] = 2;map['T'] = 3;` 从左至右获取当前序列的二进制状态`cur = cur << 2 | map[cs[i]];`
+设置 `byte[] bytes = new byte[1 << 20];` 用于记录所有字符序列对应的值，通过如下操作进行判断
+```
+for (int i = 9; i < cs.length; i++) {
+    cur = cur << 2 & mask | map[cs[i]];
+    if (bytes[cur] == 1) {
+        res.add(s.substring(i - 9, i + 1));
+        bytes[cur]++;
+    }
+    if (bytes[cur] == 0)
+        bytes[cur]++;
+}
+```
+- 总的来说就是，编码+状态转移和判断+位操作 ☆☆☆☆☆
+
+---------------------------
 ### 188. [Best Time to Buy and Sell Stock IV](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/BestTimeToBuyAndSellStockIV.java)
 - Level: Hard
 - Tags: Array, Dynamic Programming
