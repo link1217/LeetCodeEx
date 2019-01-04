@@ -1777,6 +1777,22 @@ for (int i = 9; i < cs.length; i++) {
 - Tags: Array
 - 分成两段反转数组，然后反转整个数组
 ------------------------------
+### 190. [Reverse Bits](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/ReverseBits.java)
+- Level: Easy
+- Tags: Bit Manipulation
+- 移位时使用无符号移位
+```
+public int reverseBits(int n) {
+    int res = 0;
+    for (int i = 0; i < 32; i++) {
+        res = (res << 1) + n % 2;
+        n >>= 1;
+    }
+    return res;
+}
+```
+
+-------------------------
 ### 240. [Search a 2D Matrix II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/Searcha2DMatrixII.java)
 - Level: Medium
 - Tags: Binary Search, Divide and Conquer
