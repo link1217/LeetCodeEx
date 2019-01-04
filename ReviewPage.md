@@ -1793,6 +1793,13 @@ public int reverseBits(int n) {
 ```
 
 -------------------------
+|191|[Number of 1 Bits](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/NumberOf1Bits.java)|Easy |Java| Bit Manipulation ||
+- Level: Easy
+- Tags: Bit Manipulation
+- 方法一：n每次与1进行&操作，累加结果，n每次无符号右移一位
+- 方法二：n每次与n-1进行&操作，计数累加
+
+-------------------
 ### 240. [Search a 2D Matrix II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/Searcha2DMatrixII.java)
 - Level: Medium
 - Tags: Binary Search, Divide and Conquer
