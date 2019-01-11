@@ -193,6 +193,7 @@
 |189|[Rotate Array](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/RotateArray.java)|Easy |Java| Array ||
 |190|[Reverse Bits](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/ReverseBits.java)|Easy |Java| Bit Manipulation ||
 |191|[Number of 1 Bits](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/NumberOf1Bits.java)|Easy |Java| Bit Manipulation ||
+|198|[House Robber](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/HouseRobber.java)|Easy |Java| Dynamic Programming ||
 |240|[Search a 2D Matrix II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/Searcha2DMatrixII.java)|Medium|Java| Binary Search, Divide and Conquer ||
 |260|[Single Number III](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/SingleNumberIII.java)|Medium |Java| Hash Table, Bit Manipulation ||
 |437|[Path Sum III](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/PathSumIII.java)|Easy|Java| Tree ||
