@@ -1807,6 +1807,14 @@ public int reverseBits(int n) {
 - 递推公式： `f(x)=max(f(x-2)+nums[x], f(x-1))`
 
 ------------------------------------
+### 199. [Binary Tree Right Side View](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/BinaryTreeRightSideView.java)
+- Level: Medium
+- Tags: Tree, DFS, BFS
+- 层次遍历，将每一层最右边的节点的值放入集合
+- 层次遍历的方式：1迭代，使用队列；2递归：通过`list.size()==level`判断是否到了新的一层
+- 方法二：通过递归层次遍历改进，递归时从右子树开始，每到了新的一层就将此时的值加入结果集
+
+------------------------
 ### 240. [Search a 2D Matrix II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/Searcha2DMatrixII.java)
 - Level: Medium
 - Tags: Binary Search, Divide and Conquer
