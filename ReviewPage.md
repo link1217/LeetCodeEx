@@ -1815,6 +1815,13 @@ public int reverseBits(int n) {
 - 方法二：通过递归层次遍历改进，递归时从右子树开始，每到了新的一层就将此时的值加入结果集
 
 ------------------------
+### 200. [Number of Islands](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/NumberOfIslands.java)
+- Level: Medium
+- Tags: Union Find, DFS, BFS
+- 方法一：DFS
+- 方法二：并查集，并且将二维矩阵转换为一维序号表示节点，用数组代替哈希表
+
+----------------------------
 ### 240. [Search a 2D Matrix II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/Searcha2DMatrixII.java)
 - Level: Medium
 - Tags: Binary Search, Divide and Conquer
