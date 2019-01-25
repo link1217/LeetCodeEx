@@ -9,6 +9,7 @@ New problems will be automatically updated once added.
 - [50.Pow(x, n)](#50-powx-n)
 - [100.Same Tree](#100-same-tree)
 - [150.Evaluate Reverse Polish Notation](#150-evaluate-reverse-polish-notation)
+- [150.Evaluate Reverse Polish Notation](#150-evaluate-reverse-polish-notation)
 <!--GFM-TOC -->
 
 -------------------------
@@ -1815,13 +1816,19 @@ public int reverseBits(int n) {
 - 方法二：通过递归层次遍历改进，递归时从右子树开始，每到了新的一层就将此时的值加入结果集
 
 ------------------------
-### 200. [Number of Islands](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/NumberOfIslands.java)
+### 200. [Number of Islands](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/NumberOfIslands.java)
 - Level: Medium
 - Tags: Union Find, DFS, BFS
 - 方法一：DFS
 - 方法二：并查集，并且将二维矩阵转换为一维序号表示节点，用数组代替哈希表
 
 ----------------------------
+### 201. [Bitwise AND of Numbers Range](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/BitwiseANDofNumbersRange.java)
+- Level: Medium
+- Tags: Bit Manipulation
+- 找到所有数字中左边一样的部分，m和n不断右移一位，直到相等，然后m左移相同位数即为结果
+
+------------------------
 ### 240. [Search a 2D Matrix II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/Searcha2DMatrixII.java)
 - Level: Medium
 - Tags: Binary Search, Divide and Conquer
