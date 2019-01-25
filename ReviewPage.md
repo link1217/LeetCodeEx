@@ -1841,7 +1841,10 @@ public int reverseBits(int n) {
 - 取异或和sum，找到sum中的一个1， `sum &= -sum` ，然后根据当前位置是否为1把原数组分为两部分，再求异或和即可
 
 --------------------
-
+### 421. [Maximum XOR of Two Numbers in an Array](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/MaximumXORofTwoNumbersinanArray.java)
+- Level: Medium		
+- Tags: Bit Manipulation, Trie
+- 前缀树方法。详情参见代码，或者左神算法视频进阶7视频
 ---------------------
 ### 437. [Path Sum III](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/PathSumIII.java)
 - Level: Easy

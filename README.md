@@ -199,6 +199,7 @@
 |201|[Bitwise AND of Numbers Range](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/BitwiseANDofNumbersRange.java)|Medium |Java| Bit Manipulation ||
 |240|[Search a 2D Matrix II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/Searcha2DMatrixII.java)|Medium|Java| Binary Search, Divide and Conquer ||
 |260|[Single Number III](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/SingleNumberIII.java)|Medium |Java| Hash Table, Bit Manipulation ||
+|421|[Maximum XOR of Two Numbers in an Array](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/MaximumXORofTwoNumbersinanArray.java)|Medium|Java| Bit Manipulation, Trie ||
 |437|[Path Sum III](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/PathSumIII.java)|Easy|Java| Tree ||
 |865|[Smallest Subtree with all the Deepest Nodes](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode9/SmallestSubtreeWithAllTheDeepestNodes.java)|Medium|Java| Tree ||
 |866|[Prime Palindrome](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode9/PrimePalindrome.java)|Medium|Java| Math ||
