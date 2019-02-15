@@ -197,6 +197,7 @@
 |199|[Binary Tree Right Side View](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/BinaryTreeRightSideView.java)|Medium |Java| Tree, DFS, BFS ||
 |200|[Number of Islands](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/NumberOfIslands.java)|Medium |Java| Union Find, DFS, BFS ||
 |201|[Bitwise AND of Numbers Range](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/BitwiseANDofNumbersRange.java)|Medium |Java| Bit Manipulation ||
+|202|[Happy Number](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/HappyNumber.java)|Easy |Java| Hash Table, Math ||
 |240|[Search a 2D Matrix II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/Searcha2DMatrixII.java)|Medium|Java| Binary Search, Divide and Conquer ||
 |260|[Single Number III](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/SingleNumberIII.java)|Medium |Java| Hash Table, Bit Manipulation ||
 |421|[Maximum XOR of Two Numbers in an Array](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/MaximumXORofTwoNumbersinanArray.java)|Medium|Java| Bit Manipulation, Trie ||

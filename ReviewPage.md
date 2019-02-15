@@ -1829,6 +1829,12 @@ public int reverseBits(int n) {
 - 找到所有数字中左边一样的部分，m和n不断右移一位，直到相等，然后m左移相同位数即为结果
 
 ------------------------
+|202|[Happy Number](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/HappyNumber.java)
+- Level: Easy
+- Tags: Hash Table, Math
+- 不断进行平方和运算，结果肯定会出现小于10的数，该数为1或7则返回true，否则返回false
+- 可调用自身递归运算
+--------------------
 ### 240. [Search a 2D Matrix II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/Searcha2DMatrixII.java)
 - Level: Medium
 - Tags: Binary Search, Divide and Conquer
