@@ -1841,6 +1841,12 @@ public int reverseBits(int n) {
 - 先找到合适的头结点，然后再依次检查后面的结点
 
 --------------------
+### 204. [Count Primes](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/CountPrimes.java)
+- Level: Easy
+- Tags: Hash Table, Math
+- 记录状态，循环排除
+- 如果一个数i是素数，那么i一定是奇数（除了2），且`i*i+2*N*i // N为正整数`一定不是素数
+-------------------------
 ### 240. [Search a 2D Matrix II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/Searcha2DMatrixII.java)
 - Level: Medium
 - Tags: Binary Search, Divide and Conquer
