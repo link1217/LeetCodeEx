@@ -1847,6 +1847,12 @@ public int reverseBits(int n) {
 - 记录状态，循环排除
 - 如果一个数i是素数，那么i一定是奇数（除了2），且`i*i+2*N*i // N为正整数`一定不是素数
 -------------------------
+|205|[Isomorphic Strings](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/IsomorphicStrings.java)
+- Level: Easy
+- Tags: Hash Table
+- 定义两个映射表，表示两个字符串互相的映射（使用长度为128的数组即可）
+- 只有两个位置都为0才需要赋值，否则比较map中的值，不等则返回false
+--------------------------
 ### 240. [Search a 2D Matrix II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/Searcha2DMatrixII.java)
 - Level: Medium
 - Tags: Binary Search, Divide and Conquer
