@@ -201,6 +201,8 @@
 |203|[Remove Linked List Elements](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/RemoveLinkedListElements.java)|Easy |Java| Linked List ||
 |204|[Count Primes](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/CountPrimes.java)|Easy |Java| Hash Table, Math ||
 |205|[Isomorphic Strings](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/IsomorphicStrings.java)|Easy |Java| Hash Table ||
+|206|[Reverse Linked List](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/ReverseLinkedList.java)|Easy |Java| Linked List ||
+|207|[Course Schedule](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/CourseSchedule.java)|Medium |Java| DFS, BFS, Graph, Topologicla Sort ||
 |240|[Search a 2D Matrix II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/Searcha2DMatrixII.java)|Medium|Java| Binary Search, Divide and Conquer ||
 |260|[Single Number III](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/SingleNumberIII.java)|Medium |Java| Hash Table, Bit Manipulation ||
 |421|[Maximum XOR of Two Numbers in an Array](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/MaximumXORofTwoNumbersinanArray.java)|Medium|Java| Bit Manipulation, Trie ||

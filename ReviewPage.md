@@ -1847,11 +1847,23 @@ public int reverseBits(int n) {
 - 记录状态，循环排除
 - 如果一个数i是素数，那么i一定是奇数（除了2），且`i*i+2*N*i // N为正整数`一定不是素数
 -------------------------
-|205|[Isomorphic Strings](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/IsomorphicStrings.java)
+### 205. [Isomorphic Strings](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/IsomorphicStrings.java)
 - Level: Easy
 - Tags: Hash Table
 - 定义两个映射表，表示两个字符串互相的映射（使用长度为128的数组即可）
 - 只有两个位置都为0才需要赋值，否则比较map中的值，不等则返回false
+--------------------------
+### 206. [Reverse Linked List](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/ReverseLinkedList.java)
+- Level: Easy
+- Tags: Linked List
+- 设置前驱结点翻转链表
+
+----------------
+### 207. [Course Schedule](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/CourseSchedule.java)
+- Level: Medium
+- Tags: DFS, BFS, Graph, Topologicla Sort
+- 从入度着手即BFS，从出度着手即DFS
+- 使用拓扑排序判断有向图是否有环
 --------------------------
 ### 240. [Search a 2D Matrix II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/Searcha2DMatrixII.java)
 - Level: Medium
