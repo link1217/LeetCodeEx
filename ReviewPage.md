@@ -1865,6 +1865,12 @@ public int reverseBits(int n) {
 - 从入度着手即BFS，从出度着手即DFS
 - 使用拓扑排序判断有向图是否有环
 --------------------------
+### 208. [Implement Trie (Prefix Tree)](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/ImplementTrie.java)
+- Level: Medium
+- Tags: Design, Trie
+- 前缀树，设计一种数据结构，每一层有26个结点，长度为26的数组即可，可根据字符-'a'的值作为结点的位置。另外每一个结点都需要维持一个boolean变量，表示当前结点是否是结束节点
+- 详情参见代码
+---------------------
 ### 240. [Search a 2D Matrix II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/Searcha2DMatrixII.java)
 - Level: Medium
 - Tags: Binary Search, Divide and Conquer
