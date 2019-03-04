@@ -1871,6 +1871,11 @@ public int reverseBits(int n) {
 - 前缀树，设计一种数据结构，每一层有26个结点，长度为26的数组即可，可根据字符-'a'的值作为结点的位置。另外每一个结点都需要维持一个boolean变量，表示当前结点是否是结束节点
 - 详情参见代码
 ---------------------
+### 209. [Minimum Size Subarray Sum](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/MinimumSizeSubarraySum.java)
+- Level: Medium
+- Tags: Array, Two Pointers, Binary Search
+- 双指针，右侧一直往右，直到满足要求，然后左侧一直往右，直到不满足，左侧指针移动时更新最小长度
+--------------------------
 ### 240. [Search a 2D Matrix II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/Searcha2DMatrixII.java)
 - Level: Medium
 - Tags: Binary Search, Divide and Conquer
