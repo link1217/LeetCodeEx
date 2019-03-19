@@ -1876,6 +1876,12 @@ public int reverseBits(int n) {
 - Tags: Array, Two Pointers, Binary Search
 - 双指针，右侧一直往右，直到满足要求，然后左侧一直往右，直到不满足，左侧指针移动时更新最小长度
 --------------------------
+### 210. [Course Schedule II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/CourseScheduleII.java)
+- Level: Medium
+- Tags: DFS, BFS, Graph, Topologicla Sort
+- 入度为0的结点为可以直接上的课程
+- 通过建立邻接表和更新入度解决
+-----------------------------
 ### 240. [Search a 2D Matrix II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/Searcha2DMatrixII.java)
 - Level: Medium
 - Tags: Binary Search, Divide and Conquer

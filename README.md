@@ -205,6 +205,7 @@
 |207|[Course Schedule](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/CourseSchedule.java)|Medium |Java| DFS, BFS, Graph, Topologicla Sort ||
 |208|[Implement Trie (Prefix Tree)](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/ImplementTrie.java)|Medium |Java| Design, Trie ||
 |209|[Minimum Size Subarray Sum](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/MinimumSizeSubarraySum.java)|Medium |Java| Array, Two Pointers, Binary Search ||
+|210|[Course Schedule II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/CourseScheduleII.java)|Medium |Java| DFS, BFS, Graph, Topologicla Sort ||
 |240|[Search a 2D Matrix II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/Searcha2DMatrixII.java)|Medium|Java| Binary Search, Divide and Conquer ||
 |260|[Single Number III](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/SingleNumberIII.java)|Medium |Java| Hash Table, Bit Manipulation ||
 |421|[Maximum XOR of Two Numbers in an Array](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/MaximumXORofTwoNumbersinanArray.java)|Medium|Java| Bit Manipulation, Trie ||
