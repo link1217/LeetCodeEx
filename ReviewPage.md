@@ -1882,6 +1882,12 @@ public int reverseBits(int n) {
 - 入度为0的结点为可以直接上的课程
 - 通过建立邻接表和更新入度解决
 -----------------------------
+### 211. [Add and Search Word - Data structure design](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/AddAndSearchWordDataStructureDesign.java)
+- Level: Medium
+- Tags: Backtracking, Design, Trie
+- 构造字典树，添加操作不便，查找操作需要匹配通配符
+- 查找时采用回溯方法，遇到通配符则遍历当前这一层，非空即进入回溯。
+------------------
 ### 240. [Search a 2D Matrix II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/Searcha2DMatrixII.java)
 - Level: Medium
 - Tags: Binary Search, Divide and Conquer
