@@ -1894,6 +1894,11 @@ public int reverseBits(int n) {
 - 回溯+字典树
 - 字典树中添加单词属性，回溯过程中更改当前字符
 ----------------
+### 213.[House Robber II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/HouseRobberII.java)
+- Level: Medium
+- Tags: Dynamic Programming
+- 类似于198题，对于排成一圈的房间，第一个和最后一个必然只能偷一个，所以问题从第1到第n-1个房间和第2到第n个房间，两者取最大值。即把数组拆分成两个
+----------------------
 ### 240. [Search a 2D Matrix II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/Searcha2DMatrixII.java)
 - Level: Medium
 - Tags: Binary Search, Divide and Conquer
