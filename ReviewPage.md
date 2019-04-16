@@ -1899,6 +1899,12 @@ public int reverseBits(int n) {
 - Tags: Dynamic Programming
 - 类似于198题，对于排成一圈的房间，第一个和最后一个必然只能偷一个，所以问题从第1到第n-1个房间和第2到第n个房间，两者取最大值。即把数组拆分成两个
 ----------------------
+### 214. [Shortest Palindrome](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/ShortestPalindrome.java)
+- Level: Hard
+- Tags: String
+- 利用KMP中求解next数组的方式，多求一位next数组，即可找出最长回文前缀。ps，将字符串翻转后加一个冗余字符，拼接至原字符串后面，然后再求next数组
+- 利用双指针前后对照检测，找出回文前缀，求出最终结果的前缀后缀，中间部分递归求解。ps，如果原字符串存在回文前缀，那么一定可以被检测到
+--------------------------------
 ### 240. [Search a 2D Matrix II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/Searcha2DMatrixII.java)
 - Level: Medium
 - Tags: Binary Search, Divide and Conquer
