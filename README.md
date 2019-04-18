@@ -211,6 +211,7 @@
 |213|[House Robber II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/HouseRobberII.java)|Medium |Java| Dynamic Programming ||
 |214|[Shortest Palindrome](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/ShortestPalindrome.java)|Hard |Java| String ||
 |215|[Kth Largest Element in an Array](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/KthLargestElementInAnArray.java)|Medium |Java| Divide and Conquer, Heap ||
+|216|[Combination Sum III](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/CombinationSumIII.java)|Medium |Java| Array, Backtracking ||
 |240|[Search a 2D Matrix II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/Searcha2DMatrixII.java)|Medium|Java| Binary Search, Divide and Conquer ||
 |260|[Single Number III](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/SingleNumberIII.java)|Medium |Java| Hash Table, Bit Manipulation ||
 |421|[Maximum XOR of Two Numbers in an Array](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/MaximumXORofTwoNumbersinanArray.java)|Medium|Java| Bit Manipulation, Trie ||

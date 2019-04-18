@@ -1905,13 +1905,19 @@ public int reverseBits(int n) {
 - 利用KMP中求解next数组的方式，多求一位next数组，即可找出最长回文前缀。ps，将字符串翻转后加一个冗余字符，拼接至原字符串后面，然后再求next数组
 - 利用双指针前后对照检测，找出回文前缀，求出最终结果的前缀后缀，中间部分递归求解。ps，如果原字符串存在回文前缀，那么一定可以被检测到
 --------------------------------
-|215|[Kth Largest Element in an Array](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/KthLargestElementInAnArray.java)
+### 215. [Kth Largest Element in an Array](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/KthLargestElementInAnArray.java)
 - Level: Medium
 - Tags: Divide and Conquer, Heap
 - Kth问题，方法一，基于快排的partition过程
 - BFPRT算法
 - LeetCode实际耗时，优化后的随机快排partition反而耗时更长，且BFPRT算法耗时更长。与理论有较大出入。
 ------------------------
+### 216. [Combination Sum III](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/CombinationSumIII.java)
+- Level: Medium
+- Tags: Array, Backtracking
+- 回溯，从小到大地加入list中，符号要求则加入结果集
+
+-------------------
 ### 240. [Search a 2D Matrix II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/Searcha2DMatrixII.java)
 - Level: Medium
 - Tags: Binary Search, Divide and Conquer
