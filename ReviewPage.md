@@ -1918,6 +1918,11 @@ public int reverseBits(int n) {
 - 回溯，从小到大地加入list中，符号要求则加入结果集
 
 -------------------
+### 217. [Contains Duplicate](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/ContainsDuplicate.java)
+- Level: Easy
+- Tags: Array, Hash Table
+- 桶排序或者使用哈希表
+--------------------------
 ### 240. [Search a 2D Matrix II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/Searcha2DMatrixII.java)
 - Level: Medium
 - Tags: Binary Search, Divide and Conquer
