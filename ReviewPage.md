@@ -1923,6 +1923,17 @@ public int reverseBits(int n) {
 - Tags: Array, Hash Table
 - 桶排序或者使用哈希表
 --------------------------
+### 218. [The Skyline Problem](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/TheSkylineProblem.java)
+- Level: Hard
+- Tags: Divide and Conquer, Heap, Binary Indexed Tree, Segment Tree
+- 基本的思想是对输入buildings做一个线性扫描，并且只处理它的两个点（即开始点和结束点）；
+- 还有一个关键点是要使用一个优先队列(priority_queue)来记录所有处于"alive"状态的buildings（处于alive状态的建筑是指那么在后面的变量过程中可能会被使用到的建筑）；
+- 优先队列需要根据高度和结束点x坐标来进行排序（优先队列的队首元素是高度值最大，如果存在高度值相同的点，结束点x坐标大的点位于队首）；
+- 对buildings执行迭代操作，找到当前正在处理的点（即可能的拐点），当前正在处理的点要么是下一个building的开始点，要么是优先队列中队首元素的结束点；
+- 如果当前的building的开始点的x坐标大于优先队列中队首元素的结束点x坐标，那么首先处理优先队列中的队首元素：将优先队列中的元素弹出直到它为空或者找到第一个结束点x坐标大于当前处理点的。
+- 否则，如果当前的building的开始点x坐标小于等于优先队列中堆首元素的结束点x坐标，那么处理当前的building：将它的高度和结束点x坐标放到优先队列中；判断高度值是否发生了变化，如果发生了变化，将它放入到结果集中。
+- ![img](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/files/skyline.bmp)
+-------------------
 ### 240. [Search a 2D Matrix II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/Searcha2DMatrixII.java)
 - Level: Medium
 - Tags: Binary Search, Divide and Conquer

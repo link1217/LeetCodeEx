@@ -213,6 +213,7 @@
 |215|[Kth Largest Element in an Array](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/KthLargestElementInAnArray.java)|Medium |Java| Divide and Conquer, Heap ||
 |216|[Combination Sum III](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/CombinationSumIII.java)|Medium |Java| Array, Backtracking ||
 |217|[Contains Duplicate](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/ContainsDuplicate.java)|Easy |Java| Array, Hash Table ||
+|218|[The Skyline Problem](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/TheSkylineProblem.java)|Hard |Java| Divide and Conquer, Heap, Binary Indexed Tree, Segment Tree ||
 |240|[Search a 2D Matrix II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/Searcha2DMatrixII.java)|Medium|Java| Binary Search, Divide and Conquer ||
 |260|[Single Number III](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/SingleNumberIII.java)|Medium |Java| Hash Table, Bit Manipulation ||
 |421|[Maximum XOR of Two Numbers in an Array](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/MaximumXORofTwoNumbersinanArray.java)|Medium|Java| Bit Manipulation, Trie ||
