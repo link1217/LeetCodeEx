@@ -1009,14 +1009,14 @@ while (left < right) {
 - 递归判断，参见代码
 
 ---------------
-### 101. [Symmetric Tree](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/SymmetricTree.java)
+### 101. [Symmetric Tree](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode1/SymmetricTree.java)
 - Level: Easy
 - Tags: Tree, DFS, BFS 
 - 递归与迭代实现
 - 迭代使用辅助栈，每次放两个结点进去
 
 --------------
-### 102. [Binary Tree Level Order Traversal](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/BinaryTreeLevelOrderTraversal.java)
+### 102. [Binary Tree Level Order Traversal](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode1/BinaryTreeLevelOrderTraversal.java)
 - Level: Medium
 - Tags: Tree, BFS 
 - 迭代版使用双端队列，记录最右结点
@@ -1042,7 +1042,7 @@ while (left < right) {
 ```
 
 -----------------
-### 103. [Binary Tree Zigzag Level Order Traversal](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/BinaryTreeZigzagLevelOrderTraversal.java)
+### 103. [Binary Tree Zigzag Level Order Traversal](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode1/BinaryTreeZigzagLevelOrderTraversal.java)
 - Level: Medium
 - Tags: Tree, BFS, Stack
 - 迭代版使用两个辅助栈，加入顺序不同
@@ -1053,7 +1053,7 @@ while (left < right) {
 ```
 
 ----------------
-### 104. [Maximum Depth of Binary Tree](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/MaximumDepthOfBinaryTree.java)
+### 104. [Maximum Depth of Binary Tree](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode1/MaximumDepthOfBinaryTree.java)
 - Level: Easy
 - Tags: Tree, DFS
 - 递归三行代码搞定：
@@ -1066,13 +1066,13 @@ while (left < right) {
 ```
 
 -------------------------
-### 105. [Construct Binary Tree from Preorder and Inorder Traversal](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/ConstructBinaryTreeFromPreorderAndInorderTraversal.java)
+### 105. [Construct Binary Tree from Preorder and Inorder Traversal](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode1/ConstructBinaryTreeFromPreorderAndInorderTraversal.java)
 - Level: Medium
 - Tags: Array, Tree, DFS
 - 递归版的三个版本，参考具体代码
 
 ------------------
-### 106. [Construct Binary Tree from Inorder and Postorder Traversal](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/ConstructBinaryTreeFromInorderAndPostorderTraversal.java)
+### 106. [Construct Binary Tree from Inorder and Postorder Traversal](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode1/ConstructBinaryTreeFromInorderAndPostorderTraversal.java)
 - Level: Medium
 - Tags: Array, Tree, DFS
 - 递归实现，与105题的差别在于，先排右孩子，再排左孩子，数组长度减下标为实际下标
@@ -1095,44 +1095,44 @@ while (left < right) {
 - 其余递归方法，根据105题修改即可
 
 -----------------
-### 107. [Binary Tree Level Order Traversal II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/BinaryTreeLevelOrderTraversalII.java)
+### 107. [Binary Tree Level Order Traversal II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode1/BinaryTreeLevelOrderTraversalII.java)
 - Level: Easy
 - Tags: Tree, BFS
 - 与102题逻辑一样，区别在于，在遍历过所有结点后，反转结果集即可。
 
 ------------------
-### 108. [Convert Sorted Array to Binary Search Tree](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/ConvertSortedArrayToBinarySearchTree.java)
+### 108. [Convert Sorted Array to Binary Search Tree](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode1/ConvertSortedArrayToBinarySearchTree.java)
 - Level: Easy
 - Tags: Tree, DFS
 - 每次取数组的中间位置插入结点，左孩子递归数组的左部分，右孩子递归数组的右部分。
 
 ---------------------
-### 109. [Convert Sorted List to Binary Search Tree](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/ConvertSortedListToBinarySearchTree.java)
+### 109. [Convert Sorted List to Binary Search Tree](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode1/ConvertSortedListToBinarySearchTree.java)
 - Level: Medium
 - Tags: Linked List, Tree, DFS
 - 将链表转换成数组，采用108题的思路解答
 - 直接使用链表递归，每次找到链表的中点作为二叉树结点，左边和右边继续递归
 
 ----------------
-### 110. [Balanced Binary Tree](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/BalancedBinaryTree.java)
+### 110. [Balanced Binary Tree](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode1/BalancedBinaryTree.java)
 - Level: Easy
 - Tags: Tree, DFS
 - 求左右孩子的最大深度，一旦深度差大于1直接短路返回。
 
 ----------------------
-### 111. [Minimum Depth of Binary Tree](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/MinimumDepthOfBinaryTree.java)
+### 111. [Minimum Depth of Binary Tree](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode1/MinimumDepthOfBinaryTree.java)
 - Level: Easy
 - Tags: Tree, DFS, BFS
 - 额外判断根结点的左右子结点是否为空
 
 ---------------------
-### 112. [Path Sum](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/PathSum.java)
+### 112. [Path Sum](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode1/PathSum.java)
 - Level: Easy
 - Tags: Tree, DFS
 - 结点为null直接返回false，左右子结点都为空则判断sum是否等于当前结点的值，否则继续递归。
 
 --------------------
-### 113. [Path Sum II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/PathSumII.java)
+### 113. [Path Sum II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode1/PathSumII.java)
 - Level: Medium
 - Tags: Tree, DFS
 - 递归调用自身，将集合定义在外面即可。
@@ -1155,13 +1155,13 @@ while (left < right) {
 ```
 
 -------------------
-### 114. [Flatten Binary Tree to Linked List](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/FlattenBinaryTreeToLinkedList.java)
+### 114. [Flatten Binary Tree to Linked List](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode1/FlattenBinaryTreeToLinkedList.java)
 - Level: Medium
 - Tags: Tree, DFS
 - 找到左子树的最右结点，插入右子树和当前结点之间
 
 --------------------
-### 115. [Distinct Subsequences](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/DistinctSubsequences.java)
+### 115. [Distinct Subsequences](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode1/DistinctSubsequences.java)
 - Level: Hard
 - Tags: Dynamic Programming, String
 - 动态规划递推公式：
@@ -1174,7 +1174,7 @@ while (left < right) {
 - 另一种方案参见代码
 
 --------------------
-### 116. [Populating Next Right Pointers in Each Node](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/PopulatingNextRightPointersInEachNode.java)
+### 116. [Populating Next Right Pointers in Each Node](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode1/PopulatingNextRightPointersInEachNode.java)
 - Level: Medium
 - Tags: Tree, DFS
 - 使用队列层次遍历简单实现
@@ -1198,25 +1198,25 @@ while (left < right) {
 
 
 --------------
-### 117. [Populating Next Right Pointers in Each Node II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/PopulatingNextRightPointersInEachNodeII.java)
+### 117. [Populating Next Right Pointers in Each Node II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode1/PopulatingNextRightPointersInEachNodeII.java)
 - Level: Medium
 - Tags: Tree, DFS
 - 116题的升级版，设置一个前驱结点，用于访问下一层的首个有效结点
 
 ------------------
-### 118. [Pascal's Triangle](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/PascalsTriangle.java)
+### 118. [Pascal's Triangle](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode1/PascalsTriangle.java)
 - Level: Easy
 - Tags: Array
 - 遍历累加
 
 ------------------
-### 119. [Pascal's Triangle II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/PascalsTriangleII.java)
+### 119. [Pascal's Triangle II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode1/PascalsTriangleII.java)
 - Level: Easy
 - Tags: Array
 - 同上
 
 -----------------
-### 120. [Triangle](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/Triangle.java)
+### 120. [Triangle](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode1/Triangle.java)
 - Level: Medium
 - Tags: Array, Dynamic Programming
 - 动态规划：
@@ -1224,19 +1224,19 @@ while (left < right) {
 2，从下到上+从左到右
 
 ----------------
-### 121. [Best Time to Buy and Sell Stock](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/BestTimeToBuyAndSellStock.java)
+### 121. [Best Time to Buy and Sell Stock](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode1/BestTimeToBuyAndSellStock.java)
 - Level: Easy
 - Tags: Array
 - 当前值-最小值，求最大的一个结果即可
 
 ------------------
-### 122. [Best Time to Buy and Sell Stock](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/BestTimeToBuyAndSellStock.java)
+### 122. [Best Time to Buy and Sell Stock](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode1/BestTimeToBuyAndSellStock.java)
 - Level: Easy
 - Tags: Array, Greedy
 
 
 ---------------------
-### 123. [Best Time to Buy and Sell Stock III](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/BestTimeToBuyAndSellStockIII.java)
+### 123. [Best Time to Buy and Sell Stock III](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode1/BestTimeToBuyAndSellStockIII.java)
 - Level: Hard
 - Tags: Array, Dynamic Programming
 - 暴力动态规划，耗时长
@@ -1259,7 +1259,7 @@ while (left < right) {
 ```
 
 --------------
-### 124. [Binary Tree Maximum Path Sum](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/BinaryTreeMaximumPathSum.java)
+### 124. [Binary Tree Maximum Path Sum](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode1/BinaryTreeMaximumPathSum.java)
 - Level: Hard
 - Tags: DFS
 ```
@@ -1283,26 +1283,26 @@ while (left < right) {
 
 
 ------------------
-### 125. [Valid Palindrome](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/ValidPalindrome.java)
+### 125. [Valid Palindrome](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode1/ValidPalindrome.java)
 - Level: Easy
 - Tags: Two Pointers, String
 - 双指针逐个比较，跳过非数字字母字符即可
 
 ----------------
-### 126. [Word Ladder II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/WordLadderII.java)
+### 126. [Word Ladder II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode1/WordLadderII.java)
 - Level: Hard
 - Tags: Array, String, BackTracking, BFS
 - 单向搜寻邻居单词，如果反向，需要反转map中的k-v映射
 - 将list转换为set，求解邻居过程中，移除已经访问过的字符串
 
 ------------------
-### 127. [Word Ladder](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/WordLadder.java)
+### 127. [Word Ladder](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode1/WordLadder.java)
 - Level: Medium
 - Tags:  BFS
 - 126的简化版
 
 -----------------
-### 128. [Longest Consecutive Sequence](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/LongestConsecutiveSequence.java)
+### 128. [Longest Consecutive Sequence](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode1/LongestConsecutiveSequence.java)
 - Level: Hard
 - Tags:  Array, Union Find
 - 并查集可实现O(n)时间复杂度，但实际上耗时较长
@@ -1319,7 +1319,7 @@ while (left < right) {
     }
 ```
 ----------------------
-### 129. [Sum Root to Leaf Numbers](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/SumRoot2LeafNumbers.java)
+### 129. [Sum Root to Leaf Numbers](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode1/SumRoot2LeafNumbers.java)
 - Level: Medium
 - Tags:  Tree, DFS
 - 利用辅助函数深度遍历二叉树即可，如下所示：
@@ -1340,19 +1340,19 @@ while (left < right) {
 
 
 --------------
-### 130. [Surrounded Regions](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/SurroundedRegions.java)
+### 130. [Surrounded Regions](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode1/SurroundedRegions.java)
 - Level: Medium
 - Tags:  BFS, DFS, Union Find
 - 遍历边界的O，通过感染方法将与之毗连的O全部设为Y，最后整体遍历，将O转为X，将Y转回O即可
 
 -----------------
-### 131. [Palindrome Partitioning](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/PalindromePartitioning.java)
+### 131. [Palindrome Partitioning](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode1/PalindromePartitioning.java)
 - Level: Medium
 - Tags:  BackTracking
 - 自左至右判断子串是否为回文，回溯添加入集合
 
 -------------------
-### 132. [Palindrome Partitioning II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/PalindromePartitioningII.java)
+### 132. [Palindrome Partitioning II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode1/PalindromePartitioningII.java)
 - Level: Hard
 - Tags: Dynamic Programming
 - 从每一个位置和旁边位置向两边扩，同时更新最右边的位置的值。 `dp[right] = min(dp[right],dp[left-1]+1)`
@@ -1384,13 +1384,13 @@ while (left < right) {
 ```
 
 --------------------
-### 133. [Clone Graph](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/CloneGraph.java)
+### 133. [Clone Graph](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode1/CloneGraph.java)
 - Level: Medium		
 - Tags: BFS, DFS, Graph
 - 遍历图，设置map，一旦新建一个节点就放入map
 
 -------------------
-### 134. [Gas Station](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/GasStation.java)
+### 134. [Gas Station](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode1/GasStation.java)
 - Level: Medium		
 - Tags: Greedy
 ```
@@ -1410,7 +1410,7 @@ while (left < right) {
 ```
 
 ---------------------
-### 135. [Candy](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/Candy.java)
+### 135. [Candy](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode1/Candy.java)
 - Level: Hard		
 - Tags: Greedy
 - 自左至右加一遍，大于左边的则+1，否则为1；从右到左加一遍，大于右边的则和1+右边的取最值，否则不变。
@@ -1434,14 +1434,14 @@ while (left < right) {
 ```
 
 -----------------------------
-### 136.[Single Number](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/SingleNumber.java)
+### 136.[Single Number](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode1/SingleNumber.java)
 - Level: Easy		
 - Tags: Hash Table, Bit Manipulation
 - 异或和即为所求
 
 
 -------------------
-### 137. [Single Number II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/SingleNumberII.java)
+### 137. [Single Number II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode1/SingleNumberII.java)
 - Level: Medium		
 - Tags: Hash Table, Bit Manipulation
 - 方法一： 统计每一位置上1的个数，然后对3取余后和1相与即可
@@ -1458,44 +1458,44 @@ public int singleNumber(int[] nums) {
 ```
 
 ---------------------
-### 138. [Copy List with Random Pointer](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/CopyListWithRandomPointer.java)
+### 138. [Copy List with Random Pointer](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode1/CopyListWithRandomPointer.java)
 - Level: Medium		
 - Tags: Hash Table, Linked List
 - 先在每一个结点后复制一个结点，连接在原链表内，再遍历每一个结点的随机指针，按顺序连接复制结点的随机指针，最后分开结点。
 
 ----------------------
-### 139. [Word Break](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/WordBreak.java)
+### 139. [Word Break](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode1/WordBreak.java)
 - Level: Medium		
 - Tags: Dynamic Programming, BackTracking 
 - 用hashmap记录状态，或者动态规划，用Boolean数组记录状态。
 - 只要找到一种情况满足要求即可
 
 ----------------------
-### 140. [Word Break II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/WordBreakII.java)	
+### 140. [Word Break II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode1/WordBreakII.java)	
 - Level: Hard		
 - Tags: Dynamic Programming, BackTracking 
 - 深度优先搜索：
 >	参考代码理解
 
 ----------------------
-### 141. [Linked List Cycle](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/LinkedListCycle.java)
+### 141. [Linked List Cycle](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode1/LinkedListCycle.java)
 - Level: Easy		
 - Tags: Linked List, Two Pointers
 - 快慢指针相遇则有环
 
 ---------------------
-### 142. [Linked List Cycle II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/LinkedListCycleII.java)
+### 142. [Linked List Cycle II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode1/LinkedListCycleII.java)
 - Level: Medium		
 - Tags: Linked List, Two Pointers
 - 快慢指针相遇后都变慢指针，一个原地开始，一个从头开始，再次相遇则为入环点
 
 -------------------
-### 143. [Reorder List](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/ReorderList.java)
+### 143. [Reorder List](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode1/ReorderList.java)
 - Level: Medium		
 - Tags: Linked List, Two Pointers
 - 将后半段逆序后再依次插入前半段，注意边界条件和跳出条件
 ---------------------------
-### 144. [Binary Tree Preorder Traversal](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/BinaryTreePreorderTraversal.java)
+### 144. [Binary Tree Preorder Traversal](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode1/BinaryTreePreorderTraversal.java)
 - Level: Medium		
 - Tags: Tree
 - 递归遍历
@@ -1503,31 +1503,31 @@ public int singleNumber(int[] nums) {
 - Morris遍历
 
 --------------
-### 145. [Binary Tree Postorder Traversal](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/BinaryTreePostorderTraversal.java)
+### 145. [Binary Tree Postorder Traversal](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode1/BinaryTreePostorderTraversal.java)
 - Level: Hard		
 - Tags: Tree
 - 递归遍历
 - 使用辅助栈迭代遍历
 - Morris遍历
 -------------------
-### 146. [LRU Cache](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/LRUCache.java)
+### 146. [LRU Cache](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode1/LRUCache.java)
 - Level: Hard		
 - Tags: Design
 - 哈希表+双向链表，参见代码
 
 --------------------
-### 147. [Insertion Sort List](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/InsertionSortList.java)
+### 147. [Insertion Sort List](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode1/InsertionSortList.java)
 - Level: Medium		
 - Tags: Linked List, Sort
 - 设置返回链表的前置节点，依次将头结点插入到新的链表中
 
 ------------------
-### 148. [Sort List](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/SortList.java)
+### 148. [Sort List](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode1/SortList.java)
 - Level: Medium		
 - Tags: Linked List, Sort
 - 链表版归并排序，但有说此方法空间复杂度为O(lgn)，具体常数空间度复杂度方法参见网上代码
 -------------------
-### 149. [Max Points on a Line](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/MaxPointsOnALine.java)
+### 149. [Max Points on a Line](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode1/MaxPointsOnALine.java)
 |Hard|Java| Hash Table, Math ||
 - Level: Hard		
 - Tags: Hash Table, Math
@@ -1543,21 +1543,21 @@ private int gcd(int y, int x) {
 ```
 
 -------------------------
-### 150. [Evaluate Reverse Polish Notation](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/EvaluateReversePolishNotation.java)
+### 150. [Evaluate Reverse Polish Notation](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode1/EvaluateReversePolishNotation.java)
 - Level: Medium		
 - Tags: Stack
 - 使用栈，数字入栈，操作符出栈计算后再入栈
 - 递归方法：比直接使用栈耗时更短，从右到左计算，参见代码中的第三种解法。
 
 ----------------
-### 151. [Reverse Words in a String](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/ReverseWordsInAString.java)
+### 151. [Reverse Words in a String](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode1/ReverseWordsInAString.java)
 - Level: Medium		
 - Tags: String
 - 两边和中间有多余的空格
 - 直接从右到左截取，不需要翻转，反倒更快
 
 -------------------
-### 152. [Maximum Product Subarray](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/MaximumProductSubarray.java)
+### 152. [Maximum Product Subarray](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode1/MaximumProductSubarray.java)
 - Level: Medium		
 - Tags: Array, Dynamic Programming
 - 每次取最大值和最小值，遇到负值时交换最大最小值
@@ -1572,18 +1572,18 @@ min = Math.min(nums[i], nums[i] * min);
 res = Math.max(res, max);
 ```
 ------------------------
-### 153. [Find Minimum in Rotated Sorted Array](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/FindMinimumInRotatedSortedArray.java)
+### 153. [Find Minimum in Rotated Sorted Array](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode1/FindMinimumInRotatedSortedArray.java)
 - Level: Medium		
 - Tags: Array, Binary Search
 - 二分查找，一旦符合`nums[left] <= nums[right]`返回`nums[leftr]`即可
 ----------------------
-### 154. [Find Minimum in Rotated Sorted Array II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/FindMinimumInRotatedSortedArrayII.java)
+### 154. [Find Minimum in Rotated Sorted Array II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode1/FindMinimumInRotatedSortedArrayII.java)
 - Level: Hard		
 - Tags: Array, Binary Search
 - 与153题解法思路相近，区别在于，若nums[mid]和nums[left]相等时，执行left++，即并不是每一次都进行折半，最后返回nums[right]
 
 --------------------------
-### 155. [Min Stack](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/MinStack.java)
+### 155. [Min Stack](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode1/MinStack.java)
 - Level: Easy		
 - Tags: Stack, Design
 - 使用两个栈实现
@@ -1599,7 +1599,7 @@ public void push(int x) {
 }
 ```
 --------------------------
-### 160. [Intersection of Two Linked Lists](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/IntersectionOfTwoLinkedLists.java)
+### 160. [Intersection of Two Linked Lists](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode1/IntersectionOfTwoLinkedLists.java)
 - Level: Easy		
 - Tags: Linked List
 - 方法一：记录两个链表的长度，根据长度差，让更长的链表先移动diff步，随后一起移动，直到相遇或为null
@@ -1615,7 +1615,7 @@ public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
 }
 ```
 -----------------------
-### 162. [Find Peak Element](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/FindPeakElement.java)
+### 162. [Find Peak Element](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode1/FindPeakElement.java)
 - Level: Easy		
 - Tags: Array, Binary Search
 - 二分搜索，如果`nums[mid]>nums[mid+1]`则peak点一定在左边，否则在右边
@@ -1633,29 +1633,29 @@ public int findPeakElement(int[] nums) {
 }
 ```
 ---------------------------
-### 164. [Maximum Gap](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/maximumGap.java)
+### 164. [Maximum Gap](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode1/maximumGap.java)
 - Level: Hard
 - Tags: Array, Sort
 - 左神算法视频初级班讲过
 - 基于桶排序求最大间隔，设置len+1个桶，最大间隔必在不同的桶间产生
 
 ------------------------
-### 165. [Compare Version Numbers](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/CompareVersionNumbers.java)
+### 165. [Compare Version Numbers](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode1/CompareVersionNumbers.java)
 - Level: Medium
 - Tags: String
 - 去掉.后组成字符串数组，从左到右作比较，若其中一个越界则默认为0
 -----------------------
-### 166. [Fraction to Recurring Decimal](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/Fraction2RecurringDecimal.java)
+### 166. [Fraction to Recurring Decimal](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode1/Fraction2RecurringDecimal.java)
 - Level: Medium
 - Tags: Hash Table, Math
 - 根据余数是否重复出现判定小数部分是否进入循环，将余数和对应的位置存入hashmap
 ------------------
-### 167. [Two Sum II - Input array is sorted](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/TwoSumII.java)
+### 167. [Two Sum II - Input array is sorted](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode1/TwoSumII.java)
 - Level: Easy
 - Tags: Array, Two Pointers
 - 双指针往中间移动，根据当前数的和与target的大小判断从哪边移动或者返回结果
 -----------------------
-### 168. [Excel Sheet Column Title](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/ExcelSheetColumnTitle.java)
+### 168. [Excel Sheet Column Title](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode1/ExcelSheetColumnTitle.java)
 - Level: Easy
 - Tags: Math
 - 十进制转26进制
@@ -1670,7 +1670,7 @@ public String convertToTitle(int n) {
 }
 ```
 --------------------------
-### 169. [Majority Element](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/MajorityElement.java)
+### 169. [Majority Element](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode1/MajorityElement.java)
 - Level: Easy
 - Tags: Array
 - 利用快排的partition过程，若`p[1] - p[0] + 1 > nums.length / 2`则返回nums[p[0]]，否则根据两侧剩余空间判断从哪边继续partition
@@ -1690,7 +1690,7 @@ public int majorityElement(int[] nums) {
 }
 ```
 ----------------------
-### 171. [Excel Sheet Column Number](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/ExcelSheetColumnNumber.java)
+### 171. [Excel Sheet Column Number](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode1/ExcelSheetColumnNumber.java)
 - Level: Easy
 - Tags: Math
 - 26进制转10进制
@@ -1704,7 +1704,7 @@ public int titleToNumber(String s) {
 }
 ```
 ----------------------------
-### 172. [Factorial Trailing Zeroes](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/FactorialTrailingZeroes.java)
+### 172. [Factorial Trailing Zeroes](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode1/FactorialTrailingZeroes.java)
 - Level: Easy
 - Tags: Math
 - 累加除以5的结果
@@ -1720,18 +1720,18 @@ public int trailingZeroes2(int n) {
 ```
 - 递归版见代码
 ------------------
-### 173. [Binary Search Tree Iterator](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/BSTIterator.java)
+### 173. [Binary Search Tree Iterator](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode1/BSTIterator.java)
 - Level: Medium
 - Tags: Stack, Tree, Design
 - 题意不明，具体看代码
 ------------------------
-### 174. [Dungeon Game](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/DungeonGame.java)
+### 174. [Dungeon Game](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode1/DungeonGame.java)
 - Level: Hard
 - Tags: Dynamic Programming
 - 从下到上动态规划
 - 从右下角开始计算需要的最少血量，向上向左移动的时候血量和1取最大值
 -----------------------
-### 179. [Largest Number](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/LargestNumber.java)
+### 179. [Largest Number](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode1/LargestNumber.java)
 - Level: Medium
 - Tags: Sort
 - 先排序，自定义比较器
@@ -1745,7 +1745,7 @@ Arrays.sort(arr, (o1, o2) -> {
 ```
 
 --------------------------
-### 187. [Repeated DNA Sequences](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/RepeatedDNASequences.java)
+### 187. [Repeated DNA Sequences](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode1/RepeatedDNASequences.java)
 - Level: Medium
 - Tags: Hash Table, Bit Manipulation
 - 方法一，用两个set，存放每一位开始的长度为10的字符串，如果放不进去则表明出现过，将其存入另一个set，最后返回另一个set即可
@@ -1766,19 +1766,19 @@ for (int i = 9; i < cs.length; i++) {
 - 总的来说就是，编码+状态转移和判断+位操作 ☆☆☆☆☆
 
 ---------------------------
-### 188. [Best Time to Buy and Sell Stock IV](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/BestTimeToBuyAndSellStockIV.java)
+### 188. [Best Time to Buy and Sell Stock IV](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode1/BestTimeToBuyAndSellStockIV.java)
 - Level: Hard
 - Tags: Array, Dynamic Programming
 - 根据123题修改可得
 
 ----------------------
 ---------------------------
-### 189. [Rotate Array](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/RotateArray.java)
+### 189. [Rotate Array](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode1/RotateArray.java)
 - Level: Easy
 - Tags: Array
 - 分成两段反转数组，然后反转整个数组
 ------------------------------
-### 190. [Reverse Bits](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/ReverseBits.java)
+### 190. [Reverse Bits](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode1/ReverseBits.java)
 - Level: Easy
 - Tags: Bit Manipulation
 - 移位时使用无符号移位
@@ -1794,21 +1794,21 @@ public int reverseBits(int n) {
 ```
 
 -------------------------
-### 191. [Number of 1 Bits](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/NumberOf1Bits.java)
+### 191. [Number of 1 Bits](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode1/NumberOf1Bits.java)
 - Level: Easy
 - Tags: Bit Manipulation
 - 方法一：n每次与1进行&操作，累加结果，n每次无符号右移一位
 - 方法二：n每次与n-1进行&操作，计数累加
 
 -------------------
-### 198. [House Robber](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/HouseRobber.java)
+### 198. [House Robber](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode1/HouseRobber.java)
 - Level: Easy
 - Tags: Dynamic Programming
 - 取或者不取当前的数
 - 递推公式： `f(x)=max(f(x-2)+nums[x], f(x-1))`
 
 ------------------------------------
-### 199. [Binary Tree Right Side View](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/BinaryTreeRightSideView.java)
+### 199. [Binary Tree Right Side View](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode1/BinaryTreeRightSideView.java)
 - Level: Medium
 - Tags: Tree, DFS, BFS
 - 层次遍历，将每一层最右边的节点的值放入集合
@@ -1816,114 +1816,114 @@ public int reverseBits(int n) {
 - 方法二：通过递归层次遍历改进，递归时从右子树开始，每到了新的一层就将此时的值加入结果集
 
 ------------------------
-### 200. [Number of Islands](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/NumberOfIslands.java)
+### 200. [Number of Islands](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/NumberOfIslands.java)
 - Level: Medium
 - Tags: Union Find, DFS, BFS
 - 方法一：DFS
 - 方法二：并查集，并且将二维矩阵转换为一维序号表示节点，用数组代替哈希表
 
 ----------------------------
-### 201. [Bitwise AND of Numbers Range](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/BitwiseANDofNumbersRange.java)
+### 201. [Bitwise AND of Numbers Range](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/BitwiseANDofNumbersRange.java)
 - Level: Medium
 - Tags: Bit Manipulation
 - 找到所有数字中左边一样的部分，m和n不断右移一位，直到相等，然后m左移相同位数即为结果
 
 ------------------------
-### 202. [Happy Number](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/HappyNumber.java)
+### 202. [Happy Number](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/HappyNumber.java)
 - Level: Easy
 - Tags: Hash Table, Math
 - 不断进行平方和运算，结果肯定会出现小于10的数，该数为1或7则返回true，否则返回false
 - 可调用自身递归运算
 --------------------
-### 203. [Remove Linked List Elements](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/RemoveLinkedListElements.java)
+### 203. [Remove Linked List Elements](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/RemoveLinkedListElements.java)
 - Level: Easy
 - Tags: Linked List
 - 先找到合适的头结点，然后再依次检查后面的结点
 
 --------------------
-### 204. [Count Primes](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/CountPrimes.java)
+### 204. [Count Primes](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/CountPrimes.java)
 - Level: Easy
 - Tags: Hash Table, Math
 - 记录状态，循环排除
 - 如果一个数i是素数，那么i一定是奇数（除了2），且`i*i+2*N*i // N为正整数`一定不是素数
 -------------------------
-### 205. [Isomorphic Strings](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/IsomorphicStrings.java)
+### 205. [Isomorphic Strings](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/IsomorphicStrings.java)
 - Level: Easy
 - Tags: Hash Table
 - 定义两个映射表，表示两个字符串互相的映射（使用长度为128的数组即可）
 - 只有两个位置都为0才需要赋值，否则比较map中的值，不等则返回false
 --------------------------
-### 206. [Reverse Linked List](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/ReverseLinkedList.java)
+### 206. [Reverse Linked List](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/ReverseLinkedList.java)
 - Level: Easy
 - Tags: Linked List
 - 设置前驱结点翻转链表
 
 ----------------
-### 207. [Course Schedule](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/CourseSchedule.java)
+### 207. [Course Schedule](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/CourseSchedule.java)
 - Level: Medium
 - Tags: DFS, BFS, Graph, Topologicla Sort
 - 从入度着手即BFS，从出度着手即DFS
 - 使用拓扑排序判断有向图是否有环
 --------------------------
-### 208. [Implement Trie (Prefix Tree)](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/ImplementTrie.java)
+### 208. [Implement Trie (Prefix Tree)](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/ImplementTrie.java)
 - Level: Medium
 - Tags: Design, Trie
 - 前缀树，设计一种数据结构，每一层有26个结点，长度为26的数组即可，可根据字符-'a'的值作为结点的位置。另外每一个结点都需要维持一个boolean变量，表示当前结点是否是结束节点
 - 详情参见代码
 ---------------------
-### 209. [Minimum Size Subarray Sum](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/MinimumSizeSubarraySum.java)
+### 209. [Minimum Size Subarray Sum](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/MinimumSizeSubarraySum.java)
 - Level: Medium
 - Tags: Array, Two Pointers, Binary Search
 - 双指针，右侧一直往右，直到满足要求，然后左侧一直往右，直到不满足，左侧指针移动时更新最小长度
 --------------------------
-### 210. [Course Schedule II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/CourseScheduleII.java)
+### 210. [Course Schedule II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/CourseScheduleII.java)
 - Level: Medium
 - Tags: DFS, BFS, Graph, Topologicla Sort
 - 入度为0的结点为可以直接上的课程
 - 通过建立邻接表和更新入度解决
 -----------------------------
-### 211. [Add and Search Word - Data structure design](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/AddAndSearchWordDataStructureDesign.java)
+### 211. [Add and Search Word - Data structure design](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/AddAndSearchWordDataStructureDesign.java)
 - Level: Medium
 - Tags: Backtracking, Design, Trie
 - 构造字典树，添加操作不便，查找操作需要匹配通配符
 - 查找时采用回溯方法，遇到通配符则遍历当前这一层，非空即进入回溯。
 ------------------
-### 212. [Word Search II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/WordSearchII.java)
+### 212. [Word Search II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/WordSearchII.java)
 - Level: Hard
 - Tags: Backtracking, Trie
 - 回溯+字典树
 - 字典树中添加单词属性，回溯过程中更改当前字符
 ----------------
-### 213.[House Robber II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/HouseRobberII.java)
+### 213.[House Robber II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/HouseRobberII.java)
 - Level: Medium
 - Tags: Dynamic Programming
 - 类似于198题，对于排成一圈的房间，第一个和最后一个必然只能偷一个，所以问题从第1到第n-1个房间和第2到第n个房间，两者取最大值。即把数组拆分成两个
 ----------------------
-### 214. [Shortest Palindrome](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/ShortestPalindrome.java)
+### 214. [Shortest Palindrome](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/ShortestPalindrome.java)
 - Level: Hard
 - Tags: String
 - 利用KMP中求解next数组的方式，多求一位next数组，即可找出最长回文前缀。ps，将字符串翻转后加一个冗余字符，拼接至原字符串后面，然后再求next数组
 - 利用双指针前后对照检测，找出回文前缀，求出最终结果的前缀后缀，中间部分递归求解。ps，如果原字符串存在回文前缀，那么一定可以被检测到
 --------------------------------
-### 215. [Kth Largest Element in an Array](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/KthLargestElementInAnArray.java)
+### 215. [Kth Largest Element in an Array](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/KthLargestElementInAnArray.java)
 - Level: Medium
 - Tags: Divide and Conquer, Heap
 - Kth问题，方法一，基于快排的partition过程
 - BFPRT算法
 - LeetCode实际耗时，优化后的随机快排partition反而耗时更长，且BFPRT算法耗时更长。与理论有较大出入。
 ------------------------
-### 216. [Combination Sum III](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/CombinationSumIII.java)
+### 216. [Combination Sum III](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/CombinationSumIII.java)
 - Level: Medium
 - Tags: Array, Backtracking
 - 回溯，从小到大地加入list中，符号要求则加入结果集
 
 -------------------
-### 217. [Contains Duplicate](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/ContainsDuplicate.java)
+### 217. [Contains Duplicate](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/ContainsDuplicate.java)
 - Level: Easy
 - Tags: Array, Hash Table
 - 桶排序或者使用哈希表
 --------------------------
-### 218. [The Skyline Problem](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/TheSkylineProblem.java)
+### 218. [The Skyline Problem](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/TheSkylineProblem.java)
 - Level: Hard
 - Tags: Divide and Conquer, Heap, Binary Indexed Tree, Segment Tree
 - 基本的思想是对输入buildings做一个线性扫描，并且只处理它的两个点（即开始点和结束点）；
@@ -1934,7 +1934,7 @@ public int reverseBits(int n) {
 - 否则，如果当前的building的开始点x坐标小于等于优先队列中堆首元素的结束点x坐标，那么处理当前的building：将它的高度和结束点x坐标放到优先队列中；判断高度值是否发生了变化，如果发生了变化，将它放入到结果集中。
 - ![img](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/files/skyline.bmp)
 -------------------
-### 240. [Search a 2D Matrix II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode3/Searcha2DMatrixII.java)
+### 240. [Search a 2D Matrix II](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/Searcha2DMatrixII.java)
 - Level: Medium
 - Tags: Binary Search, Divide and Conquer
 - 从左下角开始，往右上角移动
@@ -1946,12 +1946,12 @@ public int reverseBits(int n) {
 - 取异或和sum，找到sum中的一个1， `sum &= -sum` ，然后根据当前位置是否为1把原数组分为两部分，再求异或和即可
 
 --------------------
-### 421. [Maximum XOR of Two Numbers in an Array](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/MaximumXORofTwoNumbersinanArray.java)
+### 421. [Maximum XOR of Two Numbers in an Array](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode4/MaximumXORofTwoNumbersinanArray.java)
 - Level: Medium		
 - Tags: Bit Manipulation, Trie
 - 前缀树方法。详情参见代码，或者左神算法视频进阶7视频
 ---------------------
-### 437. [Path Sum III](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode2/PathSumIII.java)
+### 437. [Path Sum III](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode4/PathSumIII.java)
 - Level: Easy
 - Tags: Tree
 - 递归调用自身和辅助方法，遍历所有以当前结点开头的满足条件情况
@@ -1962,7 +1962,7 @@ public int reverseBits(int n) {
 
 
 ---------------------------
-### 865. [Smallest Subtree with all the Deepest Nodes](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode9/SmallestSubtreeWithAllTheDeepestNodes.java)	
+### 865. [Smallest Subtree with all the Deepest Nodes](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode8/SmallestSubtreeWithAllTheDeepestNodes.java)	
 - Level: Medium	
 - Tags: Tree 
 - 利用平衡二叉树的性质，若最深节点只有一个，直接返回此节点，否则返回所有最深节点共同的父节点，即返回左右子树深度一样的节点
@@ -1976,7 +1976,7 @@ public int reverseBits(int n) {
 ```
 	
 ---------------------
-### 866. [Prime Palindrome](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode9/PrimePalindrome.java)	
+### 866. [Prime Palindrome](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode8/PrimePalindrome.java)	
 - Level: Medium	
 - Tags: Math 
 - 一开始实现一种很复杂的方法，构建回文时考虑数字的左半边，累加左半边，需要注意进位时构建回文的方法转换。具体参考代码
@@ -1984,13 +1984,13 @@ public int reverseBits(int n) {
 >	假如数据量有限且可查询得到，必要时候直接拿来用，有奇效
 
 -----------------------------
-### 867. [Transpose Matrix](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode9/TransposeMatrix.java)	
+### 867. [Transpose Matrix](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode8/TransposeMatrix.java)	
 - Level:Easy	
 - Tags: Array
 - 二维数组的转置，ij互换即可
 
 ----------------------------------
-### 868. [Binary Gap](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode9/BinaryGap.java)	
+### 868. [Binary Gap](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode8/BinaryGap.java)	
 - Level: Easy
 - Tags: Math
 - 查找二进数据中两个1的最大距离，首先定位到第一个1，然后再计算距离。
@@ -2008,7 +2008,7 @@ public int reverseBits(int n) {
 - 把while循环该成for循环好像会快一点点
 
 -------------
-### 869. [Reordered Power of 2](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode9/ReorderedPowerOf2.java) 
+### 869. [Reordered Power of 2](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode8/ReorderedPowerOf2.java) 
 - Level: Medium
 - Tags: Math
 - 思路就是把一个整数转换成这些数字可以组成的最大数，然后从1开始匹配2的n次方，一旦匹配到直接返回true，结束循环条件如下：
@@ -2035,7 +2035,7 @@ public int reverseBits(int n) {
 ```
 
 ---------------
-### 870. [Advantage Shuffle](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode9/AdvantageShuffle.java)
+### 870. [Advantage Shuffle](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode8/AdvantageShuffle.java)
 - Level: Medium
 - Tags: Math, HashMap 
 - 田忌赛马？
@@ -2075,7 +2075,7 @@ public int reverseBits(int n) {
 
 
 -----------------------
-### 872. [Leaf-Similar Trees](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode9/LeafSimilarTrees.java)
+### 872. [Leaf-Similar Trees](https://github.com/lanrengufeng/LeetCodeEx/blob/master/src/leetcode8/LeafSimilarTrees.java)
 - Level: Easy
 - Tags: Tree
 - 任意一种方式遍历二叉树，将叶节点放入集合，对比两个集合即可。
